@@ -1,0 +1,21 @@
+<!-- base example -->
+
+<div class="ChartMLContainer" id="Stocks1">
+	<div class="ChartMLRenderingFineControls">
+		<ul class="ChartMLRenderingFineControls">
+			<li>(visuals)</li>
+			<li><img src="icon_enhanced.png" alt-text="Enhanced Visuals" /></li>
+			<li><img src="icon_reversed.png" alt-text="Reversed Visuals" /></li>
+		</ul>
+	</div>
+	<div class="ChartMLRenderingMain">
+		(main display)
+	</div>
+		<ul class="ChartMLRenderingGrossControls">
+			<li>(visual icon and text)</li>
+			<li>(audio icon and text)</li>
+			<li>(text description icon and text)</li>
+			<li>(data icon and text)</li>
+		</ul>
+	</div>
+</div>

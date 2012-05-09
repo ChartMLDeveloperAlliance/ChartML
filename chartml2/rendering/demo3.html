@@ -1,0 +1,255 @@
+<html>
+<head>
+	<title>Accessible Graphs Demo 1</title>
+<link rel="stylesheet" type="text/css" href="style1.css" />
+<script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+
+<!-- DHTMLX stuff here. -->
+<script type="text/javascript" src="./js/dhtmlxchart.js"></script>
+<link rel="stylesheet" type="text/css" href="./js/dhtmlxchart.css" />
+<script type="text/javascript">
+
+var data = [
+	{x: 0, y: 1},
+	{x: 1, y: 2},
+	{x: 2, y: 2.5},
+	{x: 3, y: 3.0},
+	{x: 4, y: 4.0},
+	{x: 5, y: 10},
+	{x: 6, y: 12}
+];
+
+function chartPrep(id) {
+	if(chart) chart.destructor();
+	
+	var chart = new dhtmlXChart( {
+		view: "line",
+		container: id,
+		value: "#y#",
+		tooltip: "#y#",
+		item:{
+			borderColor:"#ffffff",
+            color:"#000000"
+    	},
+        line:{
+        	color:"#ff9900",
+            width:3
+        },
+		xAxis:{
+		     title:"x",
+		     template:"#x#"
+		},
+        yAxis:{
+		     title:"y"
+	    },
+	});
+
+	chart.parse(data,"json");
+}
+
+function chartPrep2(id) {
+	if(chart2) chart2.destructor();
+	
+	var chart2 = new dhtmlXChart( {
+		view: "line",
+		container: id,
+		value: "#y#",
+		tooltip: "#y#",
+		item:{
+			borderColor:"#000000",
+            color:"#000000"
+    	},
+        line:{
+        	color:"#000000",
+            width:3
+        },
+		xAxis:{
+		     title:"x",
+		     template:"#x#"
+		},
+        yAxis:{
+		     title:"y"
+	    },
+	});
+
+	chart2.parse(data,"json");
+}
+
+function chartPrep3(id) {
+	if(chart3) chart3.destructor();
+	
+	var chart3 = new dhtmlXChart( {
+		view: "line",
+		container: id,
+		value: "#y#",
+		tooltip: "#y#",
+		item:{
+			borderColor:"#0000ff",
+            color:"#0000ff"
+    	},
+        line:{
+        	color:"#0000ff",
+            width:3
+        },
+		xAxis:{
+		     title:"x",
+		     template:"#x#"
+		},
+        yAxis:{
+		     title:"y"
+	    },
+	});
+
+	chart3.parse(data,"json");
+}
+
+</script>
+
+<script type="text/javascript">
+
+function updateMain(high_id, type) {
+	var id = "cmlrmain_"+high_id+"_"+type;
+//	$("#"+high_id).children(".ChartMLRenderingMainHolder").html("test");
+	$("#"+high_id).children(".ChartMLRenderingMain").attr('style',"visibility:hidden; height:0; width:0;"); //.css("visibility", "hidden");
+//	$("#"+id).attr('style','visibility:visible; width:"600px"; height:"360px"; border="1px solid blue";');//.css("visibility", "visible");
+	$("#debug").html(id);
+	hideall(high_id);
+	$("#"+id).show();
+//	$("#"+id).html(content);
+}
+
+function hideall(high_id) {
+	$("#cmlrmain_"+high_id+"_visual").hide();
+	$("#cmlrmain_"+high_id+"_enhance").hide();
+	$("#cmlrmain_"+high_id+"_reverse").hide();
+	$("#cmlrmain_"+high_id+"_audio").hide();
+	$("#cmlrmain_"+high_id+"_text").hide();
+	$("#cmlrmain_"+high_id+"_table").hide();
+}
+
+// The interesting stuff happens here.
+function updateChartMLMain(id, type) { // 2.0 code.
+	var content = "";
+	var timestamp = new Date().getTime();
+	var runChartPrep = false;
+	switch(type) {
+		case "visual":
+			chartPrep("chart_container");
+			break;
+		case "enhance":
+			content = '<img src="./res/graph1_enhanced.png" width="600px" />';
+			break;
+		case "reverse":
+			content = '<img src="./res/graph1_reversed.png" width="600px" />';
+			break;
+		case "audio":
+			content = '<embed src="./res/graph1_audio.mid" autostart="false" width="600px" height="360px"></embed>';
+			break;
+		case "text":
+			content = '<textarea style="width:600px; height:360px; font-size:inherit;">The line graph shows the real personal consumption expenditures increasing from $8,421 to $9,443 between the years 2004 and 2011. We can observe a steady increase from $8,421 in 2004 to $9,340 in the first quarter of 2008. At the end of the first quarter of 2008, it decreases to $9,114 until the first quarter of 2009. From that point on, the expenditures steadily rise to $9,443 in 2011.</textarea>';
+			break;
+		case "data":
+			content = "Data";
+			break;
+		default:
+			content = "Could not find content..";
+	}
+	$("#"+id).children(".ChartMLRenderingMain").html(content);
+	// also may have to change settings in the fine grained area...
+}
+
+function loadAtBody() {
+	chartPrep("cmlrmain_Stocks_visual");
+	chartPrep2("cmlrmain_Stocks_enhance");
+	chartPrep3("cmlrmain_Stocks_reverse");
+	updateMain("Stocks", "visual");
+}
+</script>
+</head>
+
+<body onload="loadAtBody()">
+<h1>Some header</h1>
+<p>Some text here.</p>
+
+<!-- base example -->
+<div class="ChartMLContainer" id="Stocks">
+	<div class="ChartMLRenderingFineControls">
+		<ul class="ChartMLRenderingFineControls">
+			<li><img src="./res/icon_visual.png" alt-text="Visual Graph" height="32px" onclick="updateMain('Stocks', 'visual')" /></li>
+			<li><img src="./res/icon_enhanced.png" alt-text="Enhanced Visuals" onclick="updateMain('Stocks', 'enhance')" /></li>
+			<li><img src="./res/icon_reversed.png" alt-text="Reversed Visuals" onclick="updateMain('Stocks', 'reverse')" /></li>
+		</ul>
+	</div>
+
+	<!-- Just assuming width of 600px for now.. -->
+<!--	<div id="cmlrmain" class="ChartMLRenderingMain" style="width:600px; height:360px; border:1px solid #A4BED4;"></div> -->
+	<div class="ChartMLRenderingMainHolder">
+		<div id="cmlrmain_Stocks_visual" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_Stocks_enhance" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_Stocks_reverse" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_Stocks_audio" class="ChartMLRenderingMain" style="width:600px; height:360px;"><embed src="./res/graph1_audio.mid" autostart="false" width="600px" height="360px"></embed></div>
+		<div id="cmlrmain_Stocks_text" class="ChartMLRenderingMain" style="width:600px; height:360px;"><textarea style="width:600px; height:360px; font-size:inherit;">The line graph shows the real personal consumption expenditures increasing from $8,421 to $9,443 between the years 2004 and 2011. We can observe a steady increase from $8,421 in 2004 to $9,340 in the first quarter of 2008. At the end of the first quarter of 2008, it decreases to $9,114 until the first quarter of 2009. From that point on, the expenditures steadily rise to $9,443 in 2011.</textarea></div>
+		<div id="cmlrmain_Stocks_table" class="ChartMLRenderingMain" style="width:600px; height:360px;">
+<table cellspacing="0" cellpadding="0" border="0" width="325">
+  <tr>
+    <td>
+       <table cellspacing="0" cellpadding="1" border="1" width="600px" >
+         <tr>
+            <th width="50%">x</th>
+            <th width="50%">y</th>
+         </tr>
+       </table>
+    </td>
+  </tr>
+  <tr>
+    <td>
+       <div style="width:600px; height:330px; overflow:auto;">
+         <table cellspacing="0" cellpadding="1" border="1" width="600px" >
+           <tr>
+             <td width="50%">1</td>
+             <td width="50%">2</td>
+           </tr>
+           <tr>
+             <td>2</td>
+             <td>2.5</td>
+           </tr>
+           <tr>
+             <td>3</td>
+             <td>3</td>
+           </tr>
+           <tr>
+             <td>4</td>
+             <td>4</td>
+           </tr>
+           <tr>
+             <td>5</td>
+             <td>10</td>
+           </tr>
+           <tr>
+             <td>6</td>
+             <td>12</td>
+           </tr>
+         </table>  
+       </div>
+    </td>
+  </tr>
+</table>
+
+		</div>
+	</div>
+<!--	<div id="chart_container" style="width:600px;height:360px;border:1px solid #A4BED4;"></div> -->
+	<div class="ChartMLRenderingGrossControls">
+		<ul class="ChartMLRenderingGrossControls">
+			<li><img src="./res/icon_visual.png" alt-text="Visual Graph" height="32px" onclick="updateMain('Stocks', 'visual')" /></li>
+			<li><img src="./res/icon_audio.png" alt-text="Auditory Graph" onclick="updateMain('Stocks', 'audio')" /></li>
+			<li><img src="./res/icon_text.png" alt-text="Text Description" onclick="updateMain('Stocks', 'text')" /></li>
+			<li><img src="./res/icon_table.png" alt-text="Data Table" onclick="updateMain('Stocks', 'table')" /></li>
+		</ul>
+	</div>
+</div>
+
+<div id="debug"></div>
+<p>Some text below.</p>
+
+</body>
+</html>
