@@ -1,0 +1,622 @@
+/*----- MAIN FOMC PAGE -----*/
+#fomcTable {font-family: "Times New Roman", Times, serif;}
+#fomcTable th{font-weight: bold; font-size: 1.8em; }
+#fomcTable .month{font-weight: bold; font-size: 1.2em;}
+#fomcTable .date{font-weight: bold; font-size: 1.8em; padding-top: .5em;}
+#fomcTable .statement{font-weight: bold; padding-top: .5em; padding-bottom: .5em; font-size: 1.2em;}
+#fomcTable .minutes a{font-weight: bold; font-size: 1.2em;}
+#fomcTable .release{font-weight: normal; padding-bottom: .5em;}
+
+/*---------- FOMC & FOMC HISTORICAL STYLES ----------*/
+h1.alternate{background-image: url(/gifjpg/fomcListBack.jpg); background-repeat: repeat-x; font-family: "Times New Roman", Times, serif; color: #FFFFFF; font-size: 1.5em; background-color:#3F523E; margin: 0; padding: .2em .3em .2em .3em;}
+h3.fomc{font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 1em; padding:0 0 0 0; margin-bottom:0;}
+ul.alternate {border: 1px solid #CCCCCC; margin: 0; padding: 0; list-style: none;}
+ul.alternate li{ margin: 0; list-style: none; padding: .5em 0 .5em .5em;}
+ul.alternate li.even{ margin: 0; list-style: none; padding: .5em 0 .5em .5em; background-color: #E8E9E4;}
+ul.alternate li .month{float:left; width: 5em;}
+
+/* ul.alternate li .day{margin: 0 .6em 0 .6em; float: left; width: 2em;} */
+ul.alternate li .day{margin: 0 .6em 0 .6em; float: left; width: 8em;} 
+ul.alternate li .statement{ margin: 0 .6em 0 .6em; float: left; width: 20em;}
+ul.alternate li .statement2{ margin: 0 0 0 .6em; float: left; width: 9em;}
+ul.alternate li .minutes{ margin: 0 0 0 0em;}
+
+th.alternate{background-image: url(/gifjpg/fomcListBack.jpg); background-repeat: repeat-x; font-family: "Times New Roman", Times, serif; color: #FFFFFF; font-size: 1.5em; background-color:#3F523E; margin: 0; padding: .2em .3em .2em .3em; height:1%; font-weight:normal; text-align:left;}
+table.alternate {border: 1px solid #CCCCCC; margin: 0; width: 100%; padding: 0; list-style: none; border-collapse: collapse;}
+table.alternate tr{margin: 0; list-style: none; padding: .8em 0 .8em .8em; border:0;}
+table.alternate tr.even{margin: 0; list-style: none; padding: .8em 0 .8em .8em; background-color: #E8E9E4;}
+table.alternate td.month{width: 8em; font-weight:bold; padding: .4em 0 .4em .3em;} 
+table.alternate td.day{margin: 0 .6em 0 .6em; width: 10em; padding: .4em 0 .4em 1.5em;}
+table.alternate td.statement{ margin: 0 0 0 .6em; padding: .4em 0 .4em 1.5em;}
+table.alternate td.statement2{ margin: 0 0 0 .6em; padding: .4em 0 .4em 1.5em;}
+table.alternate td.minutes{ margin: 0em; padding-left: 1.5em; padding-top: .4em; padding-bottom: .4em;}
+
+#fomcCurrentCal.alternate {margin-top:1em;}
+#fomcCurrentCal.alternate td.statement{width: 8em; padding-top: .4em ;padding-bottom: .4em;}
+#fomcCurrentCal.alternate td.statement2{width:8em; padding-top: .4em ;padding-bottom: .4em;}
+#fomcCurrentCal.alternate td.minutes{width:27em; padding-top: .4em; padding-bottom: .4em;}
+#fomcCurrentCal.alternate td.day{width:10em; padding-top: .4em; padding-bottom: .4em;}
+#fomcCurrentCal.alternate td.month {padding-top:.4em; padding-bottom: .4em;}
+
+a.indent{margin-left: 1em;}
+
+
+/*----FOMC HORIZONTAL GRIDS------*/
+#historical table.alternate{margin-bottom: .5em; margin-top: 1em; width: 100%; line-height: 1.5em; }
+#historical table.alternate th.year{background-image: url(/gifjpg/fomcListBack.jpg); background-repeat: repeat-x; font-family: "Times New Roman", Times, serif; color: #FFFFFF; font-size: 1.5em; background-color:#3F523E; margin: 0; padding: .2em .3em .2em .3em; height:1%; font-weight:normal; text-align:left;}
+#historical table.alternate th.year2{text-align: right; background-image: url(/gifjpg/fomcListBack.jpg); background-repeat: repeat-x; font-family: "Times New Roman", Times, serif; color: #FFFFFF; font-size: 1.5em; background-color:#3F523E; margin: 0; padding: .2em .3em .2em .3em; height:1%; font-weight:normal; text-align:left;}
+border-bottom: 1px solid #CCCCCC;}
+#historical table.alternate td.statement{ margin:0 0 0 0; width:50%; padding:.5em ; vertical-align:top; }
+#historical table.alternate td.statement2 {margin:0 0 0 0; width:50%; padding-top:0em ; padding-bottom:0em;}
+#historical table.alternate td.minutes{ margin:0 0 0 0; width:50%; padding:.5em; vertical-align:top; border-left:1px solid #ccc;}
+#historical th.alternate{background-image: none; background-repeat: repeat-x; font-family: "Times New Roman", Times, serif; color: #FFFFFF; font-size: 1.5em; background-color:#3F523E; margin: 0; padding: .2em .3em .2em .3em; height:1%; font-weight:bold; text-align:left; font-weight: normal; }
+#historical table.alternate td.rdstatement{ margin: 0; width: 50%; padding: .1em ; vertical-align: top;}
+#historical li{line-height: 1.5em;}
+#historical #indexDateControl2{margin-top: 1em;}
+#historical ul.fomc {list-style: none; margin: 0;}
+#historical ul.fomc li{padding: .5em 0em;}
+
+#historical .right{float:right;}
+#historical .left{float:left;}
+
+#indexDateControl2{padding-top: .2em; padding-bottom: .5em;}
+
+/*-- STYLES FOR TEMP PAGE TAF --*/
+li.TAF{list-style: square;}
+h2.taf {font-family: "Times New Roman", Georgia, serif; font-size: 1.5em; padding:1em 0 0.5em 0; font-weight:normal;}
+h3.taf {font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 1em; margin-bottom:0;}
+
+/*-- STYLES FOR HTML VERSION OF MINUTES --*/
+#highlightnav {background-color:#fdf1e3; margin:1em 0; padding:1em 0.25em;}
+#highlightnav a {padding:0 0.25em;}
+h2.fomc {border-bottom:1px dotted #666; margin-bottom:1em; }
+h3.chart {margin:2em 0;}
+#fomcbox {border:1px solid #ccc; padding:1em;}
+p.indent {margin:1.5em 8em;}
+p.indent2 {margin:1.5em 6em;}
+td.indent2 {padding-left: 80px;}
+.figures {line-height:2em;}
+.footnotes {font-size:0.85em; margin:2em 1em; color:#333333;}
+.tablesubhead {font-weight:bold; color:#3F523E;}
+tr.center {background-color:#516451; color:#FFF; text-align:center;}
+
+/* TAF List, from Consumer Savings, Savings Resources Page */
+ul.linklisttop {list-style:none; font-weight:bold; margin-top:3em; margin-left:0; padding-left:0; line-height:1.5em;}
+ul.linklist {list-style:none; margin-left:0; padding-left:0; line-height:1.5em;}
+ul.linklist li {font-weight:bold;}
+ul.secondarylist {list-style:none; padding-bottom:1em;}
+ul.secondarylist li {font-weight:normal;}
+ul.tertiarylist {list-style:none; margin-left:1em; padding-bottom:0.5em;}
+ul.tertiarylist li {font-weight:normal;}
+#right {float:left;}
+
+/* TAF -- Current Auctions  */
+table.highlight{margin:0 0 0 0; padding:0 0 0 0; width:70%; border-collapse: collapse; border: 1px solid #CCC;}
+table.highlight th{text-align: left; background-image: url(/gifjpg/purpleBack.jpg); background-repeat:repeat-x; height: 25px; font-family: "Times New Roman", Times, serif; color:#FFFFFF; background-color: none;   font-size: 1.5em;  margin: 0; padding: .2em .3em .2em .3em; font-weight:normal; text-align:left; background-color: #3A2743;}
+table.hightlight tr {margin: 0; list-style: none; padding: .8em 0 .8em .8em; border:0;}
+table.highlight tr.even{ margin: 0; list-style: none; padding: .8em 0 .8em .8em; background-color: #E8E9E4;}
+table.highlight td.month {width:5em; font-weight:bold; padding:0 0 0 0.25em;} 
+table.highlight td.day {margin:0 0 0 0; width:4em; padding:0.5em 0.5em 0.5em 0;}
+table.highlight td.statement {margin:0 0 0 0; width:4em; padding:0.5em;}
+table.highlight td.minutes {margin:0 0 0 0; width:4em; padding:0.5em;}
+
+
+/* TAF -- Previous Auctions Table Design (new)  */
+table.archive {width:70%; border: 1px solid #CCC; margin:1em 0 0 0; padding:0 0 0 0; border-collapse: collapse;}
+table.archive th.alternate {background-image: url(/gifjpg/fomcListBack.jpg); background-repeat: repeat-x; font-family: "Times New Roman", Times, serif; color: #FFFFFF; font-size: 1.5em; background-color:#3F523E; margin: 0; padding: .2em .3em .2em .3em; height:1%; font-weight:normal; text-align:left;}
+table.archive tr {margin: 0; list-style: none; padding: .8em 0 .8em .8em; border:0;}
+table.archive tr.even {margin: 0; list-style: none; padding: .8em 0 .8em .8em; background-color: #E8E9E4;}
+table.archive td.month {width:5em; font-weight:bold; padding:0 0 0 0.25em;} 
+table.archive td.day {margin:0 0 0 0; width:4em; padding:0.5em 0.5em 0.5em 0;}
+table.archive td.statement {margin:0 0 0 0; width:4em; padding:0.5em;}
+table.archive td.minutes {margin:0 0 0 0; width:4em; padding:0.5em;}
+
+
+
+/* TDF -- Current Auctions  */
+table.tdf{margin:0 0 0 0; padding:0 0 0 0; width:70%; border-collapse: collapse; border: 1px solid #CCC;}
+table.tdf th{text-align: left; background-image: url(/gifjpg/blueGrad.jpg); background-repeat:repeat-x; height: 25px; font-family: "Times New Roman", Times, serif; color:#FFFFFF; background-color: none;   font-size: 1.5em;  margin: 0; padding: .2em .3em .2em .3em; font-weight:normal; text-align:left; background-color: #3A2743;}
+table.tdf tr {margin: 0; list-style: none; padding: .8em 0 .8em .8em; border:0;}
+table.tdf tr.even{ margin: 0; list-style: none; padding: .8em 0 .8em .8em; background-color: #E8E9E4;}
+table.tdf td.month {width:5em; font-weight:bold; padding:0 0 0 0.25em;} 
+table.tdf td.day {margin:0 0 0 0; width:4em; padding:0.5em 0.5em 0.5em 0;}
+table.tdf td.statement {margin:0 0 0 0; width:4em; padding:0.5em;}
+table.tdf td.minutes {margin:0 0 0 0; width:4em; padding:0.5em;}
+
+
+
+/*---------- STYLES FOR FOMC PAGES (from BSR-ITA)----------*/
+#topsection {width:58em;}
+#highlightnav {background-color:#fdf1e3; margin:1em 0; padding:1em 0.25em;}
+#highlightnav a {padding:0 0.25em;}
+#leftText3 {margin-right:0.5em;}
+h2.border2 {font-family: "Times New Roman", Times, serif; font-size: 1.4em; padding: 0 0 0 0; font-weight:normal; border-bottom: 1px dashed #999999; margin-bottom: .3em;}
+/*h3{font-family: Arial, Helvetica, sans-serif; font-weight: bold; margin-bottom:0.25em;font-size: 1.15em;}*/
+ul.linklist {list-style:none; margin-left:0; padding-left:0; line-height:1.1em;}
+ul.linklist li {font-weight:bold;}
+ul.linklist li.regular {font-weight:normal;}
+ul.secondarylist {list-style:none;}
+ul.secondarylist li {font-weight:normal;}
+ul.tertiarylist {list-style:none; margin-left:1em;}
+ul.tertiarylist li {font-weight:normal;}
+#right {float:left;}
+
+
+/*--------FOMC LINK STYLES-----*/
+.fomclink {font-weight:bold; margin:-1em 0 3em 8em; font-size:0.95em;}
+
+
+/*---------- FOR ALL TERTIARY MONETARY POLICY PAGES - DISCOUNT RATE, RESERVE REQUIREMENTS, INTEREST REQUIRED ----------*/
+table.omo {border:1px solid #CCC; margin:0 0 1.5em 0; padding:0 0 0 0; border-collapse: collapse;}
+table.omo th {background-image: url(/gifjpg/fomcListBack.jpg); background-repeat: repeat-x; font-family: "Times New Roman", Times, serif; color: #FFFFFF; font-size: 1.5em; background-color:#3F523E; margin: 0; padding: .2em .3em .2em .3em; height:1%; font-weight:normal; text-align:left;}
+table.omo td {padding:0.35em; margin:0 0 0 0; color:#000;}
+table.omo td.subheaders {color:#39443a; font-weight:bold; font-style:normal; text-align:center; background-color:#f0ead0; font-size:0.85em; border:1px solid white;}
+table.omo td.subheaders2 {color:#39443a; font-weight:bold; font-style:normal; text-align:left; background-color:#f0ead0; font-size:0.85em;}
+table.omo td.subheaders3 {color:#fff; font-weight:bold; font-style:normal; text-align:center; background-color:#3F523E; font-size:0.85em;}
+table.omo td.subheaders4 {font-weight:bold; text-align:center; background-color:#f4f5f2; font-size:0.85em;}
+table.omo td.subheaders5 {color:#043502; font-weight:bold; font-style:normal; text-align:center; background-color:#ecf7ed; font-size:0.85em; border:1px solid white;}
+table.omo td.subheaders6 {color:#043502; font-weight:bold; font-style:normal; text-align:center; background-color:#fdfaec; font-size:0.85em; border:1px solid white;}
+table.omo tr.allyears {background-color:#f4f5f2;}
+table.omo td.allyears {padding:0.5em; text-align:left;}
+table.omo td.allyears a {padding:0.5em; text-align:left;}
+table.omo td.date {width:15em; padding-left:1em; font-weight:bold; text-align:left;}
+table.omo td.date2 {width:20em; padding-left:1em; font-weight:bold; text-align:left;} 
+table.omo td.data {text-align:center;}
+table.omo td.shade {text-align:center; background-color:#ecf7ed;}
+table.omo td.shade2 {text-align:center; background-color:#fdfaec;}
+.footnotes2 {font-size:0.85em; margin:1em 0; color:#333333;}
+.omo_nospace {padding: 11px;}
+
+#IndexDateControl3 {padding-bottom:1em;}
+
+/* STYLES FOR TAF AND IOR ARCHIVE DROPDOWNS AND RELATED PRESS RELEASES */
+#iorwrapper {padding:0.5em 0; margin:0.5em 0 0 0; height:1em; border:1px solid white;}
+.iorleft {float:left; width:10.5em;}
+.iorright {float:left; margin:-0.5em 0 0 0; width:10em;}
+.greentext2 {color:#03430d; font-size:0.85em; margin-top:-0.5em;}
+
+#discountwrapper {margin:0.5em 0 0 0; padding:0.5em;}
+.discountleft {width:11em; font-weight:bold; float:left;}
+.discountright {margin:-0.5em 0 0 0; float:left;}
+
+/*------THIS STYLE HAS BEEN MOVED TO SECONDARY.CSS - USED ON MULTIPLE PAGES SLIGHTLY ALTERED FOR MP PAGES? or can be deleted?----*/
+#ddwrapper {margin:1em 0 1em 0;}
+.text {float:left; font-weight:bold;}
+.dropdown {float:left; padding-left:0.5em; margin:-0.45em 0 0 0; }
+
+
+/*---------- FOMC SEARCH BOX AND ASSOCIATED RESULTS PAGES ----------*/
+#fomcleft {float:left; width:22em;}
+#fomcright {margin:0 0 0 0; width:33em; float:left;}
+.searchelement {background-color:#fcfaf3; padding:1em 1em 2em 1em; margin:0.25em;}
+.searchelement2 {background-color:#f4f6f4; padding:1em; margin:0.25em; height:18.5em;}
+h1.bordernone {border-bottom:1px solid #999; margin-bottom:0;}
+.greentext {color:#03430d;}
+.smalltext {font-size:0.85em;}
+#pagenav {text-align:right; margin:0 0 0 0; padding:0 0 0.5em 0;}
+#pagenav a {font-color:#03430d;} 
+#fsearchbox {background-color:#f9f6ec; border-right:1px solid #d7c784; border-left:1px solid #d7c784; border-bottom:1px solid #d7c784; 
+margin:0 0 1em 32em; font-size:0.85em; padding:0.5em; text-align:left;}
+#fsearchbox a {color:#000000;}
+.fsearchform {display:inline;}
+#searchbar {border-top:1px solid #e1e9e1; margin:0 3.2em 0 0; text-align:right; padding:0.25em;}
+#fomcsearchwrap {margin:0 0.5em 1em 0.5em; padding:0.5em;}
+#greenbar {background-color:#394c38; width:100%; height:2em;}
+
+
+/*------- MAIN PAGE OF MPR------------*/
+#mprwrapper {width:58em; border:1px solid #004872; margin:0 0 0 0; padding:0 0 0 0;}
+#mprleft {float:left; width:323px; margin:0 0.5em 0 0; padding:0 0 0 0; background-color:#00355f; border-right:1px solid #00355f;}
+#mprright {float:left; width:30em; margin:0 0 0 0; padding:2em 0 0 1em;}
+#mprleft a {color:#004872;}
+#mprright a {color:#004872;}
+#mprright .currentreport {list-style:none; background-color:#fefcf2; padding:0.5em 0 0.5em 1em; margin:0 0 0 0;}
+#mprright .currentreport li {padding-bottom:0.35em;}
+#mprright .mprrecent td {padding:0.5em 0.15em;}
+#mprright .mprrecent .year {font-weight:bold; color:#004872; width:4em;}
+#mprright .mprrecent .feb {width:13em;}
+#mprright .shade {background-color:#f1f6fa;}
+#space {padding-bottom:0.35em;}
+
+/*-------MPR PART STYLES FOR ALL REPORTS------------*/
+#mprhead {height:43px; margin:0.5em 0 0.75em 0; background-color:#00355f; background-image:url(/mpr_eagle.jpg); background-position:right; background-repeat:no-repeat; border-bottom:1px solid #999;}
+#mprhead a {text-decoration:none; color:white;}
+#mprhead .head {padding:0.35em 0 0 0.25em; color:white; font-size:2em; font-family:"Times New Roman", Times, serif;}
+#rightText.mpr {font-size: .85em; width:165px; margin:5.5em 0 1em 1em; padding-bottom: .5em; float:right;}
+#rightText h1.mpr {background-color:#00355f;}
+#rightText.mpr li{color: #007fbf;}
+#rightText.mpr a {color:#00355f;}
+#rightText.mpr ul {margin-top:0; margin-bottom:0; margin-left: 30px; padding-left: 0; width: 145px; list-style-position:inside; list-style: square;}
+#rightText.mpr ul li {list-style-image:none;}
+#chartleft {float:left; margin:1em 4em 1em 0;}
+#chartright {float:left; margin:1em 0 1em 0;}
+#chartright a {font-size:0.85em;}
+#chartleft a {font-size:0.85em;}
+.charttitle {font-weight:bold; font-size:1.15em; color:#00355f; font-family:"Times New Roman", Times, serif;}
+.chartnote {font-size:0.80em; font-family:"Times New Roman", Times, serif;}
+.chartsource {font-size:0.80em; font-family:"Times New Roman", Times, serif;}
+
+
+/*---------MPR PARTS - DEFAULT COLOR IS BLUE-------------*/
+#leftText3.mpr a {color:#004872;}
+#leftText3.mpr h1 {color:#004872; font-family:"Times New Roman", Times, serif; font-size: 1.7em; padding: 10px 0 5px 0px; margin: 0 0 0 0em; font-weight:normal; margin-bottom: .6em;} 
+#leftText3.mpr h2 {color:#004872; font-family: "Times New Roman", Times, serif; font-size: 1.6em; font-weight: normal;}
+#leftText3.mpr h3 {color:#004872; font-size:1.4em; font-weight: normal; font-family: "Times New Roman", Times, serif;}
+#leftText3.mpr h3.chart {margin-bottom:0; padding: 0;}
+#leftText3.mpr h3.chart .subhead{font-size: .9em;}
+#leftText3.mpr h4 {color:#004872; font-size:1.3em; font-weight: normal; font-family: "Times New Roman", Times, serif;}
+#leftText3.mpr h5 {color:#004872; font-size:1.15em; font-weight: normal; font-family: "Times New Roman", Times, serif;}
+
+#leftText3.mpr .subhead {color:#004872; font-weight:bold; font-style:italic;}
+#leftText3.mpr #box {padding:0 2em; border-top:8px solid #004872; border-bottom:8px solid #004872; color:#333; font-size:0.90em;}
+#leftText3.mpr #box h2 {color:#004872; font-weight:bold;}
+#leftText3.mpr .footnotes {font-size:0.85em;}
+#leftText3.mpr .footnotes3 {font-size:0.85em;}
+
+table.mpr {width:675px; border-bottom:3px solid #004872; border-top:2px solid #004872;}
+table.mpr caption.tablehead {color:#004872; text-align:left; font-size:1.5em; font-family:"Times New Roman", Times, serif;}
+table.mpr th {border-bottom:1px solid #000; padding: .2em;}
+table.mpr td {text-align:center; padding:0.5em;}
+table.mpr td.left {text-align:left; border-right:1px solid #000;}
+table.mpr td.indent {text-align:left; padding-left:1em; border-right:1px solid #000;}
+table.mpr td.verticalline {border-right:1px solid #000;}
+table.mpr tr.shade {background-color:#f1f6fa;}
+table.mpr td.shade {background-color:#f1f6fa;}
+
+/*---------PURPLE (JULY AND FEB 2007 MPR REPORT)--------------*/
+#leftText3.mprP a {color:#6c1b72;}
+#leftText3.mprP h1 {color:#6c1b72; font-family:"Times New Roman", Times, serif; font-size: 1.7em; padding: 10px 0 5px 0px; margin: 0 0 0 0em; font-weight:normal; margin-bottom: .6em;}
+#leftText3.mprP h2 {color:#6c1b72; font-family: "Times New Roman", Times, serif; font-size: 1.6em; font-weight: normal;}
+#leftText3.mprP h3 {color:#6c1b72; font-size:1.4em; font-weight: normal; font-family: "Times New Roman", Times, serif;}
+#leftText3.mprP .subhead {color:#6c1b72; font-style:italic; font-weight:bold;}
+#leftText3.mprP #box {padding:0 2em; border-top:8px solid #6c1b72; border-bottom:8px solid #6c1b72; color:#333;}
+#leftText3.mprP #box h2 {color:#6c1b72; font-weight:bold;}
+table.mprP {width:675px; border-bottom:3px solid #6c1b72; border-top:2px solid #6c1b72;}
+table.mprP caption.tablehead {color:#6c1b72; text-align:left; font-size:1.5em; font-family:"Times New Roman", Times, serif;}
+table.mprP th {border-bottom:1px solid #000;}
+table.mprP td {text-align:center; padding:0.15em 0;}
+table.mprP td.left {text-align:left; border-right:1px solid #000;}
+table.mprP td.indent {text-align:left; padding-left:1em; border-right:1px solid #000;}
+table.mprP td.verticalline {border-right:1px solid #000;}
+table.mprP tr.shade {background-color:#e7dae8;}
+
+/*---------CLARET (2008 FEBRUARY MPR REPORT)--------------*/
+#leftText3.mprC a {color:#993333;}
+#leftText3.mprC h1 {color:#993333; font-family:"Times New Roman", Times, serif; font-size: 1.7em; padding: 10px 0 5px 0px; margin: 0 0 0 0em; font-weight:normal; margin-bottom: .6em;}
+#leftText3.mprC h2 {color:#993333; font-family: "Times New Roman", Times, serif; font-size: 1.6em; font-weight: normal;}
+#leftText3.mprC h3 {color:#993333; font-size:1.4em; font-weight: normal; font-family: "Times New Roman", Times, serif;}
+#leftText3.mprC .subhead {color:#993333; font-style:italic; font-weight:bold;}
+#leftText3.mprC #box {padding:0.25em 2em; border-top:8px solid #993333; border-bottom:8px solid #993333; color:#333;}
+#leftText3.mprC #box h2 {color:#993333; font-weight:bold;}
+table.mprC {width:675px; border-bottom:3px solid #993333; border-top:2px solid #993333;}
+table.mprC caption.tablehead {color:#993333; text-align:left; font-size:1.5em; font-family:"Times New Roman", Times, serif;}
+table.mprC th {border-bottom:1px solid #000;}
+table.mprC td {text-align:center; padding:0.15em 0;}
+table.mprC td.left {text-align:left; border-right:1px solid #000;}
+table.mprC td.indent {text-align:left; padding-left:1em; border-right:1px solid #000;}
+table.mprC td.verticalline {border-right:1px solid #000;}
+table.mprC tr.shade {background-color:#efd6d6;}
+
+/*-------------------BLUE MPR ACCESSIBLE VERSION OF TABLES----------*/
+table.access {width:740px; border-top:2px solid #004872; border-bottom:2px solid #004872; margin:1.5em 0;}
+table.access th {border-right:1px solid #000; border-bottom:1px solid #000;}
+table.access caption.tablehead {color:#004872; text-align:left; font-size:1.5em; font-family:"Times New Roman", Times, serif;}
+table.access td {padding:0.5em; text-align:center; font-weight:normal;} 
+table.access td.left {text-align:left; border-right:1px solid #000;}
+table.access td.data {text-align:left;}
+table.access td.year {text-align:left; font-weight:bold; padding:0.25em 0 0.25em 0.5em; background-color:#f1f6fa; border-bottom:1px solid #000;}
+table.access tr.shade {background-color:#f1f6fa;}
+
+/*-------------------CLARET MPR ACCESSIBLE VERSION OF TABLES----------*/
+table.accessR {width:740px; border-top:2px solid #993333; border-bottom:2px solid #993333; margin:1.5em 0;}
+table.accessR th {border-right:1px solid #000; border-bottom:1px solid #000;}
+table.accessR caption.tablehead {color:#993333; text-align:left; font-size:1.5em; font-family:"Times New Roman", Times, serif;}
+table.accessR td {padding:0.5em; text-align:center; font-weight:normal;} 
+table.accessR td.left {text-align:left; border-right:1px solid #000;}
+table.accessR td.year {text-align:left; font-weight:bold; padding:0.25em 0 0.25em 0.5em; background-color:#efd6d6; border-bottom:1px solid #000;}
+
+/*-----END MPR STYLES---*/
+
+/*-----BALANCE SHEET TRANSPARENCY----*/
+#bstwrapper {margin:0 0 0 0; padding:1em 1.5em 3em 1.5em; border:20px solid #3F523E; width:830px;}
+
+ol.letters li {padding-bottom:0.5em;}
+hr.black {color:#314732;}
+h1.bstpopup {background-color:#ecf7ed; margin:0 0 0.5em 0; padding:0.215em;}
+
+ul.bst {margin:0 0 0 30px; padding:0.25em 0 0 0; list-style-position:outside; list-style:square; color:#314732;}
+ul.bst li {line-height:1.5em;}
+ul.bst2 {margin:0 0 0 35px; padding:0.25em 0 0 0; list-style-position:outside; list-style:square; color:#314732;}
+ul.bst2 li {line-height:1.5em;}
+
+ul.bst3 {margin:0 0 0 30px; padding:0.25em 0 0 0; list-style-position:outside; list-style:square; color:#314732;}
+ul.bst3 li {line-height:1.5em;}
+
+
+ul.bst4 {margin:0 0 0 30px; padding:0 0 1em 0; list-style-position:outside;}
+ul.bst4 li {margin-bottom:1em;}
+
+#bstcallout {margin:0.5em 1em 0.5em 0; border-bottom:2px solid #c8d9c9; width:350px; float:left; padding:0 0 0 0.5em; background-color:#f7fbf7;}
+#bstcallout h1 {margin:0 0 0.75em 0; padding:0.15em 0.15em 0.15em 0.25em; font-size:1.5em; background-color:#c8d9c9;}
+#bstcallout a {color:#314732;}
+#bstcallout ul {list-style:none; margin:0.25em; padding:0 0 0 0.5em; list-style-position:outside;}
+#bstcallout ul li {line-height:1.5em; padding-bottom:0.75em;}
+
+table.bst {border:1px solid white; margin:0 0 0 0; padding:0 0 0 0; border-collapse:collapse; font-size:0.90em;}
+table.bst th {text-align:center; font-weight:bold; color:white; background-color:#3F523E; padding:0.55em; border:2px solid white;}
+table.bst th a:link {color:white;}
+table.bst th a:visited {color:white;}
+table.bst td {text-align:center; padding:0.25em; }
+table.bst td.left {text-align:left; background-color:#fdfaec; color:#043502; width:30em; font-weight:bold; padding:0.5em; border:2px solid white; vertical-align:top;}
+table.bst td.left2 {text-align:left; background-color:#fdfaec; color:#043502; width:15em; font-weight:bold; padding:0.5em; border:2px solid white; vertical-align:top;}
+table.bst td.data {text-align:center; background-color:#f7fbf7; color:#043502; border:2px solid white;}
+table.bst td.data2 {text-align:left; padding:0.5em; background-color:#f7fbf7; color:#043502; border:2px solid white; vertical-align:top;}
+table.bst td.data3 {text-align:right; padding:0.5em; background-color:#f7fbf7; color:#043502; border:2px solid white; vertical-align:top;}
+table.bst td.shade {text-align:left; padding:0.5em; background-color:#ccc; color:#043502; border:2px solid white; vertical-align:top; }
+
+table.bst2 {margin:0 0 2em 0; padding:0 0 0 0; border-collapse:collapse; font-size:0.90em;} 
+table.bst2 th {text-align:left; font-weight:bold; color:white; background-color:#3F523E; padding:0.75em; margin-bottom:1em;}
+table.bst2 th a:link {color:white;}
+table.bst2 th a:visited {color:white;}
+table.bst2 th.right {text-align:right; font-weight:bold; color:white; background-color:#3F523E; padding:0.75em; margin-bottom:1em;}
+table.bst2 td.right {text-align:right; border-top:1px solid #dedede; border-bottom:1px solid #dedede; padding:0.25em 0.25em 0.25em 2em;}
+table.bst2 td.right2 {text-align:right; background-color:#fdfaec; color:#043502; font-weight:bold; padding:0.25em; border-top:2px solid #314732;}
+table.bst2 td.left {text-align:left; background-color:#fdfaec; color:#043502; font-weight:bold; padding:0.5em; border-top:2px solid #314732;}
+table.bst2 td.left2 {text-align:left; border-top:1px solid #dedede; border-bottom:1px solid #dedede; padding:0.25em 0.25em 0.25em 2em;}
+table.bst2 td.left3 {text-align:left; border-top:1px solid #dedede; border-bottom:1px solid #dedede;  padding:0.25em 0.25em 0.25em 7em;}
+
+#closebutton {text-align:right; margin-bottom:1em;}
+
+#bstchartleft {float:left;  width:25em; margin:0 4em 1em 0;}
+#bstchartright {float:left;  width:25em; margin:0 0 0 0;}
+#bstchartleft1 {float:left;  width:28em; margin:0 1em 1em 0;}
+#bstchartright1 {float:left;  width:28em; margin:0 0 0 0;}
+#closebutton {margin-top:0.5em; float:right; width:100%;}
+
+/*-----CLBS Reports----*/
+
+#clbs h1.border{border-bottom: none; margin-bottom: 0em; color:#474A8D;}
+#clbs h1.borderlanding{border-bottom: none; margin-bottom: 0em; color:#474A8D; height: 95px;}
+#clbs h2.borderdash{color: #000; font-style:italic; font-size: 1.7em; border-bottom: none;}
+#clbs h3{font-family: "Times New Roman", Times, serif; font-weight: bold; color:#000; font-size: 1.3em;}
+#clbs h4 {font-family: "Times New Roman", Times, serif; font-weight: normal; color:#000; font-size: 1.3em;}
+
+#clbs img.seal{height: 100px; padding-right: 10px;}
+#clbs .date { font-style: italic; font-size: 1.5em; font-family: "Times New Roman", Times, serif; margin-bottom: 20px; color:#474A8D;}
+#clbs .date .pdf{ font-style: normal; font-size: .8em;}
+
+#clbs ul li {padding-bottom: 5px;}
+#clbs ul.contents {list-style: none;}
+#clbs ul.contents li{padding-bottom: .5em;}
+
+#clbs #nav a:link{color: #474A8D;}
+#clbs #nav a:visited{color: #7e81be;}
+#clbs #nav{background-color:#E5E6F2; border-top: 1px solid #7e81be; border-bottom: 1px solid #7e81be; width: 100%; }
+#clbs #nav td{width: 33%; text-align: center; padding: 8px;}
+#clbs #nav ul{list-style: none; margin: 0; padding: 0;}
+#clbs #nav ul li.left {float: left; width: 30%; padding-top: 10px; text-align: left; padding-left: 5px;}
+#clbs #nav ul li.center {float: left; text-align:center; width: 33%; padding-top: 10px;}
+#clbs #nav ul li.right{float: right; text-align:right; width: 33%; padding-top: 10px; padding-right: 5px;}
+
+#clbs #ddwrapper {background-color: #D4E7F2;}
+
+#clbs .month{font-size: 1.2em; margin-bottom: 8px; padding-bottom: 0;}
+
+#clbs p.footnotes{font-family: "Times New Roman", Times, serif; font-size: .9em; margin:0; padding:0;}
+
+#clbs table caption.left {padding-bottom: .5em; font-size: 1.5em; text-align:left;} 
+#clbs table.data{border-top:none; border-left:none; empty-cells:show; font-family: Verdana, Geneva, sans-serif; font-size: .85em; margin-bottom: 1em; text-align:left; border-top: #7e81be 1px solid; border-bottom: 1px solid #7e81be;}
+
+#clbs table.data td {padding:5px; text-align:right; border-bottom: 2px solid #fff; border-right: none; background-color: #f0f0f0;}
+
+#clbs table.data th {padding: 5px 10px 5px 10px; text-align:center; border-right: 1px solid #7e81be; color: #000; border-left: 1px solid #7e81be; border-bottom: 1px solid #7e81be;  background-color: #f0f0f0;}
+#clbs table.data th a:link {color:#000;}
+#clbs table.data th a:visited {color:#ccc;}
+#clbs table.data th.first{border-left: 1px solid #fff;}
+#clbs table.data th.subhead {padding:5px; text-align:left; border-bottom: none; color: #000; border-bottom: 1px solid white; background-color: #E8E2EB;}
+#clbs table.data th.subhead a:link{color: black;}
+#clbs table.data th.subhead a:visited{color: black;}
+#clbs table.data th.farright{border-right: none;}
+
+#clbs table.data .subhead{text-align: left; border-bottom: 1px solid #fff;}
+
+#clbs table.data td.left{text-align:left;}
+#clbs table.data td.text{text-align:left;}
+#clbs table.data td.borderb{border-bottom: 1px solid white; border-right: 1px solid white;}
+
+#clbs table.data tr.shade {background-color:#E8E2EB; padding-top: 1px;}
+#clbs table.data tr.shade1 {/*background-color:#D4E7F2;*/ padding-top: 1px; margin-top: 1px; font-weight:bold;}
+#clbs table.data tr.shade2 {background-color: #E5E5E5;}
+
+#clbs table.data .indent1{padding-left: 15px; background-color: #FFF; color: #000; text-align:left;}
+#clbs table.data .indent2{padding-left: 25px; background-color: #FFF; color: #000; text-align:left;}
+#clbs table.data .indent3{padding-left: 35px; background-color: #FFF; color: #000; text-align:left;}
+#clbs table.data .indent4{padding-left: 45px; background-color: #FFF; color: #000; text-align:left;}
+#clbs table.data .indent5{padding-left: 55px; background-color: #FFF; color: #000; text-align:left;}
+
+#clbs h3 .pmtablehead {    font-weight: bold; font-size: 0.9em; color: #474A8D; text-align: left; margin-top: 4em;}
+#clbs h3 .pmtablesubhead { font-weight: bold; font-size: 1em; color: #474A8D; font-family: 'Times New Roman',Times,serif; text-align: left;}
+#clbs h3 .pmtableunit {    font-weight: normal; font-size: .8em; font-family: 'Times New Roman',Times,serif; text-align: left; color: #7e81be;}
+
+/* added for calendar */
+#clbs table.calendar { margin-top: 1em; margin-bottom: 1em; padding: 0; border: 1px solid #006FB2; }
+#clbs table.calendar tr.even{background-color: #D4E7F2; padding: 0;}
+#clbs table.calendar td{text-align: left; padding: 8px; vertical-align:top;}
+#clbs table.calendar {width:70%; border: 1px solid #CCC; margin:1em 0 0 0; padding:0 0 0 0; border-collapse: collapse;}
+#clbs table.calendar th.alternate{background-color: #7e81be; background-image: none; font-family: "Times New Roman", Times, serif; color: #FFFFFF; font-size: 1.5em;  margin: 0; padding: .2em .3em .2em .3em; height:1%; font-weight:normal; text-align:left;}
+#clbs table.calendar tr {margin: 0; list-style: none; padding: .8em 0 .8em .8em; border:0;}
+#clbs table.calendar tr.even {margin: 0; list-style: none; padding: .8em 0 .8em .8em; background-color: #E5E6F2;}
+#clbs table.calendar td.month {width:10em; font-weight:bold; padding:0 0 0 0.25em;} 
+#clbs table.calendar td.day {margin:0 0 0 0; width:4em; padding:0.5em 0.5em 0.5em 0;}
+#clbs table.calendar td.statement {margin:0 0 0 0; width:4em; padding:0.5em;}
+#clbs table.calendar td.minutes {margin:0 0 0 0; width:4em; padding:0.5em;}
+#clbs table.data td.one {text-decoration: underline;}
+#clbs table.data td.one .two{border-bottom: 1px solid #000; padding-bottom: 2px;}
+
+
+#clbs ul.list3 {list-style-image:url(/gifjpg/list_line.gif);}
+/*-----END: CLBS Reports----*/
+
+/* ------ VENDOR FEE STYLES ------- */
+
+table.vendorfees{font-family:Verdana, Geneva, sans-serif; font-size:0.80em; border-left: 1px solid #999999; border-top: 1px solid #999999;}
+table.vendorfees th {text-align:center; font-weight:bold; color:white; background-color:#3F523E; border-bottom:1px solid #999999; border-right: 1px solid #999999; padding: .5em; }
+table.vendorfees th.nocolor {text-align:left; background-color:#fdfaec; color:#043502; font-weight:bold; border-right: 1px solid #999999; border-bottom: 1px solid #999999; padding: .5em;}
+table.vendorfees th a:link {color:white;}
+table.vendorfees th a:visited {color:white;}
+table.vendorfees td {border-right: 1px solid #999999; border-bottom: 1px solid #999999; }
+table.vendorfees td.left {text-align:left; background-color:#fdfaec; color:#043502; font-weight:bold; border-right: 1px solid #999999; border-bottom: 1px solid #999999; padding: .5em; }
+table.vendorfees td.left2 {text-align:left; background-color:#fdfaec; color:#043502; font-weight:bold; border-right: 1px solid #999999; border-bottom: 1px solid #999999; }
+table.vendorfees td.data {text-align:center; background-color:#f7fbf7; color:#043502; border:2px solid white;}
+table.vendorfees td.data2 {text-align:right; background-color:#f7fbf7; color:#043502; border-right: 1px solid #999999; border-bottom: 1px solid #999999;}
+table.vendorfees td.data2a {text-align:left; background-color:#f7fbf7; color:#043502; border-right: 1px solid #999999; border-bottom: 1px solid #999999;}
+table.vendorfees td.data3 {text-align:right; padding:0.5em; background-color:#f7fbf7; color:#043502; border:2px solid white; vertical-align:top;}
+table.vendorfees td.shade {text-align:right; background-color:#ccc; color:#043502; border-right: 1px solid #999999; border-bottom: 1px solid #999999;  }
+
+/*.vendorfees {font-family:Verdana, Geneva, sans-serif; font-size:0.80em; border-left: 1px solid #000; border-top: 1px solid #000; }
+.vendorfees th { border-bottom:1px solid #000; border-right: 1px solid #000; padding: .5em; color: #fff; background-color: #006fb2;}
+.vendorfees th a:link {color: #fff;}
+.vendorfees th a:visited {color: #fff;}
+.vendorfees th.nocolor {border-bottom:1px solid #000; border-right: 1px solid #000; padding: .5em; color: #000; background-color: #fff;}
+.vendorfees td {border-right: 1px solid #000; border-bottom: 1px solid #000; }
+.vendorfees td.shade {border-right: 1px solid #000; border-bottom: 1px solid #000; background-color:#d4e7f2;}
+.vendorfees tr {border-top: 1px solid #000; border-bottom: 1px solid #000; margin-bottom: 2em; }*/
+
+/*--FOR OMO ARCHIVE PAGES (lowercase copy of secondary style needed only until Ephox)--*/
+ul.indexdatecontrol {border: 0; padding-left: 0; margin-left: 0; list-style: none;}
+ul.indexdatecontrol li{padding: 0 8px 0 0; float: left; border-right: 1px solid #000;}
+ul.indexdatecontrol li.last {border-right: none; padding-left: 8px; margin: -5px 0 0 0;}
+
+/* ------ Balance Sheet: H41 links to Pop-Up------- */
+span.accessible {font-family:Arial, Helvetica, sans-serif; font-size: 11px; vertical-align:text-top; padding-bottom: 0;}
+table.linkhighlight {margin:0 0 2em 0; padding:0 0 0 0; border: none;}
+table.linkhighlight th.shade {padding: 5px; color: #000; background-color: #c7d8c8; border: none; font-weight: 400; text-align:center; border-bottom: 3px solid #f7fcf6;}
+table.linkhighlight td {color: #3e4b41; background-color: #f7fcf6; border: none; padding: 5px 5px 5px 10px;}
+table.linkhighlight td a:link {color: #3e4b41;}
+table.linkhighlight td a:visited {color: #3e4b41;}
+/* ------ End: Balance Sheet: H41 links to Pop-Up------- */
+
+/* ------ NEW FOMC (Mike) ------ */
+/*CALENDAR STYLES FOR NEW CAL*/
+th.pressConference{background-image: url(/gifjpg/fomcListBack.jpg); background-repeat: repeat-x; font-family: "Times New Roman", Times, serif; color: #FFFFFF; font-size: 1.5em; background-color:#3F523E; margin: 0; padding: .2em .3em .2em .3em; height:1%; font-weight:normal; text-align:left;}
+table.pressConference {border: 1px solid #CCCCCC; margin: 1em 0 0 0; width: 100%; padding:0 0 0 0; list-style: none; border-collapse: collapse;}
+table.pressConference tr{margin: 0; list-style: none; padding: .8em 0 .8em .8em; border:0;}
+table.pressConference tr.even{margin: 0; list-style: none; padding: .8em 0 .8em .8em; background-color: #E8E9E4;}
+table.pressConference td.month{width: 8em; font-weight:bold; padding: .4em 0 .4em .3em;} 
+table.pressConference td.day{margin: 0 .6em 0 .6em; width: 10em; padding: .4em 0 .4em 1.5em;}
+#fomcCurrentCal{text-align:left;}
+#fomcCurrentCal.pressConference td.video{
+    width:18em;
+    line-height:1.75em;
+    padding-left: 0;
+    white-space:nowrap;
+}
+#fomcCurrentCal.pressConference td.day {
+    width:8em;
+    padding-left:0;
+}
+#fomcCurrentCal.pressConference td.minutes{
+    width:14.7em;
+    line-height:1.75em;
+    text-align:right;
+    padding-left:0;
+    padding-right:.5em;
+    padding-top: .4em;
+    padding-bottom: .4em;
+}
+#fomcCurrentCal.pressConference td.statement2 {
+    padding-left:1em;
+    width:auto;
+}
+/*span.rightJustified{
+    text-align:right;
+}*/
+/* --- Press Briefing Styles --- */
+.media .item {float: left; padding: 0 10px 0px 5px; border-right: 1px solid #cccccc;}
+.smallerFont{
+    font-size:.85em    }
+.pressConference h3{
+    display:block;
+    background-color: #3F523E;
+    background-image: url("/gifjpg/fomcListBack.jpg");
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    font-family: "Times New Roman",Times,serif;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0.2em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-top: 0.2em;
+    text-align: left;
+}
+.pressConference ul{
+    list-style:none;
+    border: 1px solid #cccccc;
+    padding:.5em;
+    margin:0;
+}
+.pressConference ul li{
+    margin-bottom:1em;
+}
+div.pressConference{
+    /*height:20.5em;*/
+    float:left;
+    padding-left:1em;
+}
+.pressconftextbox {
+    background-color: #E8F0E9;
+    color: #093803;
+    font-size: 0.85em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0.15em;
+    margin-top: 0;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.25em;
+    width:28.5em;
+}
+/* ------ NEW FOMC (Mike) ------ */
+ 
+.rrsmall2 {margin:0; font-size:0.85em;}
+
+#con_fomcMaterials li{
+    padding-top:.5em;
+    padding-bottom:.5em;
+    padding-left:1.5em;
+    
+}
+#con_fomcMaterials ul {
+    list-style: none;
+    margin:0 0 1em 0;
+    padding:0;
+}
+/*#con_fomcMaterials ul.toc_fomcMaterials {
+    border-top: 1px solid #8b949d;
+    border-bottom: 1px solid #8b949d;
+}*/
+
+#con_fomcMaterials ul.toc_fomcMaterials li{
+    margin:0;
+}
+#con_fomcMaterials ul.toc_fomcMaterials li ul{
+}
+#con_fomcMaterials li.noindent{
+    padding-left:.5em;
+}
+h2.fomcMaterials{
+    border-bottom-color: -moz-use-text-color;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    color: #000000;
+    font-size: 1.7em;
+    font-style: italic;
+    padding-bottom:0;
+    margin-bottom:0;
+}

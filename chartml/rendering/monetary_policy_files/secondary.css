@@ -1,0 +1,482 @@
+/*-------------------------- ALL STYLES BELOW ARE FOR SECONDARY PAGES ------------------------------*/
+
+#contentContainer{
+background-color: #FFFFFF;
+width: 77em;
+background-image:url(/gifjpg/side2.gif);
+background-repeat: repeat-y;}
+
+#leftnav{float: left;
+width: 200px;
+margin-right: 10px;
+margin-left: 8px;
+vertical-align:top;
+}
+
+#content
+{margin-left: 218px;
+background-color:#FFFFFF;
+margin-top: 0;
+padding-top: 0;}
+
+.floatRight {
+float: right;
+margin-left: 1em;
+padding: 0 0 0.5em 0.5em;
+width: 18em;
+}
+
+/*----- LEFT NAVIGATION ------*/
+
+.secondaryContentLeftNav {margin: 15px 0 0 5px;  width: 190px;}/*margin: .8em 0 0 .2em;*/
+.secondaryContentLeftNav ul {  margin-right: .5em; margin-left: 1.2em; padding: 0; margin-bottom: .4em; margin-top: .8em;}
+.secondaryContentLeftNav img { float: left; margin: 3px 0 0 -15px; padding: 0 4px 0 0; }
+.secondaryContentLeftNav ul a:active, .secondaryContentLeftNav ul a:link, .secondaryContentLeftNav ul a:visited { color: #333300; font-size: 0.9em; }
+
+.secondaryContentLeftNav li { margin: 3px 0 3px 15px; list-style: disc url(/gifjpg/menu_bullet.gif) outside; font-weight: normal; }
+#menuFirstLevelHeading { font-size: 0.9em; text-decoration: none; font-weight: bold; color: #000000; }
+#menuLink a:active, #menuLink a:link, #menuLink a:hover { text-decoration: underline; color: #333300; font-weight: bold; }
+#menuLink a:visited { text-decoration: underline; color: #666600; font-weight: bold; }
+#menuHighlight a, #menuLink #menuHighlight { color: #336633; text-decoration: none; }
+#menuHighlight a:hover, #menuLink #menuHighlight:hover { text-decoration: underline; }
+#menuOne,#menuTwo,#menuThr,#menuFou,#menuFiv,#menuSix,#menuSev { display: none }
+
+
+/*----- BREADCRUMBS -----*/
+
+#BreadCrumbContainer{background-image: url(/gifjpg/breadBack.jpg); background-repeat: repeat-y; font-size: .85em; padding: 4px 0px 5px 15px; margin:0 0 0 0;}
+#BreadCrumbContainer a{color: #333333;}
+
+ 
+
+
+/*----- SECONDARY MAIN CONTENT STYLES -----*/
+
+#TitleImage{margin-left: 0em; margin-bottom: 2em;}
+#secondaryContentTitle{border-bottom: 1px solid #999999; font-family: "Times New Roman", Times, serif; font-size: 1.4em; padding: 0 0 3px 4px; margin: 0 0 0 5px;}
+#secondaryContentMainColumn ul{list-style:none; margin: 0px; padding-top:5px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px;}
+#secondaryFeatureContainer{padding-bottom: 20px;}
+#secondaryFeatureContainer table {font-size: .9em; margin: 0 0 0 8px; }
+#secondaryFeatureContainer table a img{border: 0; margin-top: 2px;}
+#secondaryFeatureContainer table a:active{ font-weight: bold; text-decoration: underline;}
+#secondaryFeatureContainer table a:link{font-weight: bold; text-decoration: underline;}
+#secondaryFeatureContainer table a:visited{font-weight: bold; text-decoration: underline;}
+
+
+#aboutBDMtitle { font-style: italic; padding-bottom: 2px; }
+
+.secondaryCommunityPublicHearingItem { margin: 9px 0 3px 0; padding: 0 10px 0 26px; overflow: auto; height: 1%; font-size: 0.9em;  }
+
+.tertiarySecondaryPage { margin: 4px 4px 0 9px; font-size: 0.9em; }
+.tertiarySecondaryPage ul li { margin: 3px 0 11px 9px; }
+
+#printIcon {float:right;  margin: 1em 1em -5px 0px; font-size: 0.85em;}
+.printIcon a img { float: left; border: 0; margin: 0 2px 0 0; }
+#printIcon a:link {padding-left: 6px;}
+
+/*----- SECONDARY FEATURES -----*/
+
+.contentFeatureItem { margin: 10px 0 0 0; padding: 0 10px 4px 18px; overflow: auto; height: 1%; font-size: 0.9em; }
+.contentFeatureItem a img { padding: 3px 0px 0 0; border: 0; }
+.contentFeatureItem a:active, .contentFeatureItem a:link {font-weight: bold; text-decoration: underline; }
+.contentFeatureItem a:visited {font-weight: bold; text-decoration: underline; }
+.contentFeatureItem a:active, .tertiarySecondaryPage ul li a:active {font-weight: bold; text-decoration: underline; }
+.contentFeatureItem a:link, .tertiarySecondaryPage ul li a:link {font-weight: bold; text-decoration: underline; }
+.contentFeatureItem a:visited, .tertiarySecondaryPage ul li a:visited {font-weight: bold; text-decoration: underline; }
+
+.contentFeatureItem p{margin:0; padding: 0;}
+
+#spanish  { background-color: #cccccc; color: #ffffff; font-size: 0.95em; font-weight: 600; text-decoration: none; }
+#spanish:link  { background-color: #cccccc; color: #ffffff; font-size: 0.95em; font-weight: 600; text-decoration: none; }
+#spanish:visited { background-color: #cccccc; color: #666600; font-size: 0.95em; font-weight: 600; text-decoration: none; }
+
+#subnav{ width: 55em; padding-bottom: .8em; padding-left: .5em; line-height: 1.5em; padding-top: .3em; margin-bottom: .5em; border-bottom: 1px dashed #999999;}
+#subnav a:link{color: #333333;}
+#subnav a.selected{color: #333333; text-decoration:none; font-weight: bold;}
+#subnav.afterYear{ width: 55em; padding-bottom: .8em; padding-left: .5em; line-height: 1.5em; padding-top: .8em; margin-bottom: .5em; border-bottom: 1px dashed #999999; border-top: 1px dashed #999999;}
+
+/*----- Code for making Two Columns within GeneralContentText ----- */
+#TwoColumns{width:58em;}
+#leftText{width:40em; float: left;}
+#leftTextATF{width:32em; float: left;}
+#leftText3 { }
+#leftText3.pdf{margin: 0;}
+/*#rightText{font-size: .85em; width: 160px; padding-bottom: .2em; float:right;} commented out June 8, 2011 see updates below*/
+#rightText.speech{font-size: .85em; width: 300px; padding-bottom: .2em; float:right;}
+#rightTextATF{font-size: .85em; width: 250px; padding-bottom: .2em; float:left; margin-left: 10px; }
+
+/*---- RIGHT TEXT ADDED IN FROM NEWS.CSS -----*/
+#rightText h1{background-image: url(/gifjpg/middle.jpg); background-repeat: repeat-y; padding:0 0 .5em 1.1em; margin: 0 0 0 0; font-size: 1.3em; color:#000000; border-bottom: 0; font-weight:normal; font-family: "Times New Roman", Times, serif;}
+#rightText .ulbackground{background-image:url(/gifjpg/middle.jpg); background-repeat:repeat-y; color: #000;}
+#rightText ul{margin: 0; padding: 0 0 0 30px; color: #993300; width: 115px; list-style: url(/gifjpg/orangesqbullet.gif);}
+#rightText li{color: #000; padding: 0px 0 3px 0;}
+#rightText li a:link{color: #B86813;}
+#rightText li a:visited{color: #B86813;}
+#rightText .topBorder{background-image:url(/gifjpg/top.jpg); height: 10px; width:165px;}
+#rightText .bottomBorder{background-image:url(/gifjpg/bottom.jpg); background-repeat: no-repeat; height: 15px; width: 165px;}
+
+
+/*-----RIGHTTEXT UDPATES Added June 8, 2011 to create the orange right box for monetary section-----*/
+#rightText {float: right; margin: 0; width: 160px; padding: 0; font-size: .85em;}
+#rightText .item h4{font-size: 16px; margin: 0; padding: 0;}
+#rightText .item ul{width: 160px; background-color: #fef9f3; border-bottom: 1px solid #a7542c; border-top: 1px solid #a7542c; margin: 0; color: #a7542c; padding: 1em 1.75em 0em; min-height:30px;}
+#rightText .item ul li {list-style: square; margin-bottom: 1em; padding: 0 0em 0 0em;  margin-left: 5px; margin-right: 11px; list-style: url(/gifjpg/orangesqbullet.gif);}
+
+
+/*--*html #rightText li{margin-left: 3em; line-height: 1.5em; list-style-type: square; color: #B86813; padding-left: 0em; width: 165px;}
+*html #rightText ul{color: #993300; width: 153px; margin:0;} hack for IE 6 --*/
+
+
+/*---- STYLES FOR BIO PAGES -----*/
+.linkList{padding-left: 1em; list-style:none; margin-bottom: 1em; line-height: 1.5em;}
+.bio{padding-top: 1em; padding-left: .5em; padding-right: .5em;}
+
+/*Hack for IE 6
+*html .bio{position: absolute;}*/
+
+/*---------------  SECONDARY PAGE STYLES -----------------*/
+.generalContentText table{margin-right: .5em;}
+.generalContentText{margin-left: .5em; margin-top: .5em;}
+.generalContentText p{}
+
+#FooterLinks{margin: 0px 0px 0px .7em; font-weight: bold;}
+#FooterLinks a{text-decoration: none;}
+#secondaryFooterLinks{font-size: 0.95em; padding: 4px 0px 5px 0px; margin-right: .5em; margin-left: .5em; width: 60em;}
+#secondaryFooterLinks a{font-weight: bold; margin: 0 6px 0 2px; text-decoration: none; font-size: .9em;}
+
+#lastUpdate{margin: 3em 1em .5em .7em; border-bottom: #999999 1px solid; font-size: .9em; font-weight: bold;}
+#updatenoDate{margin: 3em 1em .5em .7em; border-bottom: #999999 1px solid; font-size: .9em; font-weight: bold;}
+
+.secondaryFooterLinksLeft{float:left; margin-top: .2em;}
+.secondaryFooterLinksRight{float:right;}
+
+#Footer2{background-color: #5D6F5D; width: 100%; height: 20px; color:#FFFFFF; padding: 0 0 0 0; margin-bottom: 10px; text-indent: 5px; font-size: .9em; border-top: 6px solid #D0C16E; margin-top: 0px;}
+
+/*----- CONTENT SECTION TOP NAV STYLES (USED FOR STAT RELEASES AND BIOS) -----*/
+#subNavLinks{border: 1px solid #DDD; background-image: url(/gifjpg/nav_background.gif); padding: 5px; background-position: bottom; background-repeat: repeat-x; background-color: #fff; padding:5px; margin:1em 0 1em 0; width: 100%;}
+.subNavLinks1{padding: 5px;}
+.subNavLinks2{padding: 5px;} 
+.subNavLinks3{padding: 5px;}
+
+.subNavlinkTitle1{font-family: "Times New Roman", Times, serif; background-color: #EDA553; background-image:url(/gifjpg/subNavBack.jpg); background-repeat: repeat-x; color: #FFFFFF; padding: .3em .3em .3em .6em; font-weight:bold; font-style: normal; width: 7em; font-size: 1.2em; border-right: #FFFFFF 1px solid; border-bottom:#FFFFFF 1px solid; }
+.subNavlinkTitle1 a{font-style: normal; color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: .8em;}
+.subNavlinkTitle1 a:visited{font-style: normal; color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: .8em;}
+.subNavlinkTitle2{font-family: "Times New Roman", Times, serif; background-color: #996666; color: #FFFFFF; padding: .3em .3em .3em .6em; font-weight:bold; font-style: italic; width: 7em; font-size: 1.1em; border-right: #FFFFFF 1px solid;}
+.subNavLinks1 a{color: #333333;}
+.subNavLinks1 a:visited{color: #333333;}
+.subNavLinks2 a{color: #333333;}
+.subNavLinks1 a:visited{color: #333333;}
+.subNavLinks2 a.selected{font-weight: bold; text-decoration: none;}
+#stattable{position:relative;}
+.statTitle{font-family: "Times New Roman", Times, serif; font-size: 1.4em;}
+
+
+/*----- ALL OLD LIST STYLES ----- */
+#leftText ul.generalList{list-style: none; margin-left: 1em; margin-top: 1em;}
+#leftText ul.generalList li{padding-bottom: 1em; line-height: 1.3em;}
+#leftText ul.generalList li ul{padding-top: .5em; line-height: 1.3em; list-style: none; margin-left: 1em;}
+#leftText ul.generalList li ul li{padding-bottom: .3em;}
+#leftText ul.generalList2{list-style: none; margin-left: 1em; margin-top: 1em;}
+#leftText ul.generalList2 li{padding-bottom: .3em; line-height: 1.3em;}
+#leftText ul.generalList2 li ul{padding-top: .5em; line-height: 1.3em; list-style: none; margin-left: 1em;}
+#leftText ul.generalList2 li ul li{padding-bottom: .3em;}
+
+ul.generic li{padding-bottom: .3em;}
+ul.generic li .runinhead{font-weight: bold;}
+p.indent{margin-left: 2em;}
+ul.NoBulletsRegular{list-style: none; margin: 1em 0 1em 1em; padding: 0;}
+ul.NoBulletsRegular li{padding-bottom: .3em;}
+
+ul.linklist {list-style:none; margin-left:0; padding-left:0; line-height:1.5em;}
+ul.linklist li {font-weight:bold;}
+ul.linklist li.regular {font-weight:normal;}
+ul.secondarylist {list-style:none;}
+ul.secondarylist li {font-weight:normal;}
+ul.tertiarylist {list-style:none; margin-left:1em;}
+ul.tertiarylist li {font-weight:normal;}
+
+/*- - - - - - - NEW LIST STYLES TO USE FROM MAY 19 2008) - - - - - - */
+ul{}
+li{}
+
+/*square bullet with padding under each list item*/
+ul.padding {list-style:square;}
+li.padding {padding-bottom:0.5em;}
+
+/*nested lists with bullets*/
+ul.bulletlinklist {list-style:none; margin-left:0; padding-left:0;}
+ul.bulletlinklist li{font-weight: bold; padding-bottom: .5em;}
+ul.bulletsprimarylist {margin-left:0; padding-left:0;}
+ul.bulletsprimarylist li {font-weight:normal; padding-bottom: .5em;}
+ul.bulletssecondarylist {padding-bottom: .5em;}
+ul.bulletssecondarylist li {font-weight:normal;}
+ul.bulletstertiarylist {margin-left:1em; padding-bottom:0.5em;}
+ul.bulletstertiarylist li {font-weight:normal;}
+
+/*no bullets*/
+ul.nobullets{list-style: none; margin-left: 0em; padding: .5em;}
+ul.nobullets li{padding-bottom: .5em;}
+
+/*no bullets, no padding*/
+ul.nobulletsnopadding {list-style: none; margin:0 0 0 0; padding:0 0 1em 0;}
+ul.nobulletsnopadding li {font-weight:normal; padding-bottom:0.25em;}
+
+/*nested lists without bullets*/
+ul.linklist {list-style:none; margin-left:0; padding-left:0;}
+ul.linklist li {font-weight:bold; padding-bottom: .5em;}
+ul.primarylist {list-style:none; margin-left:0; padding-left:0;}
+ul.primarylist li{font-weight: normal;}
+ul.secondarylist {list-style:none; padding-bottom:.5em;}
+ul.secondarylist li {font-weight:normal;}
+ul.tertiarylist {list-style:none; margin-left:1em; padding-bottom:.5em;}
+ul.tertiarylist li {font-weight:normal;}
+
+/*numbered and lettered lists*/
+ol {margin-top:0.75em; margin-bottom:0.75em;}
+ol.letters {list-style:upper-alpha; margin-top:0.75em; margin-bottom:0.75em;}
+ol.lowerroman {list-style:lower-roman; margin-top:0.75em;}
+ol.upperroman {list-style:upper-roman; margin-top:0.75em;}
+ol.notelist {font-size:0.85em;}
+
+/*- - - - - - - END NEW LIST STYLES - - - - - - */
+ 
+#items2{padding-bottom: 2em; padding-top: .5em;}    
+#items2 p{margin-left: 1em;}
+
+/*---TOP NAV DROP-DOWN SELECT LIST (e.g., RECENT ACTIONS PAGE)----*/
+#ddwrapper {margin-bottom:1em; padding-top:1em; padding-left:0.75em; margin-right:16em; height:25px; background-color: #EFEFEF;}
+.ddleft {width:165px; float:left;}
+.ddleftArchive {width:125px; float:left;}
+.dropdown {margin-top:-0.45em; float:left;}
+
+/*-----------THREE COLUMN LAYOUT FOR TOP NAV-----------------*/
+#navwrapper{border: 1px solid #DDD; background-image: url(/gifjpg/nav_background.gif);  background-position: bottom; background-repeat: repeat-x; background-color: #fff; padding:5px;}
+#navwrapper {line-height: 1.4em;}
+#navleft {float:left; padding:0 1em 0 0; width:13em;}
+#navleft2 {float:left; padding:0 0 0 0; width:15em; margin-left:4em;}
+#navleft3 {float:left; padding:0 0 0 0; width:15em; margin-left:6em;}
+
+/*---STANDARD DIV FOR PIPE LIST - TOP NAV-----*/
+#highlightnav {background-color: #FFFFFF;
+    background-image: url(/gifjpg/nav_background.gif);
+    border: 1px solid #DDDDDD;
+    margin: 0.5em 0 1.5em;
+    padding: 0.6em 0.35em 0.75em;
+}
+
+#highlightnav a {}
+
+/*-- FOR ALL STANDARD ACCESSIBLE TABLES  --*/
+table.accessible{border-right: 1px solid; border-top: 1px solid; empty-cells:show;}
+table.accessible td{padding: 5px; text-align: right; border-left: 1px solid; border-bottom: 1px solid;}
+table.accessible th{padding: 5px; border-left: 1px solid; border-bottom: 1px solid;}
+table.accessible td.left{text-align:left;}
+table.accessible td.center{text-align:center;}
+table.accessible caption.left{text-align:left;}
+
+/*-- Open Gov*//*Open Gov*//*Open Gov*//*Open Gov*//*Open Gov--*/
+div.openGovLeft{
+    width:41em;
+    float:left;
+    border-right:#000 solid 1px;
+    magrin:0;
+    padding:0;
+}
+div.openGovLeft .openGovSubCon{
+    width:19em;
+    float:left;
+    margin-top:20px;
+}
+div.openGovLeft .openGovSubConRight{
+    width:19em;
+    float:right;
+}
+div.openGovRight{
+    width:16.4em;
+    float:left;
+    magrin-left:5px;
+    padding-left:5px;
+    
+}
+
+div.openGovRight .notopmargin .whatsnext{
+    margin-top:0;
+}
+.openGovImageContainer{
+        text-align:right;
+        margin-bottom:5px;
+        width:45em;}
+
+div.openGovLeft .smallerFont{
+    font-size:.9em;
+    margin-left:20px;
+    }
+    
+
+.openGovImageContainer a {
+    position:absolute;
+}
+/*-- Open Gov*//*Open Gov*//*Open Gov*//*Open Gov*//*Open Gov--*/
+
+/*--FOR ARCHIVE PAGES --*/
+
+ul.indexDateControl {border: 0; padding-left: 0; margin-left: 0; list-style: none;}
+ul.indexDateControl li{padding: 0 8px 0 0; float: left; border-right: 1px solid #000;}
+ul.indexDateControl li.last {border-right: none; padding-left: 8px; margin: -5px 0 0 0;}
+
+ul.services li {margin-bottom:0.25em;}
+
+ /*----- USED FOR IDENTICAL REMARKS AND EMBARGO BREAK COMMENT -----*/
+.boldital {font-style: italic; font-weight: bold; margin-top: .5em; padding-left: 1.5em;}
+.embargo {margin-top: .25em; }
+ 
+/*--Used in the Bulletin--*/
+ol.letterslower{list-style: lower-alpha; margin-top: 0.75em; margin-bottom: 0.75em;}
+
+/*--PRINT and RSS ICONS ABOVE AN IMAGE--*/
+#printIcon_overlay {background-color: #ffffff;  margin: 0 20px 0 0; padding: .5em; float: right; filter: alpha(opacity=80); opacity: 0.8; font-size: 0.85em;}
+#printIcon_overlay a{padding: 0 5px 0 5px;}
+ 
+/*--GENERIC TABLE STYLE --*/
+
+table.genericTable {border-top:1px solid #999999; border-left:1px solid #999999; empty-cells:show; font-family: Verdana, Geneva, sans-serif; font-size: .85em; margin-bottom: 1em;}
+table.genericTable td {padding:5px; text-align:right; border-bottom:1px solid #999999; border-right: 1px solid #999999;}
+table.genericTable td.text{text-align:left;}
+table.genericTable td.right {text-align:right;}
+table.genericTable th {padding:5px; text-align:left; border-bottom: 1px solid #999999; border-right: 1px solid #999999; background-color:#3e5d3d; color:white;}
+table.genericTable th.center{padding:5px; text-align:center; border-bottom: 1px solid #999999; border-right: 1px solid #999999; background-color:#74aeb7; color:white;}
+table.genericTable th.left {text-align: left;}
+table.genericTable th a:link {color:white;}
+table.genericTable th a:visited {color:white;}
+table.genericTable th.subhead{background-color: #74aeb7; color: #000;}
+table.genericTable th.subhead2{background-color: #74aeb7; color: #000; text-align: left;}
+table.genericTable td.left{text-align:left; font-weight:none; color: #3e5d3d; border-right:1px solid #999999;}
+table.genericTable td.left2{text-align:left; border-right:1px solid #999999;}
+table.genericTable td.left3{text-align:center; font-weight:none; border-right:1px solid #999999;}
+table.genericTable td.center{text-align:center;}
+table.genericTable td.right{text-align:right;}
+table.genericTable tr.shade1 {background-color:#f7f6f0;}
+table.genericTable tr.shade2 {background-color: #f7f6f0;}
+table.genericTable .subhead{text-align: left; border-bottom: 1px solid #fff; font-weight: bold;}
+table.genericTable tr.header {background-color: #999999; }
+
+/*-- TWO COLUMN OF LINKS, EXAMPLE: LIST OF FR BANKS --*/
+
+#navlistcolleft {
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.5em;
+    margin-bottom: 1.2em;
+    margin-left: 15px;
+    margin-top: 0.5em;
+    width: 120px;}
+
+#navlistcolright {
+     float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.5em;
+    margin-bottom: 1.2em;
+    margin-top: 0.5em;
+    padding-bottom: 2em;
+}
+
+/*---------- Silver Navigation Bar for Content Navigation, See /monetarypolicy/fomc.htm for an example ----------*/
+
+/*-- TOP NAVIGATION STYLES ADDED JULY 19, 2011--*/
+.contentNav {float: left; border: 1px solid #DDD; background-image: url(/gifjpg/nav_background.gif); background-repeat: repeat-x; background-color: #fff; margin:0 0 1em 0; background-position: bottom; width: 100%;}
+.contentNav ul{list-style: none; padding: 0; margin: 0;}
+.contentNav ul li{float:left; padding: 7px 8px 7px 8px; }
+.contentNav ul li img{vertical-align: middle;}
+.contentNav ul li.selected{font-weight: bold; text-decoration: none;}
+.contentNav ul li.selected a:link{text-decoration: none;}
+.contentNav ul li.selected a:visited{text-decoration: none;}
+.contentNav ul.column{list-style: none; margin: 0; padding: 5px; float: left; width: 28%;}
+.contentNav ul.column li {padding: 2px 3px 2px 3px; float: none;}
+
+
+        
+        .contentNav2 {
+            float: left;
+            border: 1px solid #DDD;
+            background-image: url(/gifjpg/nav_background.gif);
+            background-repeat: repeat-x;
+            background-color: #fff;
+            margin: .5em 0 1.5em 0;
+            background-position: bottom;
+            width: 100%; 
+            font-size: .9em;}
+        
+        .contentNav2 ul.column {
+            list-style: none;
+            margin: 0;
+            padding: 5px 5px 8px 5px;
+            float: left;
+            width: 48%; }
+        
+        .contentNav2 ul.column li {
+            padding: 2px 3px 2px 3px;
+            float: none; }
+            
+        .contentNav4 {
+            float: left;
+            border: 1px solid #DDD;
+            background-image: url(/gifjpg/nav_background.gif);
+            background-repeat: repeat-x;
+            background-color: #fff;
+            margin: .5em 0 1.5em 0;
+            background-position: bottom;
+            width: 100%; 
+            font-size: .9em;}
+            
+        .contentNav4 ul.column {
+            list-style: none;
+            margin: 0;
+            padding: 5px 5px 8px 5px;
+            float: left;
+            width: 22%; }
+        
+        .contentNav4 ul.column li {
+            padding: 2px 3px 2px 3px;
+            float: none; }
+
+        .contentNav5 {
+            float: left;
+            border: 1px solid #DDD;
+            background-image: url(/gifjpg/nav_background.gif);
+            background-repeat: repeat-x;
+            margin: .5em 0 1.5em 0;
+            background-position: bottom;
+            width: 100%; 
+            font-size: .9em;}
+
+        .contentNav5 ul.column{
+            list-style: none; 
+            margin: 0; 
+            padding: 5px 15px 5px 15px; 
+            float: left; 
+            width: 15%;}
+        
+        .contentNav5 ul.column li {
+            padding: 2px 3px 2px 3px; 
+            float: none; }
+
+
+#important{margin: 10px 0px 0px 0px; padding: 10px; background-color: #EFEFEF; }
+ 
+/*STYLE FOR CALLOUTS SEE AUDIT PAGE IN REGREFORM AS EXAMPLE*/
+.calloutRR {border:4px double #CCCCCC;padding:10px;margin:10px 0; background-color:#efefef; background-image:url(/gifjpg/audit_letter_bk.gif); background-repeat:no-repeat;background-position:right bottom;}
+
+/*For related materials at the bottom of each page*/
+#relatedItems {background-color: #EFEFEF; padding-top: 15px; padding-bottom: 15px; margin-top: -15px; }
+#relatedItems ul {list-style:none; padding: 10px 0 0 0; margin: -10px 0 0 0;}
+#relatedItems ul li {font-family:Arial, Helvetica, sans-serif; font-size:12px; margin-left: 10px;}
+#relatedItems ul.relatedbox {list-style:none; padding: 10px 0 20px; 0; margin: 5px 0 0 15px;}
+#relatedItems ul li.relatedbox {font-family:Arial, Helvetica, sans-serif; font-size:12px; margin-left: 10px;}
+p.type {font-family: Arial, Helvetica, sans-serif; font-size:11px; color:#999; padding: 0 0 0 0;  margin: 0 0 0 10px; text-transform:uppercase;}
+p.date {font-family: Arial, Helvetica, sans-serif; font-size:12px;padding: 0 0 0 0; margin: 0 0 0 10px;}
+p.link {font-family: Arial, Helvetica, sans-serif; font-size:13px;padding: 0 0 0 0;  margin: 0 0 10px 10px;}
+hr.whiteLine {border: 1px solid #fff; height: 0.03em; width: 475px; padding: 0 0 0 0; margin-bottom: 20px;}

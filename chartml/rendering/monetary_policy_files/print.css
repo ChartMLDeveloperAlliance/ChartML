@@ -1,0 +1,608 @@
+/*---------------- PRINT HOME PAGE/GENERAL LAYOUT STYLES -------------------*/
+body {font-family: Arial, Helvetica, sans-serif; font-size: 0.8em; color: #000000; margin: 0;}
+#top{padding-top: 0em; padding-bottom: 0em; margin: 0; background-image: url(/gifjpg/masthead_BG.jpg); background-position: top; background-repeat: repeat-x; border-bottom: 6px solid #F0EAD0;}
+
+#footer
+{clear: both;
+margin-left:0;
+padding-bottom: .5em;
+padding-top: 0em;
+color: #333;
+background-color: #fff;
+margin-right: 0em;
+margin-left: 0em;}
+
+a:link { text-decoration: underline; color: #314732; }
+a:visited { text-decoration: underline; color: #BCA346; }
+
+img{border: 0;}
+
+.clear {clear: both;}
+
+#defaultPrintImage{display:none;}
+
+/*----------- PAGE HEADER STYLES FOR ALL PAGES -----------------*/
+table#headerTopLinks {font-weight: bold; width: 57em; padding-left: 0em; margin-bottom: 0em; border:0; font-size: .9em;}
+table#headerTopLinks td.headerTopLinksRight form{margin: 0; padding: 0;}
+td.headerTopLinksLeft {background-color:#FFFFFF; width: 32em;  padding-top: .5em; margin: 0; padding-left: .8em;}
+td.headerTopLinksLeft a:active { text-decoration: none;}
+td.headerTopLinksLeft a:link { text-decoration: none;}
+td.headerTopLinksLeft a:visited { text-decoration: none;}
+td.headerTopLinksLeft a:hover {text-decoration: underline;}
+td.curve1{background-image: url(../gifjpg/searchCurve1.jpg);; background-repeat: no-repeat; width: 8px; margin-top: .5em; height: 25px; border-top: .5em #FFFFFF solid; background-color:#D6C580;}
+td.curve2{background-image: url(../gifjpg/searchCurve2.jpg);; background-repeat: no-repeat; width: 8px; margin-top: .5em; height: 25px; border-top: .5em #FFFFFF solid; background-color:#D6C580;}
+td.headerTopLinksRight {background-color:#D6C580; color: #FFFFFF; padding-top: .5em;  padding-bottom:.2em; background-image: url(../gifjpg/searchBack.jpg); background-repeat: repeat-x; border-top: .5em #FFFFFF solid; text-align: center;  width: 23em; font-size: .9em;}
+td.headerTopLinksRight a:active { text-decoration: none;  color: #FFFFFF; }
+td.headerTopLinksRight a:link { text-decoration: none;  color: #FFFFFF; }
+td.headerTopLinksRight a:visited { text-decoration: none;  color: #FFFFFF; }
+td.headerTopLinksRight a:hover { color: #FFFFFF; }
+td.headerTopLinksRight a.search{text-decoration: underline;}
+#headerTopLinksSearchFormSubmit { margin: 0 0 -3px 0;}
+#headerMasthead { height: 90px; text-align:left; width: 100%; margin-top: 0em;}
+
+/*---------- TOP HORIZONTAL NAVIGATION STYLES FOR ALL PAGES -------------*/
+#navMenu { font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 0.75em; font-weight: bold; width: 70em; background-color: #5f705f; text-align:center; background-image:url(../gifjpg/navBack.jpg); background-repeat:repeat-x;}
+#navMenu td { height: 4em; border-right: 1px solid #F0EAD0; background-color: #5f705f; background-image:url(../gifjpg/navBack.jpg); background-repeat:repeat-x;}
+#navMenu a { color: #FFFFFF; text-decoration: none; padding: 15px 0 15px 0; }
+#navMenu td#selected { background: #F0EAD0; }
+#navMenu td#selected a { color: #333300; }
+#navMenu a:hover { text-decoration: underline; }
+#navMenu td.last{border-right: 0;}
+.navItem { padding-left: .3em; padding-right: .3em;}
+* html .navItem { padding-left: 0px; }
+.navMenuBack{ padding: 0px; margin:0px; background-color: #5f705f; background-image:url(../gifjpg/navBack.jpg); background-repeat:repeat-x;}
+.green{background-color: #5f705f; background-image:url(../gifjpg/navBack.jpg); background-repeat:repeat-x;}
+
+/*------------- ALL HEADLINE STYLES --------------*/
+/*h1 { border-bottom: 1px solid #999999; font-family: "Times New Roman", Times, serif; font-size: 1.6em; padding: 8px 0 5px 4px; margin: 0 5px 0 0; font-weight: normal;}*/
+h1.secondary{border-bottom: 1px solid #999999; font-family: "Times New Roman", Times, serif; font-size: 1.6em; padding: 0 0 3px 4px; margin: 0 0 0 5px; font-weight:normal;}
+h1.all{border-bottom: 1px solid #999999; font-family: "Times New Roman", Times, serif; font-size: 1.6em; padding: 10px 0 2px 0px; margin: 0 0 0 0em; font-weight:normal; margin-bottom: .2em; width: 480px;}
+h1.homeFeature{font-family: "Times New Roman", Times, serif; font-size: 1.2em; padding: .3em 0px .3em .3em;  margin: 0 0px 0 0px;     background-image: url(../gifjpg/homeFeatureBack.jpg); background-repeat: repeat-x; font-weight:bold; border-bottom: 0; color: #FFFFFF;}
+h1.stats {font-family: "Times New Roman", Times, serif; font-size: 1.2em; padding: .3em 0px .3em .3em;  margin: 0 0px 0 0px;     background-image: url(../gifjpg/statBack.jpg); background-repeat:repeat-x; font-weight:bold; border-bottom: 0; color: #FFFFFF;}
+/*h2{font-family: "Times New Roman", Times, serif; font-size: 1.4em; padding: 5px 0px 0px 0px; margin: 0; font-weight:normal;}*/
+h2.stats{font-family: "Times New Roman", Times, serif; font-size: 1.4em; padding: 5px 0px 3px 0px; margin: 0; font-weight:normal; border-bottom: 1px dashed #999999; margin-right: .7em;}
+h2.pr{font-family: "Times New Roman", Times, serif; font-size: 1.4em; padding-left: 5px; margin: 0; font-weight:normal; border-bottom: 1px dashed #999999; margin-right: .7em; margin-bottom: 3px;}
+h2.sitemap{font-family: "Times New Roman", Times, serif; font-size: 1.4em; padding: 1.8em 0px 3px 0px; font-weight:normal; border-bottom: 1px dashed #999999; margin-right: .7em; margin-bottom: .5em;}
+h2.whatsnext{font-family: "Times New Roman", Times, serif; font-size: 1.4em; padding: 1em 0px 3px 0px; font-weight:normal; border-bottom: 1px dashed #999999; margin-right: .7em; margin-bottom: .5em;}
+h2.border{font-family: "Times New Roman", Times, serif; font-size: 1.4em; padding: 5px 0px 0px 0px; font-weight:normal; border-bottom: 1px dashed #999999; margin-bottom: .3em; margin-top: .5em;}
+/*h3{font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 1.2em;}*/
+h3.statColumn{font-size: .85em; padding-left: 2em; margin-bottom: 0em;}
+h3.subtitle{font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 1em;}
+h3.italic{font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 1em; font-style:italic;}
+h3.prTime{font-weight: bold; font-family: Arial, Helvetica, sans-serif;}
+
+
+/*--------------------------------NEW HEADERS ----------------------*/
+.border{border-bottom: 1px solid #999999;}
+.borderdash{border-bottom: 1px dashed #333333;}
+.bold{font-weight: bold;}
+.boldnopadding{font-weight: bold; padding-bottom: 0; margin-bottom:0;}
+.italic{font-style: italic;}
+.italicbold{font-style: italic; font-weight: bold;}
+.italicnopadding{padding-bottom: 0; margin-bottom: 0em; font-style:italic;}
+.italicboldnopadding{padding-bottom: 0; margin-bottom: 0; font-style: italic; font-weight:bold;}
+.nopadding{margin: 0; padding: 0;}
+h1{font-family: "Times New Roman", Times, serif; font-size: 1.7em; padding: 10px 0 5px 0px; margin: 0 0 0 0em; font-weight:normal; margin-bottom: .6em; border-bottom: none;}
+h3 {font-size:1.4em; font-weight: normal; font-family: "Times New Roman", Times, serif;}
+h2 {font-family: "Times New Roman", Times, serif; font-size: 1.6em; border: none; font-weight: normal;}
+h4 {font-size:1.3em; font-weight: normal; font-family: "Times New Roman", Times, serif;}
+h5 {margin-bottom:0; font-size:1.2em; font-weight:normal; font-family: "Times New Roman", Times, serif;}
+h6 {margin-bottom:0; font-size:1.1em; font-weight:normal; font-family: "Times New Roman", Times, serif;}
+
+/*------------ Makes the Skip to Content links invisible ---------------*/
+.invisible { font-size: 0pt; font-weight: lighter; text-decoration: none; color: white; display: none; }
+.skip { font-size: 0pt; font-weight: lighter; text-decoration: none; color: white; display: none; }
+
+/*---------------  HOME PAGE STYLES -----------------*/
+/*----- LAYOUT -----*/
+#containerHome
+{margin: 0;
+color: #333;
+    width: 100%;}
+#SubContainerHome
+{margin: 0;
+color: #333;
+line-height: 130%;
+width: 100%;
+margin-left: .7em;}
+#contentHomeLeftColumnBackground {
+    margin: 0px;
+    padding: 0px;
+    width: 50em; }
+    
+#contentHomeLeftColumn {
+    text-align:left;
+    width: 100%;
+    margin: 2px 10px 3px .75em;}    
+#contentStatsColumn {
+    width: 30%;}
+#contentStatsColumn2{
+width: 13em;}
+/*----- RECENT DEVELOPMENTS -----*/
+#contentRecentDevelopContainer{margin-left: 25%;}
+#contentRecentDevelopContainer ul {list-style: square outside; margin: 0 0 0 33px; padding: 10px 10px 5px 0; border: 0; 
+font-family: Arial, Helvetica, sans-serif; font-size: 1em; }
+#contentRecentDevelopContainer li { margin: 0 10px 0 0; padding: 0 0 6px 0; }
+#contentRecentDevelopContainer a:active { text-decoration: none; font-weight: bold; color: #333300; }
+#contentRecentDevelopContainer a:link { text-decoration: none; font-weight: bold; color: #333300; }
+#contentRecentDevelopContainer a:visited { text-decoration: none; font-weight: bold; color: #666600; }
+#contentRecentDevelopContainer a:hover { text-decoration: underline; color: #333300; }
+
+/*----- FEATURED ITEMS -----*/
+#contentFeatureContainer{padding-bottom: 15px;}
+#contentFeatureContainer table {font-size: .9em; }
+#contentFeatureContainer table a img{border: 0; margin-top: 2px;}
+#contentFeatureContainer table a:active{font-weight: bold; text-decoration: underline;}
+#contentFeatureContainer table a:link{font-weight: bold; text-decoration: underline;}
+#contentFeatureContainer table a:visited{font-weight: bold; text-decoration: underline;}
+#contentFinancialCareersContainer{margin-top: 0px; padding: 0px; background-color: #ffffff; width: 30em;}
+
+/*FR System Features*/
+#contentRecentDevelopContainer2{margin-left: 30%; margin-right: 10px;}
+ul.tablistnav {
+ display:none;
+}
+.tablistlive .tablisttab img{float: left; padding-right: 10px;}
+.tablisttab{clear: both; padding-bottom: 10px;}
+.tablistlive .tablisttabhide {
+ display:block;
+}
+#Column3{width: 100%; clear: both;}
+#contentStatsColumn2{width: 50%; float: left;}
+#contentStatsColumn{width: 50%; float: right;}
+
+/*----- FEATURED ITEMS -----*/
+#contentFeatureContainer{padding-bottom: 15px; float: left; width: 30%; margin-right: 10px; background-image: none; background-repeat: repeat-x; margin-top: .5em;}
+#contentFeatureContainer table {font-size: .9em; }
+#contentFeatureContainer table a img{border: 0; margin-top: 2px;}
+#contentFeatureContainer table a:active{font-weight: bold; text-decoration: underline;}
+#contentFeatureContainer table a:link{font-weight: bold; text-decoration: underline;}
+#contentFeatureContainer table a:visited{font-weight: bold; text-decoration: underline;}
+#contentFinancialCareersContainer{margin: 2em 0px 0px 1em; padding: 0px; width: 100%; background-color: #ffffff; clear: both;}
+#contentFeatureContainer h1.border{background-color: #541623; color: #FFFFFF;  border: none; padding: 5px; font-size: 1.4em; margin: 3px;}
+
+/*----- FINANCIAL EDUCATION -----*/
+#contentFinancialEdContainer {float: left; width: 30%; padding-bottom: .5em; background-image: none; background-repeat: repeat-x; margin: 0 0 0 0; }
+#contentFinancialCareerText{margin: 12px 10px 0 13px;}
+#contentFinancialCareerText img { float: left; display: inline; border: 0; padding: 0 8px 0 0; }
+#contentFinancialEdContainer h1.homeFeature {background-image: none; background-repeat: no-repeat; padding-left: 15px;}
+ 
+/*----- CAREERS STYLES -----*/
+#contentCareersContainer {float: left; width: 30%; padding-bottom: .5em; background-image: none; background-repeat: repeat-x; margin: 0 0 0 2em;}
+#contentCareersContainer h1.homeFeature {background-image: none; background-repeat: no-repeat; padding-left: 15px;}
+
+/*----- STATISTICAL RELEASE COLUMN STYLES -----*/
+.contentRightStats {height: 100%; }
+.orange{background-color: #EDA553;}
+.contentRightStatsSubTitle{font-size: .85em;  font-weight: bold; padding-top: 10px; padding-left: 11px;}
+.contentRightStats ul{margin-left: 1em; margin-top: 0;}
+.contentRightStats li {padding: 0 1.2em 0 1.2em; margin: 5px 0 5px 0; font-size: .85em; list-style: none;}
+.contentRightStatsFeaturette { margin: 22px 15px 0 41px; font-size: .85em; }
+.contentRightStatsFeaturette img { float: left; margin: 5px 0px 0 -30px; border: 0; } 
+table.statFeature{ margin-left: 2em; margin-right: 2em; font-size: .85em;}
+table.statFeature td{vertical-align: top;}
+
+
+/*----- HOME PAGE FOOTER LINKS -----*/
+#homeFooter{background-color: #5D6F5D; width: 100%; height: 2em; color:#FFFFFF; padding: 5px 0 0 0; margin-bottom: .5em; text-indent: .5em; font-size: .9em; border-top: 6px solid #f0ead0; margin-left: 0em; margin-right: .3em;}
+#homeFooterLinks {font-size: 0.95em; padding: 4px 0px 5px 0px; margin-right: .5em; margin-left: .5em; width: 80em;}
+#homeFooterLinks a { font-weight: bold; margin: 0 6px 0 2px; text-decoration: none; font-size: .9em; }
+.homeFooterLinksLeft{float: left; margin-top: .2em;}
+.homeFooterLinksRight{float: right;}
+#govLink img { border: 0; margin: 0px 0 0 0; }
+#homeFooterLinks img.exit{margin-top: 3px;}
+#homeLastUpdate{margin-left: .5em; margin-right: .5em; margin-top: 3em; border-bottom: #999999 1px solid; font-size: .9em; font-weight: bold;}
+
+/*-------------- STAT RELEASE STYLES ONLY ----------------*/
+.statSmallTxt{font-size: .8em;}
+.postDate{font-size: .9em;}
+.dataDate{font-family: Arial, Helvetica, sans-serif; font-size: .9em; padding: 5px 0px 0px 0px; margin: 0; font-weight:bold; color:#FF0000; padding-bottom:.7em;}
+#principle{border-bottom: #666666 dashed 1px; width: 43em; padding-bottom: 1em;}
+#principle li{ list-style: square; }
+.statsCategory li{ list-style: square; }
+.statsCategory{width: 43em; padding-bottom: .5em;}
+
+/*--------------- AZINDEX STYLES -------------------------*/
+table.indextable{margin-bottom: 1em;}
+td.indexref{background-color:#B69D3A; font-weight: bold; width: 1.5em; color: #FFFFFF;}
+td.indexref a{color: #FFFFFF;}
+td.indexanchor{font-weight: bold; background-color:#B69D3A; width: 1.5em; color: #FFFFFF;}
+.indextext{line-height: 1.5em; margin-left: 1em;}
+.indexindent1{padding-left: 1.5em;}
+
+/*--------------- SITEMAP STYLES -------------------------*/
+ul.sitemapitem{line-height: 1.5em; margin-left: .5em; margin-bottom: 0em; padding-bottom: 0em; margin-top: .5em;}
+li.sitemaphead{list-style: disk; font-weight: bold;}
+li.siteindent1{padding-left: 1em; list-style-image:none; list-style: none;}
+li.siteindent2{padding-left: 3em; list-style-image: none; list-style: none;}
+
+/*-------------- WHATS NEXT STYLES -----------------------*/
+table.whatsnext{margin-left: 1em;}
+
+/*-------------- FAQ STYLES ------------------------------*/
+.subitem{line-height: 1.5em; margin-left: 1em;}
+.question1{border-top: 1px dashed #999999; margin-top: 1em; padding-top: .75em; padding-bottom: .5em; font-weight: bold;}
+.question{ margin-top: 1em; padding-bottom: .5em; font-weight: bold;}
+.answer{margin-left: .5em;}
+.answersubpara{margin-left: 3em;}
+.answersubparahang{margin-left: 3em;}
+
+/*-------------------------- ALL PRINT STYLES BELOW ARE FOR SECONDARY PAGES ------------------------------*/
+#contentContainer{
+background-color: #FFFFFF;
+background-image: none;}
+
+#leftnav{float: left;
+width: 125px;
+margin-right: .9em;
+margin-left: .6em;
+vertical-align:top;}
+
+#content
+{margin-left: 160px;
+background-color:#FFFFFF;
+margin-top: 0;
+padding-top: 0;}
+
+/*----- LEFT NAVIGATION ------*/
+
+.secondaryContentLeftNav {margin: 5px 0 0 5px;  width: 140px;}
+.secondaryContentLeftNav ul {  margin-right: .5em; margin-left: 1.2em; padding: 0; margin-bottom: .4em; margin-top: .8em;}
+.secondaryContentLeftNav img { float: left; margin: 3px 0 0 -15px; padding: 0 4px 0 0; }
+.secondaryContentLeftNav ul a:active, .secondaryContentLeftNav ul a:link, .secondaryContentLeftNav ul a:visited { color: #333300; font-size: 0.9em; }
+.secondaryContentLeftNav li { margin: 3px 0 3px 15px; list-style: disc url(/gifjpg/menu_bullet.gif) outside; font-weight: normal; }
+#menuFirstLevelHeading { font-size: 0.9em; text-decoration: none; font-weight: bold; color: #000000; }
+#menuLink a:active, #menuLink a:link, #menuLink a:hover { text-decoration: underline; color: #333300; font-weight: bold; }
+#menuLink a:visited { text-decoration: underline; color: #666600; font-weight: bold; }
+#menuHighlight a, #menuLink #menuHighlight { color: #336633; text-decoration: none; }
+#menuHighlight a:hover, #menuLink #menuHighlight:hover { text-decoration: underline; }
+#menuOne,#menuTwo,#menuThr,#menuFou,#menuFiv,#menuSix,#menuSev { display: none }
+
+/*----- BREADCRUMBS -----*/
+#BreadCrumbContainer{background-image:none; font-size: .85em; padding: 4px 0px 5px 5px; margin: 0px; width: 450px;}
+#BreadCrumbContainer a{color: #333333;}
+
+/*----- SECONDARY MAIN CONTENT STYLES -----*/
+#TitleImage img{margin-left: 0em; margin-bottom: 1em;}
+#TitleImage .printTitle{display:none;/*font-family: "Times New Roman", Times, serif; font-size: 1.9em; padding-bottom:3em; margin: 0 5px 0 0; font-weight: normal; */}
+
+#secondaryContentTitle{border-bottom: 1px solid #999999; font-family: "Times New Roman", Times, serif; font-size: 1.4em; padding: 0 0 3px 4px; margin: 0 0 0 5px;}
+#secondaryContentMainColumn ul{list-style:none; margin: 0px; padding-top:5px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px;}
+#secondaryFeatureContainer{padding-bottom: 20px; width: 450px;}
+#secondaryFeatureContainer table {font-size: .9em; margin: 0 0 0 8px; }
+#secondaryFeatureContainer table a img{border: 0; margin-top: 2px;}
+#secondaryFeatureContainer table a:active{ font-weight: bold; text-decoration: underline; }
+#secondaryFeatureContainer table a:link{font-weight: bold; text-decoration: underline;}
+#secondaryFeatureContainer table a:visited{font-weight: bold; text-decoration: underline;}
+
+#aboutBDMtitle { font-style: italic; padding-bottom: 2px; }
+.secondaryCommunityPublicHearingItem { margin: 9px 0 3px 0; padding: 0 10px 0 26px; overflow: auto; height: 1%; font-size: 0.9em;  }
+.tertiarySecondaryPage { margin: 4px 4px 0 9px; font-size: 0.9em; }
+.tertiarySecondaryPage ul li { margin: 3px 0 11px 9px; }
+#printIcon {float:right;  margin: 1em 2px -5px 0em; font-size: 0.85em;}
+.printIcon a img { float: left; border: 0; margin: 0 2px 0 0; }
+
+/*----- SECONDARY FEATURES -----*/
+
+.contentFeatureItem { margin: 10px 0 0 0; padding: 0 10px 4px 18px; overflow: auto; height: 1%; font-size: 0.9em;}
+.contentFeatureItem a img { padding: 3px 0px 0 0; border: 0; }
+.contentFeatureItem a:active, .contentFeatureItem a:link {font-weight: bold; text-decoration: underline; }
+.contentFeatureItem a:visited {font-weight: bold; text-decoration: underline; }
+.contentFeatureItem a:active, .tertiarySecondaryPage ul li a:active {font-weight: bold; text-decoration: underline; }
+.contentFeatureItem a:link, .tertiarySecondaryPage ul li a:link {font-weight: bold; text-decoration: underline; }
+.contentFeatureItem a:visited, .tertiarySecondaryPage ul li a:visited {font-weight: bold; text-decoration: underline; }
+
+#spanish  { background-color: #cccccc; color: #ffffff; font-size: 0.95em; font-weight: 600; text-decoration: none; }
+#spanish:link  { background-color: #cccccc; color: #ffffff; font-size: 0.95em; font-weight: 600; text-decoration: none; }
+#spanish:visited { background-color: #cccccc; color: #666600; font-size: 0.95em; font-weight: 600; text-decoration: none; }
+#subnav{ width: 55em; padding-bottom: .8em; padding-left: .5em; line-height: 1.5em; padding-top: .3em; margin-bottom: .5em; border-bottom: 1px dashed #999999;}
+#subnav a:link{color: #333333;}
+#subnav a.selected{color: #333333; text-decoration:none; font-weight: bold;}
+#subnav.afterYear{ width: 55em; padding-bottom: .8em; padding-left: .5em; line-height: 1.5em; padding-top: .8em; margin-bottom: .5em; border-bottom: 1px dashed #999999; border-top: 1px dashed #999999;}
+/*----- Code for making Two Columns within GeneralContentText ----- */
+
+/*----- Code for making Two Columns within GeneralContentText ----- */
+
+/*#TwoColumns{width: 58em;}*/
+/*#leftText{float: left;
+    width: 40em;}*/
+/*#leftText3 {width:490px; float:left; padding-right: 15px;}*/
+
+#TwoColumns{width: 100%;}
+#leftText {width: 85%; float: left;}
+#leftText3 {width: 85%; float: left;}
+
+#leftText ul.generalList{list-style: none; margin-left: 1em; margin-top: 1em;}
+#leftText ul.generalList li{padding-bottom: 1em; line-height: 1.3em;}
+#leftText ul.generalList li ul{padding-top: .5em; line-height: 1.3em; list-style: none; margin-left: 1em;}
+#leftText ul.generalList li ul li{padding-bottom: .3em;}
+#leftText ul.generalList2{list-style: none; margin-left: 1em; margin-top: 1em;}
+#leftText ul.generalList2 li{padding-bottom: .3em; line-height: 1.3em;}
+#leftText ul.generalList2 li ul{padding-top: .5em; line-height: 1.3em; list-style: none; margin-left: 1em;}
+#leftText ul.generalList2 li ul li{padding-bottom: .3em;}
+
+/*#rightText{display: none;}*/
+#rightText.ita {display:none;}
+
+
+#rightText{font-size: .8em; width: 10%; padding-bottom: .2em; float:right;}
+#rightText h1{font-size: 1em; color:#000000; padding: .5em; border-bottom: 0; margin-bottom: 0em; font-weight:bold; margin-right: 0; width:11em;}
+#rightText ul{color: #993300; margin: 0; padding:0; padding-bottom: .5em;}
+#rightText li{ list-style: square; color: #B86813; padding-bottom: .3em; margin-left: 2em; padding-top: .3em;}
+#rightText a{color: #B86813;}
+#rightText h1.cat2{margin-bottom: 0; margin-top: .5em;}
+#rightText ul.cat2{margin: 0;}
+#rightText li.cat2{color: #B86813; margin: 0; margin-left: 2em;}
+#rightText li.cat2 a{color:#B86813;}
+#rightText li.cat2 a:visited{color:#B86813;}
+#rightText ul.subNav{margin: 0; width: 12em; border: 1px solid #608AA4;}
+#rightText li.subNav {color:#243540;}
+#rightText li.subNav a{color:#243540;}
+#rightText li.subNav a:visited{color:#243540;}
+#rightText.bios{ margin-top: 2.5em;}
+ 
+#rightText.bankPrez{}
+#rightText.bankPrez h1 {background-image: url(); margin-top: 0; padding-top: 0; margin-bottom: 0; padding-bottom: 0; margin-right: .3em;}
+#rightText.bankPrez li.bankInfo {list-style:none; margin-left: 0em; background-image:url(); padding-left: 1.5em; padding-right: 1em; padding-top: .5em;}
+#rightText.bankPrez ul{}
+#rightText.bankPrez li.bankInfo p{padding: .5em 0em .5em 0em; margin: 0em 0em;}
+
+/*----- TOP SUB NAV FOR BIOS -----*/
+#subNavLinks{margin-bottom: 1em; width: 680px; margin-right: .5em; margin-top: 1em; margin-left: 0em; font-size: .9em;}
+.subNavLinks1{background-color: #FDF1E3; padding: .3em; border-bottom: #FFFFFF 1px solid; line-height: 1.5em; vertical-align:top;}
+.subNavLinks2{background-color: #DDCCCC; padding: .3em;}  
+.subNavlinkTitle1{background-color: #EDA553; background-image:url(); background-repeat: repeat-x; color: #FFFFFF; padding: .3em .3em .3em .6em; font-weight:bold; font-style: normal; width: 7em; font-size: 1em; border-right: #FFFFFF 1px solid; border-bottom:#FFFFFF 1px solid; }
+.subNavlinkTitle1 a{font-style: normal; color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: .8em;}
+.subNavlinkTitle1 a:visited{font-style: normal; color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: .8em;}
+.subNavlinkTitle2{font-family: "Times New Roman", Times, serif; background-color: #996666; color: #FFFFFF; padding: .3em .3em .3em .6em; font-weight:bold; font-style: italic; width: 7em; font-size: 1.1em; border-right: #FFFFFF 1px solid;}
+.subNavLinks1 a{color: #333333;}
+.subNavLinks1 a:visited{color: #333333;}
+.subNavLinks2 a{color: #333333;}
+.subNavLinks1 a:visited{color: #333333;}
+.subNavLinks2 a.selected{font-weight: bold; text-decoration: none;}
+#stattable{position:relative;}
+.statTitle{font-family: "Times New Roman", Times, serif; font-size: 1.4em;}
+
+
+/*---- STYLES FOR BIO PAGES -----*/
+.linkList{padding-left: 1em; list-style:none; margin-bottom: 1em; line-height: 1.5em;}
+.bio{padding-top: 1em; padding-left: .5em; padding-right: .5em;}
+
+/*Hack for IE 6*/
+*html .bio{position: absolute;}
+
+/*---------------  SECONDARY PAGE STYLES -----------------*/
+.generalContentText table{margin-right: 1em;}
+.generalContentText{margin-left: .5em; margin-top: .5em;}
+.generalContentText p{}
+
+#FooterLinks{margin: 0px 0px 0px .7em; font-weight: bold;}
+#FooterLinks a{text-decoration: none;}
+#secondaryFooterLinks{font-size: 0.95em; padding: 4px 0px 5px 0px; margin-right: .5em; margin-left: .5em; width: 60em;}
+#secondaryFooterLinks a{font-weight: bold; margin: 0 6px 0 2px; text-decoration: none; font-size: .9em;}
+#lastUpdate{margin: 3em 1em .5em .7em; border-bottom: #999999 1px solid; font-size: .9em; font-weight: bold;}
+.secondaryFooterLinksLeft{float:left; margin-top: .2em;}
+.secondaryFooterLinksRight{float:right; margin-right: 9em;}
+#Footer2{background-color: #5D6F5D; width: 100%; height: 20px; color:#FFFFFF; padding: 0 0 0 0; margin-bottom: 10px; text-indent: 5px; font-size: .9em; border-top: 6px solid #D0C16E; margin-top: 0px;}
+
+/*----- PRESS RELEASE INDEX PAGES -----*/
+#prIndex {width: 475px;}
+#prIndex h1.all{margin-bottom: 1em;}
+
+/*----- JOINT PRESS RELEASES -----*/
+
+#jointPressRelease #Agencies{text-align: right;
+color: #5f705f;
+font-weight: bold;
+border-bottom: 1px solid #999999;
+font-size: .85em;
+margin-top: 0em;
+padding-top: 0em;
+padding-bottom: .5em;
+padding-right: .5em;
+margin-right: .5em;
+width: 475px;}
+
+#jointPressRelease #timeDateContainer{padding-top: .5em; padding-bottom: 2em;}
+#jointPressRelease .releaseTime{float: left; font-weight: bold;}
+#jointPressRelease .releaseDate{float:right; font-weight: bold;}
+
+#jointPressRelease #TwoColumns{width: 475px;}
+
+.exhibitsFlash{display: none;}
+.duplicate{font-style: italic; font-weight: bold;}
+
+/*----- FRFS/FSPC RELEASES -----*/
+
+#FRFSreleaseTitle{font-family: "Times New Roman", Times, serif; font-size: 1.4em; padding: 0px 0px 2px 0px; margin: 0px 0px 2px 0px;}
+.TitleText{border-bottom: 1px solid #999999; margin-left: 75px; padding-bottom: 4px;}
+#FRFSreleaseTop{margin-top: 1em; width: 475px;}
+#FRFSreleaseTitle img{margin-right: 10px;}
+#FRFSreleaseSubTitle{padding-top: 2px;}
+#FRFScontact{text-align: right; font-size: .9em; padding-bottom: .5em;}
+
+#FRFS #TwoColumns {width: 475px;}
+#FRFS #TwoColumns #timeDateContainer{padding-top: .5em; padding-bottom: 2em; width: 475px;}
+#FRFS .releaseTime{float: left; font-weight: bold;}
+#FRFS .releaseDate{float:right; font-weight: bold;}
+
+/*FORECLOSURE PAGE STYLES*/
+#evenleft{float:none; margin:600px 0 0 0; padding:0 0 0 0;}
+#evenright {float:none; border:none; margin:0 0 0 0; padding:0 0 0 0;}
+#evenleft a {color:#460661;}
+#evenright a {color:#460661;}
+.enlarge {display:none;}
+#closebutton a {display:none;}
+
+/*----- REPORTING FORMS -----*/
+#ReportForms #leftnav{width: 100px;}
+
+/*- - - - - - - NEW LIST STYLES TO USE FROM MAY 19 2008) - - - - - - */
+ul{}
+li{}
+/*nested lists with bullets*/
+ul.bulletlinklist {list-style:none; margin-left:0; padding-left:0;}
+ul.bulletlinklist li{font-weight: bold; padding-bottom: .5em;}
+ul.bulletsprimarylist {margin-left:0; padding-left:0;}
+ul.bulletsprimarylist li {font-weight:normal; padding-bottom: .5em;}
+ul.bulletssecondarylist {padding-bottom: .5em;}
+ul.bulletssecondarylist li {font-weight:normal;}
+ul.bulletstertiarylist {margin-left:1em; padding-bottom:0.5em;}
+ul.bulletstertiarylist li {font-weight:normal;}
+/*no bullets*/
+ul.nobullets{list-style: none; margin-left: 0em; padding: .5em;}
+ul.nobullets li{padding-bottom: .5em;}
+/*no bullets, no padding*/
+ul.nobulletsnopadding {list-style: none; margin:0 0 0 0; padding:0 0 1em 0;}
+ul.nobulletsnopadding li {font-weight:normal; padding-bottom:0.25em;}
+/*nested lists without bullets*/
+ul.linklist {list-style:none; margin-left:0; padding-left:0;}
+ul.linklist li {font-weight:bold; padding-bottom: .5em;}
+ul.primarylist {list-style:none; margin-left:0; padding-left:0;}
+ul.primarylist li{font-weight: normal;}
+ul.secondarylist {list-style:none; padding-bottom:.5em;}
+ul.secondarylist li {font-weight:normal;}
+ul.tertiarylist {list-style:none; margin-left:1em; padding-bottom:.5em;}
+ul.tertiarylist li {font-weight:normal;}
+/*numbered and lettered lists*/
+ol {margin-top:0.75em; margin-bottom:0.75em;}
+ol.letters {list-style:upper-alpha; margin-top:0.75em; margin-bottom:0.75em;}
+ol.lowerroman {list-style:lower-roman; margin-top:0.75em;}
+ol.upperroman {list-style:upper-roman; margin-top:0.75em;}
+ol.notelist {font-size:0.85em;}
+/*- - - - - - - END NEW LIST STYLES - - - - - - */
+
+/*END ALL STYLES FOR SECONDARY PAGES*/
+ 
+/* STYLES FOR PAYMENT SYSTEM PAGES */
+table.payment {border-top:1px solid #EAEAEA; border-left:1px solid #EAEAEA; empty-cells:show; font-family: Verdana, Geneva, sans-serif; font-size: .85em; margin-bottom: 1em;}
+table.payment td {padding:5px; text-align:right; border-bottom:1px solid #EAEAEA; border-right: 1px solid #EAEAEA;}
+table.payment td.text{text-align:left;}
+table.payment td.right {text-align:right;}
+table.payment th {padding:5px; text-align:center; border-bottom: 1px solid #EAEAEA; border-right: 1px solid #EAEAEA; background-color:#54405E; color:white;}
+table.payment th.left {text-align: left;}
+table.payment th a:link {color:white;}
+table.payment th a:visited {color:white;}
+table.payment th.subhead{background-color: #E8E2EB; color: #000;}
+table.payment th.subhead2{background-color: #E5E5E5; color: #000; text-align: left;}
+table.payment td.left{text-align:center; font-weight:bold; border-right:1px solid #EAEAEA;}
+table.payment td.left2{text-align:center; border-right:1px solid #EAEAEA;}
+table.payment td.left3{text-align:left; font-weight:none; border-right:1px solid #EAEAEA;}
+table.payment td.center{text-align:center;}
+table.payment td.right{text-align:right;}
+table.payment tr.shade1 {background-color:#E8E2EB;}
+table.payment tr.shade2 {background-color: #E5E5E5;}
+table.payment .subhead{text-align: left; border-bottom: 1px solid #fff; font-weight: bold;}
+table.payment2 {border-top:none; border-left:none; empty-cells:show; font-family: Verdana, Geneva, sans-serif; font-size: .85em; margin-bottom: 1em;}
+table.payment2 td {padding:5px; text-align:right; border-bottom:none; border-right: none;}
+table.payment2 th {padding:5px; text-align:center; border-bottom: none; background-color:#54405E; color:white; border-right: 1px solid white;}
+table.payment2 th a:link {color:white;}
+table.payment2 th a:visited {color:white;}
+table.payment2 th.subhead {padding:5px; text-align:left; border-bottom: none; color: #000; border-bottom: 1px solid white; background-color: #E8E2EB;}
+table.payment2 th.subhead a:link{color: black;}
+table.payment2 th.subhead a:visited{color: black;}
+table.payment2 .subhead{text-align: left; border-bottom: 1px solid #fff;}
+table.payment2 td.left{text-align:left;}
+table.payment2 td.text{text-align:left;}
+table.payment2 td.borderb{border-bottom: 1px solid white; border-right: 1px solid white;}
+table.payment2 tr.shade {background-color:#E8E2EB; padding-top: 1px;}
+table.payment2 tr.shade1 {background-color:#E8E2EB; padding-top: 1px;}
+table.payment2 tr.shade2 {background-color: #E5E5E5;}
+/* This table aligns all content to the left for entire table */
+table.payment3 {border-top:1px solid #EAEAEA; border-left:1px solid #EAEAEA; empty-cells:show; font-family: Verdana, Geneva, sans-serif; font-size: .85em; margin-bottom: 1em;}
+table.payment3 td {padding:5px; text-align:left; border-bottom:1px solid #EAEAEA; border-right: 1px solid #EAEAEA;}
+table.payment3 td.text{text-align:left;}
+table.payment3 td.textc{text-align:center;}
+table.payment3 th {padding:5px; text-align:center; border-bottom: 1px solid #EAEAEA; border-right: 1px solid #EAEAEA; background-color:#54405E; color:white;}
+table.payment3 th a:link {color:white;}
+table.payment3 th a:visited {color:white;}
+table.payment3 th.subhead{background-color: #E8E2EB; color: #000;}
+table.payment3 th.subhead2{background-color: #E5E5E5; color: #000; text-align: left;}
+table.payment3 td.left{text-align:center; font-weight:bold; border-right:1px solid #EAEAEA;}
+table.payment3 td.left2{text-align:center; border-right:1px solid #EAEAEA;}
+table.payment3 td.center{text-align:center;}
+table.payment3 td.right{text-align:right;}
+table.payment3 tr.shade {background-color:#E8E2EB;}
+table.payment3 tr.shade1 {background-color:#E8E2EB;}
+table.payment3 tr.shade2 {background-color: #E5E5E5;}
+table.payment3 .subhead{text-align: left; border-bottom: 1px solid #fff; font-weight: bold;}
+/*table.payment1 {border:1px solid #bea65e; border-top:1px solid white; empty-cells:show;}
+table.payment1 td {padding:5px; text-align:right; border-bottom:1px solid #bea65e;}
+table.payment1 th {padding:5px; text-align:center; border-left:1px solid white; border-bottom: 1px solid white; background-color:#bea65e; color:white;}
+table.payment1 th a:link {color:white;}
+table.payment1 th a:visited {color:white;}
+table.payment1 td.left{text-align:center; font-weight:bold; border-right:1px solid #bea65e;}
+table.payment1 td.left2{text-align:center; border-right:1px solid #bea65e;}
+table.payment1 td.center{text-align:center;}
+table.payment1 td.right{text-align:right;}
+table.payment1 tr.shade {background-color:#eeeadb;}
+table.payment2 {border:1px solid #559797; border-top:1px solid white; empty-cells:show;}
+table.payment2 td {padding:5px; text-align:right; border-bottom:1px solid #559797;}
+table.payment2 th {padding:5px; text-align:center; border-left:1px solid white; border-bottom: 1px solid white; background-color:#559797; color:white;}
+table.payment2 th a:link {color:white;}
+table.payment2 th a:visited {color:white;}
+table.payment2 td.left{text-align:center; font-weight:bold; border-right:1px solid #559797;}
+table.payment2 td.left2{text-align:center; border-right:1px solid #559797;}
+table.payment2 td.center{text-align:center;}
+table.payment2 td.right{text-align:right;}
+table.payment2 tr.shade {background-color:#93d8d8;}
+table.payment3 {border:1px solid #a7542c; border-top:1px solid white; empty-cells:show;}
+table.payment3 td {padding:5px; text-align:right; border-bottom:1px solid #a7542c;}
+table.payment3 th {padding:5px; text-align:center; border-left:1px solid white; border-bottom: 1px solid white; background-color:#a7542c; color:white;}
+table.payment3 th a:link {color:white;}
+table.payment3 th a:visited {color:white;}
+table.payment3 td.left{text-align:center; font-weight:bold; border-right:1px solid #a7542c;}
+table.payment3 td.left2{text-align:center; border-right:1px solid #a7542c;}
+table.payment3 td.center{text-align:center;}
+table.payment3 td.right{text-align:right;}
+table.payment3 tr.shade {background-color:#fdece4;}
+table.payment4 {border:1px solid #460661; border-top:1px solid white; empty-cells:show;}
+table.payment4 td {padding:5px; text-align:right; border-bottom:1px solid #460661;}
+table.payment4 th {padding:5px; text-align:center; border-left:1px solid white; border-bottom: 1px solid white; background-color:#460661; color:white;}
+table.payment4 th a:link {color:white;}
+table.payment4 th a:visited {color:white;}
+table.payment4 td.left{text-align:center; font-weight:bold; border-right:1px solid #460661;}
+table.payment4 td.left2{text-align:center; border-right:1px solid #460661;}
+table.payment4 td.center{text-align:center;}
+table.payment4 td.right{text-align:right;}
+table.payment4 tr.shade {background-color:#bc9fc9;}
+table.payment5 {border:1px solid #5a7a32; border-top:1px solid white; empty-cells:show;}
+table.payment5 td {padding:5px; text-align:right; border-bottom:1px solid #5a7a32;}
+table.payment5 th {padding:5px; text-align:center; border-left:1px solid white; border-bottom: 1px solid white; background-color:#5a7a32; color:white;}
+table.payment5 th a:link {color:white;}
+table.payment5 th a:visited {color:white;}
+table.payment5 td.left{text-align:center; font-weight:bold; border-right:1px solid #5a7a32;}
+table.payment5 td.left2{text-align:center; border-right:1px solid #5a7a32;}
+table.payment5 td.center{text-align:center;}
+table.payment5 td.right{text-align:right;}
+table.payment5 tr.shade {background-color:#95ad6b;}*/
+.borderdash2 {margin-top: 0px; border-bottom: 1px dashed #333333;}
+/*---STANDARD DIV FOR PIPE LIST - TOP NAV-----*/
+#highlightnav {background-color:#fdf1e3; margin:0.5em 0 1.5em 0; padding:1em 0.25em;}
+#highlightnav a {}
+#rightTextPay{font-size: .85em; width: 165px; padding-bottom: .2em; float:right; border: 1px solid #E1E1E1; }
+/*---- RIGHT STATS BOX ON DEFAULT PAGE ----*/
+#rightTextPay h1{font-family: "Times New Roman", Times, serif; font-size: 1.25em; padding: .3em 0px .3em .3em;  margin: 0 0px 0 0px;  font-weight: normal; border-bottom: 0; color: #FFFFFF; background-color: #B66B18;}
+#rightTextPay .ulbackground{background-image: url(../GIFJPG/grayback2.jpg); background-repeat: repeat-x;}
+#rightTextPay ul{margin-top: 0px; margin-bottom:5px; margin-left: 20px; padding-top: 10px; padding-left: 0; color: #993300; list-style-position:outside; list-style: square;}
+#rightTextPay li{padding-bottom: 5px;}
+#rightTextPay a{}
+#rightTextPay .topBorder{display: none;}
+#rightTextPay .bottomBorder{display: none;}
+li .payrisk {list-style: none; padding-bottom: 0px; padding-top: 5px; }
+li .payrisk2 {padding-top: 2px; list-style: square;}
+li .payrisk3 {padding-top: 2px; list-style: circle;}
+li .payrisk4 {padding-top: 0px; list-style: none;}
+ul .payrisk {margin-top: 5px; list-style: square;}
+ul .payrisk2 {margin-top: 5px; list-style: none;}
+
+
+/* ------ VENDOR FEE STYLES ------- */
+table.vendorfees {font-family:Verdana, Geneva, sans-serif; font-size:0.60em; border-left: 1px solid #000; border-top: 1px solid #000; width: 100%;}
+table.vendorfees th { border-bottom:1px solid #000; border-right: 1px solid #000; padding: .5em; color: #fff; background-color: #006fb2;}
+table.vendorfees th a:link {color: #fff;}
+table.vendorfees th a:visited {color: #fff;}
+table.vendorfees th.nocolor {border-bottom:1px solid #000; border-right: 1px solid #000; padding: .5em; color: #000; background-color: #fff;}
+table.vendorfees td {border-right: 1px solid #000; border-bottom: 1px solid #000; }
+table.vendorfees td.shade {border-right: 1px solid #000; border-bottom: 1px solid #000; background-color:#d4e7f2;}
+table.vendorfees tr {border-top: 1px solid #000; border-bottom: 1px solid #000; margin-bottom: 2em; }

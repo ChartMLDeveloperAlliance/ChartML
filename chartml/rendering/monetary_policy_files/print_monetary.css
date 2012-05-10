@@ -1,0 +1,547 @@
+/*---------------- PRINT MONETARY POLICY/GENERAL LAYOUT STYLES -------------------*/
+body {font-family: "Times New Roman", Times, serif; font-size:1em; color: #000000; margin-left: .25em;}
+
+#top{display: none;}
+
+#footer
+{display: none;}
+
+a:link { text-decoration: underline; color: #314732; }
+a:visited { text-decoration: underline; color: #BCA346; }
+
+img{border: 0;}
+
+.clear {
+    clear: both;
+    display: block;
+    height: 1px;
+    margin: 0;
+    padding: 0; 
+    overflow: hidden;}
+
+/*----------- PAGE HEADER STYLES FOR ALL PAGES -----------------*/
+
+table#headerTopLinks {display:none;}
+#headerTopLinksSearchFormSubmit {display: none;}
+#headerMasthead {display: none;}
+
+/*---------- TOP HORIZONTAL NAVIGATION STYLES FOR ALL PAGES -------------*/
+
+#navMenu {display: none;}
+
+/*------------- ALL HEADLINE STYLES --------------*/
+
+h1.secondary{border-bottom: 1px solid #999999; font-family: "Times New Roman", Times, serif; font-size: 1.6em; padding: 0 0 3px 4px; margin: 0 0 0 5px; font-weight:normal;}
+h1.all{border-bottom: 1px solid #999999; font-family: "Times New Roman", Times, serif; font-size: 1.3em; padding: 10px 0 2px 0px; margin: 0 0 0 0em; font-weight:normal; margin-bottom: .2em;}
+h1.homeFeature{font-family: "Times New Roman", Times, serif; font-size: 1.2em; padding: .3em 0px .3em .3em;  margin: 0 0px 0 0px;     background-image: url(../gifjpg/homeFeatureBack.jpg); background-repeat: repeat-x; font-weight:bold; border-bottom: 0; color: #FFFFFF;}
+h1.stats {font-family: "Times New Roman", Times, serif; font-size: 1.2em; padding: .3em 0px .3em .3em;  margin: 0 0px 0 0px;     background-image: url(../gifjpg/statBack.jpg); background-repeat:repeat-x; font-weight:bold; border-bottom: 0; color: #FFFFFF;}
+
+
+h2.stats{font-family: "Times New Roman", Times, serif; font-size: 1.4em; padding: 5px 0px 3px 0px; margin: 0; font-weight:normal; border-bottom: 1px dashed #999999; margin-right: .7em;}
+h2.pr{font-family: "Times New Roman", Times, serif; font-size: 1.4em; padding-left: 5px; margin: 0; font-weight:normal; border-bottom: 1px dashed #999999; margin-right: .7em; margin-bottom: 3px;}
+h2.sitemap{font-family: "Times New Roman", Times, serif; font-size: 1.4em; padding: 1.8em 0px 3px 0px; font-weight:normal; border-bottom: 1px dashed #999999; margin-right: .7em; margin-bottom: .5em;}
+h2.whatsnext{font-family: "Times New Roman", Times, serif; font-size: 1.4em; padding: 1em 0px 3px 0px; font-weight:normal; border-bottom: 1px dashed #999999; margin-right: .7em; margin-bottom: .5em;}
+h2.border{font-family: "Times New Roman", Times, serif; font-size: 1.1em; padding: 5px 0px 0px 0px; font-weight:normal; border-bottom: 1px dashed #999999; margin-bottom: .3em; margin-top: .5em;}
+
+
+h3.statColumn{font-size: .85em; padding-left: 2em; margin-bottom: 0em;}
+h3.subtitle{font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 1em;}
+h3.italic{font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 1em; font-style:italic;}
+h3.prTime{font-weight: bold; font-family: Arial, Helvetica, sans-serif;}
+
+/*--------------------------------NEW HEADERS ----------------------*/
+.border{border-bottom: 1px solid #999999;}
+.borderdash{border-bottom: 1px dashed #333333; margin-top:1em;}
+.bold{font-weight: bold;}
+.boldnopadding{font-weight: bold; padding-bottom: 0; margin-bottom:0;}
+.italic{font-style: italic;}
+.italicbold{font-style: italic; font-weight: bold;}
+.italicnopadding{padding-bottom: 0; margin-bottom: 0em; font-style:italic;}
+.italicboldnopadding{padding-bottom: 0; margin-bottom: 0; font-style: italic; font-weight:bold;}
+.nopadding{margin: 0; padding: 0;}
+h1{font-family: "Times New Roman", Times, serif; font-size: 1.7em; padding: 10px 0 5px 0px; margin: 0 0 0 0em; font-weight:normal; margin-bottom: .6em; border-bottom: none;}
+h3 {font-size:1.4em; font-weight: normal; font-family: "Times New Roman", Times, serif;}
+h2 {font-family: "Times New Roman", Times, serif; font-size: 1.6em; border: none; font-weight: normal;}
+h4 {font-size:1.3em; font-weight: normal; font-family: "Times New Roman", Times, serif;}
+h5 {margin-bottom:0; font-size:1.2em; font-weight:normal; font-family: "Times New Roman", Times, serif;}
+h6 {margin-bottom:0; font-size:1.1em; font-weight:normal; font-family: "Times New Roman", Times, serif;}
+
+/*------------ Makes the Skip to Content links invisible ---------------*/
+
+.invisible { font-size: 0pt; font-weight: lighter; text-decoration: none; color: white; display: none; }
+.skip { font-size: 0pt; font-weight: lighter; text-decoration: none; color: white; display: none; }
+
+/*-------------------------- ALL PRINT STYLES BELOW ARE FOR SECONDARY PAGES ------------------------------*/
+
+#contentContainer{
+background-color: #FFFFFF;
+background-image:none;
+background-repeat: repeat-y;}
+
+#leftnav{display:none;}
+
+#content
+{margin-left: 0em;
+background-color:#FFFFFF;
+margin-top: 0;
+padding-top: 0;
+padding-left: 1em;}
+
+/*----- BREADCRUMBS -----*/
+
+#BreadCrumbContainer{display:none;}
+#printIcon {display: none;}
+.printIcon a img {display: none;}
+
+/*----- General Content Area -----*/
+
+.generalContentText table{margin-right: 1em;}
+.generalContentText #printThis{margin-top: .5em;}
+/*.generalContentText a:after{ content: attr(href); }*/
+
+/*----- Code for making Two Columns within GeneralContentText ----- */
+
+#TwoColumns{}
+
+#leftText{width: 630px;}
+#leftText ul.generalList{list-style: none; margin-left: 1em; margin-top: 1em;}
+#leftText ul.generalList li{padding-bottom: 1em; line-height: 1.3em;}
+#leftText ul.generalList li ul{padding-top: .5em; line-height: 1.3em; list-style: none; margin-left: 1em;}
+#leftText ul.generalList li ul li{padding-bottom: .3em;}
+#leftText ul.generalList2{list-style: none; margin-left: 1em; margin-top: 1em;}
+#leftText ul.generalList2 li{padding-bottom: .3em; line-height: 1.3em;}
+#leftText ul.generalList2 li ul{padding-top: .5em; line-height: 1.3em; list-style: none; margin-left: 1em;}
+#leftText ul.generalList2 li ul li{padding-bottom: .3em;}
+
+/*#rightText{display: none;}*/
+#rightText{font-size: .85em; width: 200px; padding-bottom: .2em; float:right;}
+#rightText h1{font-size: 1em; background-color: none; color:#000000; padding: .5em; border-bottom: 0; margin: 0em; font-weight:bold; font-family: Arial, Helvetica, sans-serif; margin-right: 0; width:200px; background-image: none;}
+#rightText ul{color: #993300; background-color: none; margin-left: 0em; padding-left:0em; padding-bottom: .5em; width: 100px; border-bottom: none;}
+#rightText li{ list-style: square; color: #B86813; padding-bottom: .3em; margin-left: 0em; padding-top: .3em;}
+#rightText a{color: #B86813;}
+#rightText h1.cat2{background-color:none; margin-bottom: 0; width: 200px; border-top: 1px solid #996666; margin-top: .5em;}
+#rightText ul.cat2{background-color:none; margin: 0; width: 100px; border-bottom: 1px solid #996666;}
+#rightText li.cat2{color: #996666; background-color:#EFE7E7; margin: 0; margin-left: 0em;}
+#rightText li.cat2 a{color:#996666;}
+#rightText li.cat2 a:visited{color:#996666;}
+#rightText ul.subNav{background-color:none; margin: 0; width: 100px; border: 1px solid #608AA4;}
+#rightText li.subNav {color:#243540;}
+#rightText li.subNav a{color:#243540;}
+#rightText li.subNav a:visited{color:#243540;}
+#rightText.bios{ margin-top: 2.5em;}
+#rightText .topBorder{background-image:none; height: 0; width:0;}
+#rightText .bottomBorder{background-image:none; background-repeat: no-repeat; height: 0px; width: 0px;}
+#rightText .ulbackground{background-image:none; background-repeat:repeat-y;}
+
+/*----- Styles for FOMC Calendars -----*/
+#extralinks {float:right; margin:-2em 0.5em 0 0;}
+
+th.alternate{background-image: url(/GIFJPG/fomcListBack.jpg); background-repeat: repeat-x; font-family: "Times New Roman", Times, serif; color: #FFFFFF; font-size: 1.5em; background-color:#3F523E; margin: 0; padding: .2em .3em .2em .3em; height:1%; font-weight:bold; text-align:left;}
+table.alternate {border: 1px solid #CCCCCC; margin: 0; padding: 0; list-style: none; border-collapse: collapse;}
+table.alternate tr{margin: 0; list-style: none; padding: .8em 0 .8em .8em; border:0;}
+table.alternate tr.even{ margin: 0; list-style: none; padding: .8em 0 .8em .8em; background-color: #E8E9E4;}
+table.alternate td.month{width: 7em; font-weight:bold; padding-left: .3em; padding-top: .4em ;padding-bottom: .4em;}
+table.alternate td.day{margin: 0 .6em 0 .6em; width: 10em; padding-top: .4em ;padding-bottom: .4em;}
+table.alternate td.statement{ margin: 0 0 0 .6em; width: 19em; padding-top: .4em ;padding-bottom: .4em;}
+table.alternate td.statement2{ margin: 0 0 0 .6em; width: 10em; padding-top: .4em ;padding-bottom: .4em;}
+table.alternate td.minutes{ margin: 0 0 0 0em; width: 19em; padding-top: .4em ;padding-bottom: .4em;}
+#fomcCurrentCal.alternate td.statement{width: 8em; padding-top: .4em ;padding-bottom: .4em;}
+#fomcCurrentCal.alternate td.statement2{width:5em; padding-top: .4em ;padding-bottom: .4em;}
+#fomcCurrentCal.alternate td.minutes{width:21em; padding-top: .4em; padding-bottom: .4em;}
+#fomcCurrentCal.alternate td.day{width:10em; padding-top: .4em; padding-bottom: .4em;}
+#fomcCurrentCal.alternate td.month{padding-top:.4em; padding-bottom: .4em;}
+
+
+/*---------- FOMC SEARCH BOX AND ASSOCIATED RESULTS PAGES ----------*/
+#fomcwrap {padding:1em 0 0 0; margin:2em 0 0 0; width:640px;}
+#fomcleft {float:none; padding:0 0 0 0; margin:0 0 1em 0;}
+#fomcright { float:none; padding:0 0 0 0; margin:1em 0 0 0;}
+.searchelement {background-color:#fcfaf3; padding:1em 1em 2em 1em; margin:0.25em;}
+.searchelement2 {background-color:#f4f6f4; padding:1em; margin:0.25em; height:18.5em;}
+h1.bordernone {border-bottom:1px solid #999; margin-bottom:0;}
+.greentext {color:#03430d;}
+.smalltext {font-size:0.85em;}
+#pagenav {width:100%; text-align:right; margin:0 0 0 0; padding:0 0 0.5em 0;}
+#pagenav a {font-color:#03430d;} 
+#fsearchbox {background-color:#f9f6ec; border-right:1px solid #d7c784; border-left:1px solid #d7c784; border-bottom:1px solid #d7c784; 
+margin:0 0 0 15em; font-size:0.85em; padding:0.5em; text-align:right;}
+#fsearchbox a {color:#000000;}
+.fsearchform {display:inline;}
+.fsearchbox {background-color:#f1f4f1; margin:0 0 0 0; font-size:0.85em; padding:5px 1em; text-align:right;}
+#searchbar {border-top:1px solid #e1e9e1; margin:0 3.2em 0 0; text-align:right; padding:0.25em;}
+#fomcsearchwrap {margin:0 0.5em 1em 0.5em; padding:0.5em;}
+#greenbar {background-color:#394c38; width:100%; height:2em;}
+#skip2 {display:none;}
+
+
+
+
+
+/*------- MAIN PAGE OF MPR------------*/
+#mprwrapper {width:640px; border:none; margin:0 0 0 0; padding:0 0 0 0;}
+#mprleft {float:none; width:323px; margin:0 0.5em 0 0; padding:0 0 0 0; background-color:#00355f; border-right:none;}
+#mprright {float:none; width:30em; margin:1em 0 0 0; padding:2em 0 0 1em;}
+#mprleft a {color:#004872;}
+#mprright a {color:#004872;}
+#mprright .currentreport {list-style:none; background-color:#fefcf2; padding:0.5em 0 0.5em 1em; margin:0 0 0 0;}
+#mprright .currentreport li {padding-bottom:0.35em;}
+#mprright .mprrecent td {padding:0.5em 0.15em;}
+#mprright .mprrecent .year {font-weight:bold; color:#004872; width:4em;}
+#mprright .mprrecent .feb {width:13em;}
+#mprright .shade {background-color:#f1f6fa;}
+#space {padding-bottom:0.35em;}
+
+/*------- MAIN PAGE OF MPR------------*/
+#mprwrapper {width:640px; border:none; margin:0 0 0 0; padding:0 0 0 0;}
+#mprleft {float:none; width:323px; margin:0 0.5em 0 0; padding:0 0 0 0; background-color:#00355f; border-right:none;}
+#mprright {float:none; width:30em; margin:1em 0 0 0; padding:2em 0 0 1em;}
+#mprleft a {color:#004872;}
+#mprright a {color:#004872;}
+#mprright .currentreport {list-style:none; background-color:#fefcf2; padding:0.5em 0 0.5em 1em; margin:0 0 0 0;}
+#mprright .currentreport li {padding-bottom:0.35em;}
+#mprright .mprrecent td {padding:0.5em 0.15em;}
+#mprright .mprrecent .year {font-weight:bold; color:#004872; width:4em;}
+#mprright .mprrecent .feb {width:13em;}
+#mprright .shade {background-color:#f1f6fa;}
+#space {padding-bottom:0.35em;}
+
+/*-------MPR PART STYLES FOR ALL REPORTS------------*/
+#mprhead {height:43px; margin:0.5em 0 1em 0; background-color:#00355f; background-image:none; background-position:right; background-repeat:no-repeat; border-bottom:1px solid #999;}
+#mprhead a {text-decoration:none; color:white;}
+#mprhead .head {padding:0.35em 0 0 0.25em; color:white; font-size:2em; font-family:"Times New Roman", Times, serif;}
+#rightText.mpr {font-size: .85em; width:150px; margin:0; padding-bottom: .5em; float:right;}
+#rightText.mpr h1 {background-color:none; color: #000000;}
+#rightText.mpr li{color: #007fbf;}
+#rightText.mpr a {color:#00355f;}
+#rightText.mpr ul {margin: 0px; padding: 0px; list-style-position:outside; list-style: square;}
+#chartleft {float:none; margin:1em 0 1em 0;}
+#chartright {float:none; margin:1em 0 1em 0;}
+#chartright a {font-size:0.85em;}
+#chartleft a {font-size:0.85em;}
+
+/*---------MPR PARTS - DEFAULT COLOR IS BLUE-------------*/
+#leftText3.mpr{float: left; clear: both;}
+#leftText3.mpr a {color:#004872;}
+#leftText3.mpr h1 {color:#004872; font-family:"Times New Roman", Times, serif; font-size: 1.7em; padding: 10px 0 5px 0px; margin: 0 0 0 0em; font-weight:normal; margin-bottom: .6em;} 
+#leftText3.mpr h2 {color:#004872; font-family: "Times New Roman", Times, serif; font-size: 1.6em; font-weight: normal;}
+#leftText3.mpr h3 {color:#004872; font-size:1.4em; font-weight: normal; font-family: "Times New Roman", Times, serif;}
+#leftText3.mpr .subhead {color:#004872; font-weight:bold; font-style:italic;}
+#leftText3.mpr #box {padding:0 2em; border-top:8px solid #004872; border-bottom:8px solid #004872; color:#333; font-size:0.90em;}
+#leftText3.mpr #box h2 {color:#004872; font-weight:bold;}
+table.mpr {width:675px; border-bottom:3px solid #004872; border-top:2px solid #004872;}
+table.mpr caption.tablehead {color:#004872; text-align:left; font-size:1.5em; font-family:"Times New Roman", Times, serif;}
+table.mpr th {border-bottom:1px solid #000;}
+table.mpr td {text-align:center; padding:0.15em 0;}
+table.mpr td.left {text-align:left; border-right:1px solid #000;}
+table.mpr td.indent {text-align:left; padding-left:1em; border-right:1px solid #000;}
+table.mpr td.verticalline {border-right:1px solid #000;}
+table.mpr tr.shade {background-color:#f1f6fa;}
+
+/*---------PURPLE (JULY AND FEB 2007 MPR REPORT)--------------*/
+#leftText3.mprP{float: left; clear: both; width: 85%;}
+#leftText3.mprP a {color:#6c1b72;}
+#leftText3.mprP h1 {color:#6c1b72; font-family:"Times New Roman", Times, serif; font-size: 1.7em; padding: 10px 0 5px 0px; margin: 0 0 0 0em; font-weight:normal; margin-bottom: .6em;}
+#leftText3.mprP h2 {color:#6c1b72; font-family: "Times New Roman", Times, serif; font-size: 1.6em; font-weight: normal;}
+#leftText3.mprP h3 {color:#6c1b72; font-size:1.4em; font-weight: normal; font-family: "Times New Roman", Times, serif;}
+#leftText3.mprP .subhead {color:#6c1b72; font-style:italic; font-weight:bold;}
+#leftText3.mprP #box {padding:0 2em; border-top:8px solid #6c1b72; border-bottom:8px solid #6c1b72; color:#333;}
+#leftText3.mprP #box h2 {color:#6c1b72; font-weight:bold;}
+table.mprP {width:675px; border-bottom:3px solid #6c1b72; border-top:2px solid #6c1b72;}
+table.mprP caption.tablehead {color:#6c1b72; text-align:left; font-size:1.5em; font-family:"Times New Roman", Times, serif;}
+table.mprP th {border-bottom:1px solid #000;}
+table.mprP td {text-align:center; padding:0.15em 0;}
+table.mprP td.left {text-align:left; border-right:1px solid #000;}
+table.mprP td.indent {text-align:left; padding-left:1em; border-right:1px solid #000;}
+table.mprP td.verticalline {border-right:1px solid #000;}
+table.mprP tr.shade {background-color:#e7dae8;}
+
+/*---------CLARET (2008 FEBRUARY MPR REPORT)--------------*/
+#leftText3.mprC {float: left;  clear: both; width: 85%;}
+#leftText3.mprC a {color:#993333;}
+#leftText3.mprC h1 {color:#993333; font-family:"Times New Roman", Times, serif; font-size: 1.7em; padding: 10px 0 5px 0px; margin: 0 0 0 0em; font-weight:normal; margin-bottom: .6em;}
+#leftText3.mprC h2 {color:#993333; font-family: "Times New Roman", Times, serif; font-size: 1.6em; font-weight: normal;}
+#leftText3.mprC h3 {color:#993333; font-size:1.4em; font-weight: normal; font-family: "Times New Roman", Times, serif;}
+#leftText3.mprC .subhead {color:#993333; font-style:italic; font-weight:bold;}
+#leftText3.mprC #box {padding:0.25em 2em; border-top:8px solid #993333; border-bottom:8px solid #993333; color:#333;}
+#leftText3.mprC #box h2 {color:#993333; font-weight:bold;}
+table.mprC {width:675px; border-bottom:3px solid #993333; border-top:2px solid #993333;}
+table.mprC caption.tablehead {color:#993333; text-align:left; font-size:1.5em; font-family:"Times New Roman", Times, serif;}
+table.mprC th {border-bottom:1px solid #000;}
+table.mprC td {text-align:center; padding:0.15em 0;}
+table.mprC td.left {text-align:left; border-right:1px solid #000;}
+table.mprC td.indent {text-align:left; padding-left:1em; border-right:1px solid #000;}
+table.mprC td.verticalline {border-right:1px solid #000;}
+table.mprC tr.shade {background-color:#efd6d6;}
+
+/*-------------------BLUE MPR ACCESSIBLE VERSION OF TABLES----------*/
+table.access {width:640px; border-top:2px solid #004872; border-bottom:2px solid #004872; margin:1.5em 0;}
+table.access th {border-right:1px solid #000; border-bottom:1px solid #000;}
+table.access caption.tablehead {color:#004872; text-align:left; font-size:1.5em; font-family:"Times New Roman", Times, serif;}
+table.access td {padding:0.5em; text-align:center; font-weight:normal;} 
+table.access td.left {text-align:left; border-right:1px solid #000;}
+table.access td.year {text-align:left; font-weight:bold; padding:0.25em 0 0.25em 0.5em; background-color:#f1f6fa; border-bottom:1px solid #000;}
+
+/*-------------------CLARET MPR ACCESSIBLE VERSION OF TABLES----------*/
+table.accessR {width:640px; border-top:2px solid #993333; border-bottom:2px solid #993333; margin:1.5em 0;}
+table.accessR th {border-right:1px solid #000; border-bottom:1px solid #000;}
+table.accessR caption.tablehead {color:#993333; text-align:left; font-size:1.5em; font-family:"Times New Roman", Times, serif;}
+table.accessR td {padding:0.5em; text-align:center; font-weight:normal;} 
+table.accessR td.left {text-align:left; border-right:1px solid #000;}
+table.accessR td.year {text-align:left; font-weight:bold; padding:0.25em 0 0.25em 0.5em; background-color:#efd6d6; border-bottom:1px solid #000;}
+
+/*-----END MPR STYLES---*/
+
+/*-----BALANCE SHEET TRANSPARENCY----*/
+h2.borderdash {margin:1em 0;}
+
+#navwrapper {display:none; background-color:#FDF1E3; padding:0.5em 1em;}
+#navwrapper a:link, a:visited {color:#314732;}
+#navleft {float:none; display:none; padding:0 0 0 0; width:12em;}
+#navleft2 {float:none; display:none; padding:0 0 0 0; width:22em; margin-top:1em;}
+#navleft3 {float:none; display:none; padding:0 0 0 0; width:15em; margin-top:1em;}
+
+#bstwrapper {margin:0 0 0 0; padding:1em 1.5em; border:20px solid #3F523E; width:830px;}
+ol.letters li {padding-bottom:0.5em;}
+hr.black {color:#314732;}
+h1.bstpopup {background-color:#ecf7ed; margin:0 0 0.5em 0; padding:0.215em;}
+ul.bst {margin:0 0 0 30px; padding:0.25em 0 0 0; list-style-position:outside; list-style:square; color:#314732;}
+ul.bst li {line-height:1.5em;}
+ul.bst2 {margin:0 0 0 35em; padding:0.25em 0 0 0; list-style-position:outside; list-style:square; color:#314732;}
+ul.bst2 li {line-height:1.5em;}
+ul.bst3 {margin:0 0 0 30px; padding:0 0 1.25em 0; list-style-position:outside; list-style:square; color:#314732;}
+ul.bst3 li {line-height:1.5em;}
+#bstcallout {margin:0.5em 1em 0.5em 0; border-bottom:2px solid #c8d9c9; width:350px; float:left; padding:0 0 0 0.5em; background-color:#f7fbf7;}
+#bstcallout h1 {margin:0 0 0.75em 0; padding:0.15em 0.15em 0.15em 0.25em; font-size:1.5em; background-color:#c8d9c9;}
+#bstcallout a {color:#314732;}
+#bstcallout ul {list-style:none; margin:0.25em; padding:0 0 0 0.5em; list-style-position:outside;}
+#bstcallout ul li {line-height:1.5em; padding-bottom:0.75em;}
+table.bst {width:640px; border:1px solid white; margin:0 0 0 0; padding:0 0 0 0; border-collapse:collapse; font-size:0.90em;}
+table.bst th {text-align:center; font-weight:bold; color:white; background-color:#3F523E; padding:0.55em; border:2px solid white;}
+table.bst td {text-align:center; padding:0.25em; }
+table.bst td.left {text-align:left; background-color:#fdfaec; color:#043502; width:30em; font-weight:bold; padding:0.5em; border:2px solid white;}
+table.bst td.left2 {text-align:left; background-color:#fdfaec; color:#043502; width:15em; font-weight:bold; padding:0.5em; border:2px solid white;}
+table.bst td.data {text-align:center; background-color:#f7fbf7; color:#043502; border:2px solid white;}
+table.bst td.data2 {text-align:left; padding:0.5em; background-color:#f7fbf7; color:#043502; border:2px solid white; vertical-align:top;}
+table.bst td.data3 {text-align:right; padding:0.5em; background-color:#f7fbf7; color:#043502; border:2px solid white; vertical-align:top;}
+table.bst2 {width:640px; margin:0 0 2em 0; padding:0 0 0 0; border-collapse:collapse; font-size:0.90em;} 
+table.bst2 th {text-align:left; font-weight:bold; color:white; background-color:#3F523E; padding:0.75em; margin-bottom:1em;}
+table.bst2 th.right {text-align:right; font-weight:bold; color:white; background-color:#3F523E; padding:0.75em; margin-bottom:1em;}
+table.bst2 td.right {text-align:right; border-top:1px solid #dedede; border-bottom:1px solid #dedede; padding:0.25em 0.25em 0.25em 2em;}
+table.bst2 td.right2 {text-align:right; background-color:#fdfaec; color:#043502; font-weight:bold; padding:0.25em; border-top:2px solid #314732;}
+table.bst2 td.left {text-align:left; background-color:#fdfaec; color:#043502; font-weight:bold; padding:0.5em; border-top:2px solid #314732;}
+table.bst2 td.left2 {text-align:left; border-top:1px solid #dedede; border-bottom:1px solid #dedede; padding:0.25em 0.25em 0.25em 2em;}
+table.bst2 td.left3 {text-align:left; border-top:1px solid #dedede; border-bottom:1px solid #dedede;  padding:0.25em 0.25em 0.25em 7em;}
+#closebutton {text-align:right;}
+
+#bstchartleft {float:none;  width:25em; margin:1em 0;}
+#bstchartright {float:none;  width:25em; margin:1em 0;}
+#bstchartleft1 {float:none;  width:28em; margin:1em 0;}
+#bstchartright1 {float:none;  width:28em; margin:1em 0;}
+
+/* TAF STYLES */
+table.archive {width:70%; border: 1px solid #CCC; margin:1em 0 0 0; padding:0 0 0 0; border-collapse: collapse;}
+table.archive th.alternate {background-image: url(); background-repeat: repeat-x; font-family: "Times New Roman", Times, serif; color: #FFFFFF; font-size: 1.5em; background-color:#3F523E; margin: 0; padding: .2em .3em .2em .3em; height:1%; font-weight:normal; text-align:left;}
+table.archive tr {margin: 0; list-style: none; padding: .8em 0 .8em .8em; border:0;}
+table.archive tr.even {margin: 0; list-style: none; padding: .8em 0 .8em .8em; background-color: #E8E9E4;}
+table.archive td.month {width:5em; font-weight:bold; padding:0 0 0 0.25em;} 
+table.archive td.day {margin:0 0 0 0; width:4em; padding:0.5em 0.5em 0.5em 0;}
+table.archive td.statement {margin:0 0 0 0; width:4em; padding:0.5em;}
+table.archive td.minutes {margin:0 0 0 0; width:4em; padding:0.5em;}
+table.highlight{margin:0 0 0 0; padding:0 0 0 0; width:70%; border-collapse: collapse; border: 1px solid #CCC;}
+table.highlight th{text-align: left; background-image: url(); background-repeat:repeat-x; height: 25px; font-family: "Times New Roman", Times, serif; color:#FFFFFF; background-color: none;   font-size: 1.5em;  margin: 0; padding: .2em .3em .2em .3em; font-weight:normal; text-align:left; background-color: #3A2743;}
+table.hightlight tr {margin: 0; list-style: none; padding: .8em 0 .8em .8em; border:0;}
+table.highlight tr.even{ margin: 0; list-style: none; padding: .8em 0 .8em .8em; background-color: #E8E9E4;}
+table.highlight td.month {width:5em; font-weight:bold; padding:0 0 0 0.25em;} 
+table.highlight td.day {margin:0 0 0 0; width:4em; padding:0.5em 0.5em 0.5em 0;}
+table.highlight td.statement {margin:0 0 0 0; width:4em; padding:0.5em;}
+table.highlight td.minutes {margin:0 0 0 0; width:4em; padding:0.5em;}.greentext2 {color:#03430d; font-size:0.85em; margin-top:-0.5em;}
+#iorwrapper {padding:0.5em 0; margin:0.5em 0 0 0; height:1em; border:1px solid white;}
+.iorleft {float:left; width:10.5em;}
+.iorright {float:left; margin:-0.5em 0 0 0; width:10em;}
+
+table.omo {border:1px solid #CCC; margin:0 0 1.5em 0; padding:0 0 0 0; border-collapse: collapse;}
+table.omo th {background-image: url(); background-repeat: repeat-x; font-family: "Times New Roman", Times, serif; color: #FFFFFF; font-size: 1.5em; background-color:#3F523E; margin: 0; padding: .2em .3em .2em .3em; height:1%; font-weight:normal; text-align:left;}
+table.omo td {padding:0.35em; margin:0 0 0 0; color:#000;}
+table.omo td.subheaders {color:#39443a; font-weight:bold; font-style:normal; text-align:center; background-color:#f0ead0; font-size:0.85em; border:1px solid white;}
+table.omo td.subheaders2 {color:#39443a; font-weight:bold; font-style:normal; text-align:left; background-color:#f0ead0; font-size:0.85em;}
+table.omo td.subheaders3 {color:#fff; font-weight:bold; font-style:normal; text-align:center; background-color:#3F523E; font-size:0.85em;}
+table.omo td.subheaders4 {font-weight:bold; text-align:center; background-color:#f4f5f2; font-size:0.85em;}
+table.omo td.subheaders5 {color:#043502; font-weight:bold; font-style:normal; text-align:center; background-color:#ecf7ed; font-size:0.85em; border:1px solid white;}
+table.omo td.subheaders6 {color:#043502; font-weight:bold; font-style:normal; text-align:center; background-color:#fdfaec; font-size:0.85em; border:1px solid white;}
+table.omo tr.allyears {background-color:#f4f5f2;}
+table.omo td.allyears {padding:0.5em; text-align:left;}
+table.omo td.allyears a {padding:0.5em; text-align:left;}
+table.omo td.date {width:15em; padding-left:1em; font-weight:bold; text-align:left;}
+table.omo td.date2 {width:20em; padding-left:1em; font-weight:bold; text-align:left;} 
+table.omo td.data {text-align:center;}
+table.omo td.shade {text-align:center; background-color:#ecf7ed;}
+table.omo td.shade2 {text-align:center; background-color:#fdfaec;}
+.footnotes2 {font-size:0.85em; margin:1em 0; color:#333333;}
+#IndexDateControl3 {padding-bottom:1em;}
+
+/*-----CLBS Reports----*/
+#clbs h1.border{border-bottom: none; margin-bottom: 0em; color:#005581;}
+#clbs h1.borderlanding{border-bottom: none; margin-bottom: 0em; color:#005581; height: 95px;}
+#clbs h2.borderdash{color: #000; font-style:italic; font-size: 1.7em; border-bottom: none;}
+#clbs h3{font-family: "Times New Roman", Times, serif; font-weight: bold; color:#000; font-size: 1.3em;}
+#clbs h4 {font-family: "Times New Roman", Times, serif; font-weight: normal; color:#000; font-size: 1.3em;}
+#clbs img.seal{height: 100px;}
+#clbs .date { font-style: italic; font-size: 1.5em; font-family: "Times New Roman", Times, serif; margin-bottom: 40px; color:#005581;}
+#clbs .date .pdf{ font-style: normal; font-size: .8em;}
+#clbs ul li {padding-bottom: 5px;}
+#clbs ul.contents {list-style: none;}
+#clbs ul.contents li{padding-bottom: .5em;}
+#clbs #nav a:link{color: #006DB2;}
+#clbs #nav a:visited{color: #004F7D;}
+#clbs #nav{background-color:#D4E7F2; border-top: 1px solid #006FB2; border-bottom: 1px solid #006FB2; width: 100%; }
+#clbs #nav td{width: 33%; text-align: center; padding: 8px;}
+#clbs #nav ul{list-style: none; margin: 0; padding: 0;}
+#clbs #nav ul li.left {float: left; width: 30%; padding-top: 10px; text-align: left; padding-left: 5px;}
+#clbs #nav ul li.center {float: left; text-align:center; width: 33%; padding-top: 10px;}
+#clbs #nav ul li.right{float: right; text-align:right; width: 33%; padding-top: 10px; padding-right: 5px;}
+#clbs #ddwrapper {background-color: #D4E7F2;}
+#clbs .month{font-size: 1.2em; margin-bottom: 8px; padding-bottom: 0;}
+#clbs p.footnotes{font-family: "Times New Roman", Times, serif; font-size: .9em; margin:0; padding:0;}
+#clbs table caption.left {padding-bottom: .5em; font-size: 1.5em; text-align:left;} 
+#clbs table.data{border-top:none; border-left:none; empty-cells:show; font-family: "Times New Roman", Times, serif; font-size: 1.0em; margin-bottom: 1em; text-align:left; border-top: #005581 1px solid; border-bottom: 1px solid #005581;}
+#clbs table.data td {padding:5px; text-align:right; border-bottom: 1px dotted #CCC; border-right: none;}
+#clbs table.data th {padding: 5px 10px 5px 10px; text-align:center; border-bottom: none; color: #000; border-left: 1px solid #000; border-bottom: 1px solid #000;}
+#clbs table.data th a:link {color:#000;}
+#clbs table.data th a:visited {color:#ccc;}
+#clbs table.data th.first{border-left: 1px solid #fff;}
+#clbs table.data th.subhead {padding:5px; text-align:left; border-bottom: none; color: #000; border-bottom: 1px solid white; background-color: #E8E2EB;}
+#clbs table.data th.subhead a:link{color: black;}
+#clbs table.data th.subhead a:visited{color: black;}
+#clbs table.data th.farright{border-right: none;}
+#clbs table.data .subhead{text-align: left; border-bottom: 1px solid #fff;}
+#clbs table.data td.left{text-align:left;}
+#clbs table.data td.text{text-align:left;}
+#clbs table.data td.borderb{border-bottom: 1px solid white; border-right: 1px solid white;}
+#clbs table.data tr.shade {background-color:#E8E2EB; padding-top: 1px;}
+#clbs table.data tr.shade1 {/*background-color:#D4E7F2;*/ padding-top: 1px; margin-top: 1px; font-weight:bold;}
+#clbs table.data tr.shade2 {background-color: #E5E5E5;}
+#clbs table.data .indent1{padding-left: 15px; background-color: #FFF; color: #000; text-align:left;}
+#clbs table.data .indent2{padding-left: 25px; background-color: #FFF; color: #000; text-align:left;}
+#clbs table.data .indent3{padding-left: 35px; background-color: #FFF; color: #000; text-align:left;}
+#clbs table.data .indent4{padding-left: 45px; background-color: #FFF; color: #000; text-align:left;}
+#clbs table.data .indent5{padding-left: 55px; background-color: #FFF; color: #000; text-align:left;}
+#clbs h3 .pmtablehead {    font-weight: bold; font-size: 0.9em; color: #005581; text-align: left; margin-top: 4em;}
+#clbs h3 .pmtablesubhead { font-weight: bold; font-size: 1em; color: #005581; font-family: 'Times New Roman',Times,serif; text-align: left;}
+#clbs h3 .pmtableunit {    font-weight: normal; font-size: .8em; font-family: 'Times New Roman',Times,serif; text-align: left; color: #005581;}
+/* added for calendar */
+#clbs table.calendar { margin-top: 1em; margin-bottom: 1em; padding: 0; border: 1px solid #006FB2; }
+#clbs table.calendar tr.even{background-color: #D4E7F2; padding: 0;}
+#clbs table.calendar td{text-align: left; padding: 8px; vertical-align:top;}
+#clbs table.calendar {width:70%; border: 1px solid #CCC; margin:1em 0 0 0; padding:0 0 0 0; border-collapse: collapse;}
+#clbs table.calendar th.alternate{background-color: #006FB2; background-image: none; font-family: "Times New Roman", Times, serif; color: #FFFFFF; font-size: 1.5em;  margin: 0; padding: .2em .3em .2em .3em; height:1%; font-weight:normal; text-align:left;}
+#clbs table.calendar tr {margin: 0; list-style: none; padding: .8em 0 .8em .8em; border:0;}
+#clbs table.calendar tr.even {margin: 0; list-style: none; padding: .8em 0 .8em .8em; background-color: #D4E7F2;}
+#clbs table.calendar td.month {width:10em; font-weight:bold; padding:0 0 0 0.25em;} 
+#clbs table.calendar td.day {margin:0 0 0 0; width:4em; padding:0.5em 0.5em 0.5em 0;}
+#clbs table.calendar td.statement {margin:0 0 0 0; width:4em; padding:0.5em;}
+#clbs table.calendar td.minutes {margin:0 0 0 0; width:4em; padding:0.5em;}
+#clbs table.data td.one {text-decoration: underline;}
+#clbs table.data td.one .two{border-bottom: 1px solid #000; padding-bottom: 2px;}
+
+#clbs ul.list3 {list-style-image:url(/gifjpg/list_line.gif);}
+/*-----END: CLBS Reports----*/
+
+
+/* ------ VENDOR FEE STYLES ------- */
+table.vendorfees{font-family:Verdana, Geneva, sans-serif; font-size:0.60em; border-left: 1px solid #999999; border-top: 1px solid #999999;}
+table.vendorfees th {text-align:center; font-weight:bold; color:white; background-color:#3F523E; border-bottom:1px solid #999999; border-right: 1px solid #999999; padding: .5em; }
+table.vendorfees th.nocolor {text-align:left; background-color:#fdfaec; color:#043502; font-weight:bold; border-right: 1px solid #999999; border-bottom: 1px solid #999999; padding: .5em;}
+table.vendorfees th a:link {color:white;}
+table.vendorfees th a:visited {color:white;}
+table.vendorfees td {border-right: 1px solid #999999; border-bottom: 1px solid #999999; }
+table.vendorfees td.left {text-align:left; background-color:#fdfaec; color:#043502; font-weight:bold; border-right: 1px solid #999999; border-bottom: 1px solid #999999; padding: .5em;}
+table.vendorfees td.left2 {text-align:left; background-color:#fdfaec; color:#043502; font-weight:bold; border-right: 1px solid #999999; border-bottom: 1px solid #999999; }
+table.vendorfees td.data {text-align:center; background-color:#f7fbf7; color:#043502; border:2px solid white;}
+table.vendorfees td.data2 {text-align:right; background-color:#f7fbf7; color:#043502; border-right: 1px solid #999999; border-bottom: 1px solid #999999;}
+table.vendorfees td.data2a {text-align:left; background-color:#f7fbf7; color:#043502; border-right: 1px solid #999999; border-bottom: 1px solid #999999;}
+table.vendorfees td.data3 {text-align:right; padding:0.5em; background-color:#f7fbf7; color:#043502; border:2px solid white; vertical-align:top;}
+table.vendorfees td.shade {text-align:right; background-color:#ccc; color:#043502; border-right: 1px solid #999999; border-bottom: 1px solid #999999;  }
+
+/* ------ Balance Sheet: H41 Pop-Up------- */
+span.accessible {font-family:Arial, Helvetica, sans-serif; font-size: 11px; vertical-align:text-top; }
+table.accessible {margin:0 0 2em 0; padding:0 0 0 0; border: none;}
+table.accessible th.shade {color: #000; background-color: #c7d8c8; border: none; font-weight: 400; text-align:center; border-bottom: 3px solid #f7fcf6;}
+table.accessible td {color: #3e4b41; background-color: #f7fcf6; border: none; padding-left: 10px;}
+table.accessible td a:link {color: #3e4b41;}
+table.accessible td a:visited {color: #3e4b41;}
+/* ------ End: Balance Sheet: H41 Pop-Up------- */
+
+/* ------ NEW FOMC (Mike) ------ */
+/*CALENDAR STYLES FOR NEW CAL*/
+th.pressConference{background-image: url(); background-repeat: repeat-x; font-family: "Times New Roman", Times, serif; color: #FFFFFF; font-size: 1.5em; background-color:#3F523E; margin: 0; padding: .2em .3em .2em .3em; height:1%; font-weight:normal; text-align:left;}
+table.pressConference {border: 1px solid #CCCCCC; margin: 0; width: 48em; padding: 0; list-style: none; border-collapse: collapse;}
+table.pressConference tr{margin: 0; list-style: none; padding: .8em 0 .8em .8em; border:0;}
+table.pressConference tr.even{margin: 0; list-style: none; padding: .8em 0 .8em .8em; background-color: #E8E9E4;}
+table.pressConference td.month{width: 8em; font-weight:bold; padding: .4em 0 .4em .3em;} 
+table.pressConference td.day{margin: 0 .6em 0 .6em; width: 10em; padding: .4em 0 .4em 1.5em;}
+#fomcCurrentCal{text-align:left;}
+#fomcCurrentCal.pressConference td.video{
+    width:18em;
+    line-height:1.75em;
+    padding-left: 0;
+    white-space:nowrap;
+}
+#fomcCurrentCal.pressConference td.day {
+    width:8em;
+    padding-left:0;
+}
+#fomcCurrentCal.pressConference td.minutes{
+    width:14.7em;
+    line-height:1.75em;
+    text-align:right;
+    padding-left:0;
+    padding-right:.5em;
+    padding-top: .4em;
+    padding-bottom: .4em;
+}
+#fomcCurrentCal.pressConference td.statement2 {
+    padding-left:1em;
+    width:auto;
+}
+/*span.rightJustified{
+    text-align:right;
+}*/
+/* --- Press Briefing Styles --- */
+.media .item {float: left; padding: 0 25px 0px 5px; border-right: 1px solid #cccccc;}
+.smallerFont{
+    font-size:.85em    }
+.pressConference h3{
+    display:block;
+    background-color: #3F523E;
+    background-image: url("");
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    font-family: "Times New Roman",Times,serif;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0.2em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-top: 0.2em;
+    text-align: left;
+}
+.pressConference ul{
+    list-style:none;
+    border: 1px solid #cccccc;
+    padding:.5em;
+    margin:0;
+}
+.pressConference ul li{
+    margin-bottom:1em;
+}
+div.pressConference{
+    height:20.5em;
+    float:left;
+    padding-left:2em;
+    width:33em;
+}
+/* ------ NEW FOMC (Mike) ------ */
