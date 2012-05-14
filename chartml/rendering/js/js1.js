@@ -16,34 +16,57 @@ function hideall(high_id) {
 }
 
 function loadAtBody() {
-	prepareGraph("Stocks");
+	prepareGraph("Stocks", 600);
+	prepareGraph("Bonds", 600);
 }
 
-function prepareGraph(high_id) {
+function prepareGraph(high_id, width) {
 //	insertStructure(high_id);
+	var file = "./data/"+high_id+".csv";
+	var csv = $.ajax({
+        url: file,
+        async: false
+     }).responseText;
+	var data = CSV.csvToArray(csv);
 	
-	var data = [
-		{x: 0, y: 1},
-		{x: 1, y: 2},
-		{x: 2, y: 2.5},
-		{x: 3, y: 3.0},
-		{x: 4, y: 4.0},
-		{x: 5, y: 10},
-		{x: 6, y: 12}
-	];
 	var text = "The line graph shows a steadily increasing line, starting at (0,1), and moving to the right until x=6. At x=5, there is a jump.";
-	var tablecontents = '<table cellspacing="0" cellpadding="0" border="0" width="325"><tr><td>'
-	+ '<table cellspacing="0" cellpadding="1" border="1" width="600px" ><tr><th width="50%">x</th><th width="50%">y</th></tr></table>'
-	+ '</td></tr><tr><td><div style="width:600px; height:330px; overflow:auto;">'
-	+ '<table cellspacing="0" cellpadding="1" border="1" width="600px" >'
-	+ '<tr><td width="50%">1</td><td width="50%">2</td></tr><tr><td>2</td><td>2.5</td></tr><tr><td>3</td><td>3</td></tr><tr><td>4</td><td>4</td>'
-	+ '</tr><tr><td>5</td><td>10</td></tr><tr><td>6</td><td>12</td></tr></table>'
-	+ '</div></td></tr></table>';
-	prepareAudio(high_id);
-	prepareVisualCharts(data, high_id);
-	prepareTextDescription(text, high_id);
-	prepareTable(tablecontents, high_id);
 	
+	var rows = data.length;
+	var columns = data[0].length;
+	var column_width = (width/columns)|0;
+	var tablecontents = '<table cellspacing="0" cellpadding="0" border="0" width="325"><tr><td>';
+	tablecontents += '<table cellspacing="0" cellpadding="1" border="1" width="'+width+'px" >';
+	tablecontents += '<tr>';
+	for(index=0; index<columns; index++) {
+		tablecontents += '<td>';
+		tablecontents += 'data'+index;
+		tablecontents += '</td>';
+	}
+	tablecontents += '</tr>';
+	tablecontents += '</table>';
+	tablecontents += '</td></tr><tr><td>';
+	tablecontents += '<div style="width:600px; height:330px; overflow:auto;">';
+	tablecontents += '<table cellspacing="0" cellpadding="1" border="1" width="'+width+'px" >';
+	for(row_index=0; row_index<rows; row_index++) {
+		tablecontents += '<tr>';
+		for(column_index=0; column_index<columns; column_index++) {
+			tablecontents += '<td width='+column_width+'px>';
+			tablecontents += data[row_index][column_index];
+			tablecontents += '</td>';
+		}
+		tablecontents += '</tr>';
+	}
+	tablecontents += '</table>'
+	tablecontents += '</div></td></tr></table>';
+	
+	// actual loading of visual charts and table.
+	prepareVisualCharts(data, high_id);
+	prepareTable(tablecontents, high_id);
+
+	// prefab audio and text
+	prepareAudio(high_id);
+	prepareTextDescription(text, high_id);
+
 	updateMain(high_id, "visual");
 }
 
@@ -74,7 +97,8 @@ function insertStructure(high_id) {
 }
 
 function prepareAudio(high_id) {
-	var html ='<embed src="./res/audio_'+high_id+'.mid" autostart="false" width="600px" height="360px"></embed>';
+	// HACK: force use of 'audio_Stocks.mid'.
+	var html ='<embed src="./res/audio_'+'Stocks'+'.mid" autostart="false" width="600px" height="360px"></embed>';
 	$("#cmlrmain_"+high_id+"_audio").html(html);
 }
 
@@ -97,13 +121,11 @@ function prepareVisualCharts(data, high_id) {
 }
 
 function chartPrepVisual(data, id) {
-//	if(chart) chart.destructor();
-	
 	var chart = new dhtmlXChart( {
 		view: "line",
 		container: id,
-		value: "#y#",
-		tooltip: "#y#",
+		value: "#data1#",
+		tooltip: "#data1#",
 		item:{
 			borderColor:"#ffffff",
             color:"#000000"
@@ -114,22 +136,32 @@ function chartPrepVisual(data, id) {
         },
 		xAxis:{
 		     title:"x",
-		     template:"#x#"
+		     template:"#data0#"
 		},
         yAxis:{
 		     title:"y"
 	    },
 	});
 
-	chart.parse(data,"json");
+	var length = data[0].length;
+
+	for(index=2; index<length; index++) {
+		var datalabel = "#data"+index+"#";
+		chart.addSeries({
+			value: datalabel,
+			color: "#00ff00"
+		});
+	}
+
+	chart.parse(data,"jsarray");
 }
 
 function chartPrepEnhanced(data, id) {
 	var chart = new dhtmlXChart( {
 		view: "line",
 		container: id,
-		value: "#y#",
-		tooltip: "#y#",
+		value: "#data1#",
+		tooltip: "#data1#",
 		item:{
 			borderColor:"#000000",
             color:"#000000"
@@ -140,22 +172,32 @@ function chartPrepEnhanced(data, id) {
         },
 		xAxis:{
 		     title:"x",
-		     template:"#x#"
+		     template:"#data0#"
 		},
         yAxis:{
 		     title:"y"
 	    },
 	});
 
-	chart.parse(data,"json");
+	var length = data[0].length;
+
+	for(index=2; index<length; index++) {
+		var datalabel = "#data"+index+"#";
+		chart.addSeries({
+			value: datalabel,
+			color: "#00ff00"
+		});
+	}
+
+	chart.parse(data,"jsarray");
 }
 
 function chartPrepReversed(data, id) {
 	var chart = new dhtmlXChart( {
 		view: "line",
 		container: id,
-		value: "#y#",
-		tooltip: "#y#",
+		value: "#data1#",
+		tooltip: "#data1#",
 		item:{
 			borderColor:"#eeeeee",
             color:"#eeeeee"
@@ -166,13 +208,24 @@ function chartPrepReversed(data, id) {
         },
 		xAxis:{
 		     title:"x",
-		     template:"#x#"
+		     template:"#data0#"
 		},
         yAxis:{
 		     title:"y"
 	    },
 	});
 
-	chart.parse(data,"json");
+
+	var length = data[0].length;
+
+	for(index=2; index<length; index++) {
+		var datalabel = "#data"+index+"#";
+		chart.addSeries({
+			value: datalabel,
+			color: "#00ff00"
+		});
+	}
+
+	chart.parse(data,"jsarray");
 }
 

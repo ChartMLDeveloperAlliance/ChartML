@@ -1,13 +1,13 @@
 /* style1.css */
 ul.ChartMLRenderingFineControls li, ul.ChartMLRenderingGrossControls li {
 	display: inline;
-	padding-left: 1em;
+	padding-left: 4px;
 }
 
 div.ChartMLRenderingMain {
 /*	display: inline; */
 }
 
-div#cmlrmain_Stocks_reverse canvas {
+div.reverse canvas {
 	background: black;
 }
