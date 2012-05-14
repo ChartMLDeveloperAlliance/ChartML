@@ -1,0 +1,235 @@
+<html>
+<head>
+<title>FRB: Monetary Policy Report, March 1, 2011 - Part 2: Recent Financial and Economic Developments</title>
+<link href="./monetary_policy_files/pubweb.css" rel="stylesheet" type="text/css">
+<link href="./monetary_policy_files/secondary.css" rel="stylesheet" type="text/css">
+<link href="./monetary_policy_files/print.css" rel="stylesheet" type="text/css" media="print">
+<link href="./monetary_policy_files/print_monetary.css" rel="stylesheet" type="text/css" media="print">
+<link href="./monetary_policy_files/monetary.css" rel="stylesheet" type="text/css">
+
+
+<link rel="stylesheet" type="text/css" href="./css/style1.css" />
+<script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+
+<!-- A different CSV parser. -->
+<script type="text/javascript" src="./js/ucsv-1.1.0-min.js"></script>
+
+<!-- DHTMLX stuff here. -->
+<script type="text/javascript" src="./js/dhtmlxchart.js"></script>
+<link rel="stylesheet" type="text/css" href="./js/dhtmlxchart.css" />
+<script type="text/javascript" src="./js/js1.js"></script>
+
+<!-- A CSV parser. I don't think it's really "jquery". -->
+<!-- <script type="text/javascript" src="./js/jquery.csv-0.6.min.js"></script>-->
+
+<script type="text/javascript">
+function loadAtBody() {
+	prepareGraph("MPR211_F1", 600);
+	prepareGraph("MPR211_F2", 600);
+	prepareGraph("MPR211_F3", 600);
+	prepareGraph("MPR211_F4", 600);
+	prepareGraph("MPR211_F5", 600);
+	prepareGraph("MPR211_F6", 600);
+}
+
+</script>
+
+</head>
+
+<body onload="loadAtBody()">
+<h1 class="borderdash">Part 2: Recent Financial and Economic Developments</h1>
+
+<span class="subhead">Monetary Policy Report submitted to the Congress on March 1, 2011, pursuant to section 2B of the Federal Reserve Act</span>
+
+<!--/IoRangePreExecute-->
+<p>
+
+
+       Economic activity expanded at a moderate pace, on balance, in the second half of 2010. According to the currently available estimates from the Bureau of Economic Analysis, real gross domestic product (GDP) increased at an annual rate of about 2-3/4 percent, on average, over that period (<a href="http://www.federalreserve.gov/monetarypolicy/mpr_20110301_part2.htm#figure1">figure 1</a>). In the third quarter, as had been the case in the first half of the year, much of the increase was the result of inventory accumulation; in contrast, final sales continued to rise at a subdued rate. Meanwhile, several indicators of economic activity had softened from the readings observed earlier in the year, raising concerns about the durability of the recovery. Later in the year, however, the tone of the incoming data on economic activity brightened somewhat, final sales strengthened, and the recovery appeared to be on a firmer footing.
+    
+    </p><p>
+       Since the middle of 2010, consumer spending has risen solidly on average, businesses have continued to increase their outlays for equipment and software, and exports have moved up further. In contrast, construction of new homes and nonresidential buildings remains exceptionally weak. Conditions in the labor market have improved only slowly, with payrolls increasing at a modest pace. Throughout nearly all of 2010, that pace of employment expansion was insufficient to bring the unemployment rate down meaningfully from its recent peak. In December 2010 and January of this year, however, the unemployment rate is estimated to have dropped more noticeably, even though payroll employment gains remained lackluster. Meanwhile, long-duration joblessness persisted at near-record levels. With regard to inflation developments, despite rapid increases in commodity prices, longer-term inflation expectations have remained stable and consumer price inflation has continued to trend downward on net (<a href="http://www.federalreserve.gov/monetarypolicy/mpr_20110301_part2.htm#figure2">figure 2</a>).
+    </p>
+    <div id="chartleft">
+      <p>
+<div class="ChartMLContainer" id="MPR211_F1">
+	<div class="ChartMLRenderingMainHolder">
+		<div id="cmlrmain_MPR211_F1_visual" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F1_enhance" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F1_reverse" class="ChartMLRenderingMain reverse" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F1_audio" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F1_text" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F1_table" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+	</div>
+	<div class="ChartMLRenderingGrossControls">
+		<ul class="ChartMLRenderingGrossControls">
+			<li><button type="submit" onclick="updateMain('MPR211_F1', 'visual')"><img src="./res/icon_visual.png" alt-text="Visual Graph" height="32px" /><br/>Visual</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F1', 'enhance')"><img src="./res/icon_enhanced.png" alt-text="Enhanced Visuals" /><br />Enhanced</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F1', 'reverse')"><img src="./res/icon_reversed.png" alt-text="Reversed Visuals" /><br />Reversed</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F1', 'audio')"><img src="./res/icon_audio.png" alt-text="Auditory Graph" /><br />Audio</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F1', 'text')"><img src="./res/icon_text.png" alt-text="Text Description" /><br />Text</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F1', 'table')"><img src="./res/icon_table.png" alt-text="Data Table" /><br />Table</button></li>
+		</ul>
+	</div>
+</div>
+	</p></div>
+    <div id="chartright">
+<div class="ChartMLContainer" id="MPR211_F2">
+	<div class="ChartMLRenderingMainHolder">
+		<div id="cmlrmain_MPR211_F2_visual" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F2_enhance" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F2_reverse" class="ChartMLRenderingMain reverse" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F2_audio" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F2_text" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F2_table" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+	</div>
+	<div class="ChartMLRenderingGrossControls">
+		<ul class="ChartMLRenderingGrossControls">
+			<li><button type="submit" onclick="updateMain('MPR211_F2', 'visual')"><img src="./res/icon_visual.png" alt-text="Visual Graph" height="32px" /><br/>Visual</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F2', 'enhance')"><img src="./res/icon_enhanced.png" alt-text="Enhanced Visuals" /><br />Enhanced</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F2', 'reverse')"><img src="./res/icon_reversed.png" alt-text="Reversed Visuals" /><br />Reversed</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F2', 'audio')"><img src="./res/icon_audio.png" alt-text="Auditory Graph" /><br />Audio</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F2', 'text')"><img src="./res/icon_text.png" alt-text="Text Description" /><br />Text</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F2', 'table')"><img src="./res/icon_table.png" alt-text="Data Table" /><br />Table</button></li>
+		</ul>
+	</div>
+</div>
+    
+    </div>
+    <div class="clear">
+    </div>
+    <p>
+       Conditions in financial markets generally improved over the course of the second half of 2010 and early 2011 and continued to be supportive of economic activity. This improvement reflected, in part, additional monetary policy stimulus provided by the Federal Reserve, as well as growing investor confidence in the sustainability of the economic recovery. Although yields on Treasury securities rose somewhat, on net, since mid-2010, yields on investment-grade corporate bonds were little changed at low levels, and yields on speculative-grade bonds declined. In equity markets, price indexes generally rose, buoyed by solid corporate earnings and a more positive economic outlook. Commercial banks reported that they had eased some of their lending standards and terms, though lending standards remained generally tight and some businesses and households continued to face difficulties obtaining credit. Changes in interest rates faced by households were mixed. The improvement in financial conditions was accompanied by some signs of a pickup in the demand for credit. Borrower credit quality generally improved, although problems persisted in some sectors of the economy. Concerns about European banking and fiscal strains increased again in late 2010 after having eased for a time; however, in contrast to what was observed in the spring, these concerns left little imprint on U.S. financial markets.
+    </p><p></p>
+
+    <a name="12126" style="clear: all; margin-top: 20px"></a>
+
+    <h2 class="borderdash">Domestic Developments</h2>
+
+
+
+
+
+
+<h3>
+       The Household Sector
+    </h3>
+    <h4>
+       Consumer Spending and Household Finance
+    </h4>
+    <p>
+       Real personal consumption expenditures (PCE) increased at an annual rate of about 3-1/4&nbsp;percent in the second half of 2010, with a particularly brisk rise in the fourth quarter (<a href="http://www.federalreserve.gov/monetarypolicy/mpr_20110301_part2.htm#figure3">figure&nbsp;3</a>). The spending gains were supported by the continued, though modest, pickup in real household incomes, by some fading of the restraining effects of the earlier sharp declines in households' net worth, and by a modest improvement in the availability of consumer credit. Outlays for durable goods also may have been boosted to some extent by purchases that had been deferred during the recession. The increases in spending exceeded the rise in income, and the saving rate edged down during the second half of the year, though it remains well above levels that prevailed prior to the recession (<a href="http://www.federalreserve.gov/monetarypolicy/mpr_20110301_part2.htm#figure4">figure&nbsp;4</a>).
+    </p>
+    <div id="chartleft">
+    <div id="chartright">
+<div class="ChartMLContainer" id="MPR211_F3">
+	<div class="ChartMLRenderingMainHolder">
+		<div id="cmlrmain_MPR211_F3_visual" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F3_enhance" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F3_reverse" class="ChartMLRenderingMain reverse" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F3_audio" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F3_text" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F3_table" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+	</div>
+	<div class="ChartMLRenderingGrossControls">
+		<ul class="ChartMLRenderingGrossControls">
+			<li><button type="submit" onclick="updateMain('MPR211_F3', 'visual')"><img src="./res/icon_visual.png" alt-text="Visual Graph" height="32px" /><br/>Visual</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F3', 'enhance')"><img src="./res/icon_enhanced.png" alt-text="Enhanced Visuals" /><br />Enhanced</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F3', 'reverse')"><img src="./res/icon_reversed.png" alt-text="Reversed Visuals" /><br />Reversed</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F3', 'audio')"><img src="./res/icon_audio.png" alt-text="Auditory Graph" /><br />Audio</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F3', 'text')"><img src="./res/icon_text.png" alt-text="Text Description" /><br />Text</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F3', 'table')"><img src="./res/icon_table.png" alt-text="Data Table" /><br />Table</button></li>
+		</ul>
+	</div>
+</div>
+    </div>
+    <div id="chartright">
+      <p>
+<div class="ChartMLContainer" id="MPR211_F4">
+	<div class="ChartMLRenderingMainHolder">
+		<div id="cmlrmain_MPR211_F4_visual" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F4_enhance" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F4_reverse" class="ChartMLRenderingMain reverse" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F4_audio" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F4_text" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F4_table" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+	</div>
+	<div class="ChartMLRenderingGrossControls">
+		<ul class="ChartMLRenderingGrossControls">
+			<li><button type="submit" onclick="updateMain('MPR211_F4', 'visual')"><img src="./res/icon_visual.png" alt-text="Visual Graph" height="32px" /><br/>Visual</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F4', 'enhance')"><img src="./res/icon_enhanced.png" alt-text="Enhanced Visuals" /><br />Enhanced</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F4', 'reverse')"><img src="./res/icon_reversed.png" alt-text="Reversed Visuals" /><br />Reversed</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F4', 'audio')"><img src="./res/icon_audio.png" alt-text="Auditory Graph" /><br />Audio</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F4', 'text')"><img src="./res/icon_text.png" alt-text="Text Description" /><br />Text</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F4', 'table')"><img src="./res/icon_table.png" alt-text="Data Table" /><br />Table</button></li>
+		</ul>
+	</div>
+</div>
+      </p>
+    </div>
+    <div class="clear">
+    </div>
+    <p>
+       The increase in consumer outlays in the second half of 2010 partly reflected a step-up in sales of new light motor vehicles (cars, sport utility vehicles, and pickup trucks). Sales of light vehicles rose from an annual rate of 11-1/4&nbsp;million units in the second quarter of 2010&nbsp;to more than 12-1/4&nbsp;million units in the fourth quarter and moved up further in the first part of 2011. Sales were supported, in part, by further improvements in credit conditions for auto buyers as well as by more-generous sales incentives from the automakers. Real spending in other goods categories also rose appreciably, while the increase in outlays for services was more subdued.
+    </p>
+    <p>
+       The determinants of consumer outlays showed further, albeit gradual, improvement during the second half of 2010. The level of real disposable personal income (DPI)--after-tax income adjusted for inflation--which rose rapidly in the first half of the year, continued to advance in the second half, as real wages and salaries moved up at an annual rate of 2&nbsp;percent (<a href="http://www.federalreserve.gov/monetarypolicy/mpr_20110301_part2.htm#figure5">figure&nbsp;5</a>). The increase in real wage and salary income reflected the continued, though tepid, recoveries in both employment and hours worked; in contrast, hourly pay was little changed in real terms.
+    </p>
+    <p>
+       The ratio of household net worth to DPI moved up a little in the third quarter of 2010 and appears to have risen further since then, as increases in equity values likely more than offset further declines in house prices (<a href="http://www.federalreserve.gov/monetarypolicy/mpr_20110301_part2.htm#figure6">figure&nbsp;6</a>). Although the wealth-to-income ratio has trended up since the beginning of 2009 and has returned to the levels that prevailed prior to the late 1990s, it remains well below its highs in 2006 and 2007. Consumer sentiment rose late in the year, boosted by gradual improvements in household assessments of financial and business conditions as well as job prospects; nevertheless, these gains only moved sentiment back to or a bit above the low levels that prevailed at the start of last year (<a href="http://www.federalreserve.gov/monetarypolicy/mpr_20110301_part2.htm#figure7">figure&nbsp;7</a>).
+    </p>
+    <div id="chartleft">
+      <p>
+<div class="ChartMLContainer" id="MPR211_F5">
+	<div class="ChartMLRenderingMainHolder">
+		<div id="cmlrmain_MPR211_F5_visual" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F5_enhance" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F5_reverse" class="ChartMLRenderingMain reverse" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F5_audio" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F5_text" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F5_table" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+	</div>
+	<div class="ChartMLRenderingGrossControls">
+		<ul class="ChartMLRenderingGrossControls">
+			<li><button type="submit" onclick="updateMain('MPR211_F5', 'visual')"><img src="./res/icon_visual.png" alt-text="Visual Graph" height="32px" /><br/>Visual</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F5', 'enhance')"><img src="./res/icon_enhanced.png" alt-text="Enhanced Visuals" /><br />Enhanced</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F5', 'reverse')"><img src="./res/icon_reversed.png" alt-text="Reversed Visuals" /><br />Reversed</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F5', 'audio')"><img src="./res/icon_audio.png" alt-text="Auditory Graph" /><br />Audio</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F5', 'text')"><img src="./res/icon_text.png" alt-text="Text Description" /><br />Text</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F5', 'table')"><img src="./res/icon_table.png" alt-text="Data Table" /><br />Table</button></li>
+		</ul>
+	</div>
+</div>
+      </p>
+    </div>
+    <div id="chartright">
+      <p>
+<div class="ChartMLContainer" id="MPR211_F6">
+	<div class="ChartMLRenderingMainHolder">
+		<div id="cmlrmain_MPR211_F6_visual" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F6_enhance" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F6_reverse" class="ChartMLRenderingMain reverse" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F6_audio" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F6_text" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+		<div id="cmlrmain_MPR211_F6_table" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
+	</div>
+	<div class="ChartMLRenderingGrossControls">
+		<ul class="ChartMLRenderingGrossControls">
+			<li><button type="submit" onclick="updateMain('MPR211_F6', 'visual')"><img src="./res/icon_visual.png" alt-text="Visual Graph" height="32px" /><br/>Visual</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F6', 'enhance')"><img src="./res/icon_enhanced.png" alt-text="Enhanced Visuals" /><br />Enhanced</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F6', 'reverse')"><img src="./res/icon_reversed.png" alt-text="Reversed Visuals" /><br />Reversed</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F6', 'audio')"><img src="./res/icon_audio.png" alt-text="Auditory Graph" /><br />Audio</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F6', 'text')"><img src="./res/icon_text.png" alt-text="Text Description" /><br />Text</button></li>
+			<li><button type="submit" onclick="updateMain('MPR211_F6', 'table')"><img src="./res/icon_table.png" alt-text="Data Table" /><br />Table</button></li>
+		</ul>
+	</div>
+</div>
+      </p>
+    </div>
+    <div class="clear">
+    </div>
+    <p>
+       Household debt likely fell at just under a 2&nbsp;percent annual rate in the second half of 2010, a slightly slower pace than in the first half. The contraction for 2010 as a whole, which was due primarily to ongoing decreases in mortgage debt, marked the second consecutive annual decline. The reduction in overall household debt levels, combined with increases in personal income, resulted in a further decline in the ratio of household debt to income and in the debt service ratio--the required principal and interest payments on existing mortgage and consumer debt relative to income (<a href="http://www.federalreserve.gov/monetarypolicy/mpr_20110301_part2.htm#figure8">figure&nbsp;8</a>).
+    </p>
+</body>
+</html>

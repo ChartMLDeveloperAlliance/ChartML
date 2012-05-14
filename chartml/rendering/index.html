@@ -1,75 +1,21 @@
 <html>
-<head>
-	<title>Accessible Graphs Demo 1</title>
-<link rel="stylesheet" type="text/css" href="./css/style1.css" />
-<script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+<head></head>
+<body>
+<h1>Dynamic Accessible Graphs Demonstration</h1>
 
-<!-- A CSV parser. I don't think it's really "jquery". -->
-<!-- <script type="text/javascript" src="./js/jquery.csv-0.6.min.js"></script>-->
+<p>This is a demonstration of integrating accessibility into graphs on a website.
+It is intended to show the concept, and many updates will have to be made to make
+the idea ready for production.</p>
 
-<!-- A different CSV parser. -->
-<script type="text/javascript" src="./js/ucsv-1.1.0-min.js"></script>
+<p>Data is being dynamically loaded from a CSV file. The audio and text descriptions 
+do not change, but could be implemented now with a hook-in with the accessible
+graphing engine.</p>
 
-<!-- DHTMLX stuff here. -->
-<script type="text/javascript" src="./js/dhtmlxchart.js"></script>
-<link rel="stylesheet" type="text/css" href="./js/dhtmlxchart.css" />
-<script type="text/javascript" src="./js/js1.js"></script>
-
-</head>
-
-<body onload="loadAtBody()">
-<h1>Some header</h1>
-<p>Here is some text about the picture below. it goes on for awhile.
-Here is some text about the picture below. it goes on for awhile.
-Here is some text about the picture below. it goes on for awhile.
-Here is some text about the picture below. it goes on for awhile.
-Here is some text about the picture below. it goes on for awhile.
-Here is some text about the picture below. it goes on for awhile.
-</p>
-
-<div class="ChartMLContainer" id="Stocks">
-	<div class="ChartMLRenderingMainHolder">
-		<div id="cmlrmain_Stocks_visual" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
-		<div id="cmlrmain_Stocks_enhance" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
-		<div id="cmlrmain_Stocks_reverse" class="ChartMLRenderingMain reverse" style="width:600px; height:360px;"></div>
-		<div id="cmlrmain_Stocks_audio" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
-		<div id="cmlrmain_Stocks_text" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
-		<div id="cmlrmain_Stocks_table" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
-	</div>
-	<div class="ChartMLRenderingGrossControls">
-		<ul class="ChartMLRenderingGrossControls">
-			<li><button type="submit" onclick="updateMain('Stocks', 'visual')"><img src="./res/icon_visual.png" alt-text="Visual Graph" height="32px" /><br/>Visual</button></li>
-			<li><button type="submit" onclick="updateMain('Stocks', 'enhance')"><img src="./res/icon_enhanced.png" alt-text="Enhanced Visuals" /><br />Enhanced</button></li>
-			<li><button type="submit" onclick="updateMain('Stocks', 'reverse')"><img src="./res/icon_reversed.png" alt-text="Reversed Visuals" /><br />Reversed</button></li>
-			<li><button type="submit" onclick="updateMain('Stocks', 'audio')"><img src="./res/icon_audio.png" alt-text="Auditory Graph" /><br />Audio</button></li>
-			<li><button type="submit" onclick="updateMain('Stocks', 'text')"><img src="./res/icon_text.png" alt-text="Text Description" /><br />Text</button></li>
-			<li><button type="submit" onclick="updateMain('Stocks', 'table')"><img src="./res/icon_table.png" alt-text="Data Table" /><br />Table</button></li>
-		</ul>
-	</div>
-</div>
-
-<p>Here is some text afterwords.</p>
-
-<div class="ChartMLContainer" id="Bonds">
-	<div class="ChartMLRenderingMainHolder">
-		<div id="cmlrmain_Bonds_visual" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
-		<div id="cmlrmain_Bonds_enhance" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
-		<div id="cmlrmain_Bonds_reverse" class="ChartMLRenderingMain reverse" style="width:600px; height:360px;"></div>
-		<div id="cmlrmain_Bonds_audio" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
-		<div id="cmlrmain_Bonds_text" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
-		<div id="cmlrmain_Bonds_table" class="ChartMLRenderingMain" style="width:600px; height:360px;"></div>
-	</div>
-	<div class="ChartMLRenderingGrossControls">
-		<ul class="ChartMLRenderingGrossControls">
-			<li><button type="submit" onclick="updateMain('Bonds', 'visual')"><img src="./res/icon_visual.png" alt-text="Visual Graph" height="32px" /><br/>Visual</button></li>
-			<li><button type="submit" onclick="updateMain('Bonds', 'enhance')"><img src="./res/icon_enhanced.png" alt-text="Enhanced Visuals" /><br />Enhanced</button></li>
-			<li><button type="submit" onclick="updateMain('Bonds', 'reverse')"><img src="./res/icon_reversed.png" alt-text="Reversed Visuals" /><br />Reversed</button></li>
-			<li><button type="submit" onclick="updateMain('Bonds', 'audio')"><img src="./res/icon_audio.png" alt-text="Auditory Graph" /><br />Audio</button></li>
-			<li><button type="submit" onclick="updateMain('Bonds', 'text')"><img src="./res/icon_text.png" alt-text="Text Description" /><br />Text</button></li>
-			<li><button type="submit" onclick="updateMain('Bonds', 'table')"><img src="./res/icon_table.png" alt-text="Data Table" /><br />Table</button></li>
-		</ul>
-	</div>
-</div>
-
+<ul>
+<li><a href="index1.html">A basic page</a></li>
+<li><a href="index2.html">The original FRB site</a></li>
+<li><a href="index4.html">Updated FRB site</a></li>
+<li><a href="./data/MPR211_F1.csv">Sample data.</a></li>
+</ul>
 </body>
 </html>

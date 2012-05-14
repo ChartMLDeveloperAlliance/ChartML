@@ -15,11 +15,6 @@ function hideall(high_id) {
 	$("#cmlrmain_"+high_id+"_table").hide();
 }
 
-function loadAtBody() {
-	prepareGraph("Stocks", 600);
-	prepareGraph("Bonds", 600);
-}
-
 function prepareGraph(high_id, width) {
 //	insertStructure(high_id);
 	var file = "./data/"+high_id+".csv";
@@ -127,12 +122,13 @@ function chartPrepVisual(data, id) {
 		value: "#data1#",
 		tooltip: "#data1#",
 		item:{
-			borderColor:"#ffffff",
-            color:"#000000"
+			borderColor:"#0075ab",
+            color:"#0075ab",
+            width: 0
     	},
         line:{
-        	color:"#ff9900",
-            width:3
+        	color:"#0075ab",
+            width:2
         },
 		xAxis:{
 		     title:"x",
