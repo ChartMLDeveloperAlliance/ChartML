@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Chart>
+	<Data>
+		<Groups>
+			<Group>
+				<Point>
+					<ID>23</ID>
+					<Label>First Point</Label>
+					<PointPart>
+						<VariableID>123</VariableID>
+						<Value>ABC</Value>
+					</PointPart>
+					<PointPart>
+						<VariableID>243</VariableID>
+						<Value>DEF</Value>
+					</PointPart>
+				</Point>
+				<Point>
+					<PointPart>
+						<VariableID>123</VariableID>
+						<Value>BCD</Value>
+					</PointPart>
+					<PointPart>
+						<VariableID>243</VariableID>
+						<Value>EFG</Value>
+					</PointPart>
+				</Point>
+			</Group>
+		</Groups>
+		<Variables>
+			<Variable>
+				<VariableID>123</VariableID>
+				<Type>Nominal</Type>
+				<Label>Some label</Label>
+			</Variable>
+		</Variables>
+	</Data>
+	<Rendering>
+		<DataRendering />
+		<VariableRendering />
+	</Rendering>
+</Chart>
