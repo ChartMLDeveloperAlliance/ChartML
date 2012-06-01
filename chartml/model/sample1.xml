@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This sample shows a few data points, with an increasing linear trend, y=2x+1-->
+<Chart>
+	<Data>
+		<Groups>
+			<Group>
+				<Point>
+					<PointPart>
+						<VariableID>x</VariableID>
+						<Value>0</Value>
+					</PointPart>
+					<PointPart>
+						<VariableID>y</VariableID>
+						<Value>1</Value>
+					</PointPart>
+				</Point>
+				<Point>
+					<PointPart>
+						<VariableID>x</VariableID>
+						<Value>1</Value>
+					</PointPart>
+					<PointPart>
+						<VariableID>y</VariableID>
+						<Value>3</Value>
+					</PointPart>
+				</Point>
+				<Point>
+					<PointPart>
+						<VariableID>x</VariableID>
+						<Value>2</Value>
+					</PointPart>
+					<PointPart>
+						<VariableID>y</VariableID>
+						<Value>5</Value>
+					</PointPart>
+				</Point>
+				<Point>
+					<PointPart>
+						<VariableID>x</VariableID>
+						<Value>3</Value>
+					</PointPart>
+					<PointPart>
+						<VariableID>y</VariableID>
+						<Value>7</Value>
+					</PointPart>
+				</Point>
+				<Point>
+					<PointPart>
+						<VariableID>x</VariableID>
+						<Value>4</Value>
+					</PointPart>
+					<PointPart>
+						<VariableID>y</VariableID>
+						<Value>9</Value>
+					</PointPart>
+				</Point>
+				<Point>
+					<PointPart>
+						<VariableID>x</VariableID>
+						<Value>5</Value>
+					</PointPart>
+					<PointPart>
+						<VariableID>y</VariableID>
+						<Value>11</Value>
+					</PointPart>
+				</Point>
+			</Group>
+		</Groups>
+		<Variables>
+			<Variable>
+				<VariableID>x</VariableID>
+				<Type>Ratio</Type>
+				<Label>x</Label>
+			</Variable>
+			<Variable>
+				<VariableID>y</VariableID>
+				<Type>Ratio</Type>
+				<Label>y</Label>
+			</Variable>
+		</Variables>
+	</Data>
+	<Rendering>
+		<DataRendering />
+		<VariableRendering />
+	</Rendering>
+</Chart>

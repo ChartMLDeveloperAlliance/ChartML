@@ -59,7 +59,7 @@
 
 	<xs:complexType name="VariableGroupType">
 		<xs:sequence>
-			<xs:element name="Variable" type="VariableType" />
+			<xs:element name="Variable" type="VariableType" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
 	
