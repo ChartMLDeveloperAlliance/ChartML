@@ -81,6 +81,9 @@
 		</Variables>
 	</Data>
 	<Rendering>
+		<GlobalRendering>
+			<ChartSpecies>Coordinate Graph</ChartSpecies>
+		</GlobalRendering>
 		<DataRendering />
 		<VariableRendering />
 	</Rendering>

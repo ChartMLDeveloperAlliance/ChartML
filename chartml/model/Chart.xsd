@@ -94,9 +94,10 @@
 
 	<xs:complexType name="GlobalRenderingType">
 		<xs:sequence>
-			<xs:any minOccurs="0" />
+			<xs:element name="ChartSpecies" type="xs:string" />
 		</xs:sequence>
 	</xs:complexType>
+	
 
 	<xs:complexType name="DataRenderingType">
 		<xs:sequence>
