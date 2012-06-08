@@ -3,7 +3,7 @@
 
 <!-- Driver -->
 	<xs:element name="Chart" type="ChartType" />
-
+	
 <!-- Simple Elements -->
 	<xs:simpleType name="stringtype">
 		<xs:restriction base="xs:string" />
