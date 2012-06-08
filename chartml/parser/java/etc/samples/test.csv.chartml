@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Chart>
+    <Data>
+        <Groups>
+            <Group>
+                <Point>
+                    <PointPart>
+                        <VariableID>1</VariableID>
+                        <Value>1</Value>
+                    </PointPart>
+                    <PointPart>
+                        <VariableID>2</VariableID>
+                        <Value> 0</Value>
+                    </PointPart>
+                </Point>
+                <Point>
+                    <PointPart>
+                        <VariableID>1</VariableID>
+                        <Value>2</Value>
+                    </PointPart>
+                    <PointPart>
+                        <VariableID>2</VariableID>
+                        <Value> 10</Value>
+                    </PointPart>
+                </Point>
+                <Point>
+                    <PointPart>
+                        <VariableID>1</VariableID>
+                        <Value>3</Value>
+                    </PointPart>
+                    <PointPart>
+                        <VariableID>2</VariableID>
+                        <Value> 20</Value>
+                    </PointPart>
+                </Point>
+            </Group>
+        </Groups>
+        <Variables>
+            <Variable>
+                <VariableID>1</VariableID>
+                <Type>Ordinal</Type>
+            </Variable>
+            <Variable>
+                <VariableID>2</VariableID>
+                <Type>Ordinal</Type>
+            </Variable>
+        </Variables>
+    </Data>
+    <Rendering>
+        <GlobalRendering>
+            <ChartSpecies>Coordinate Graph</ChartSpecies>
+        </GlobalRendering>
+        <DataRendering/>
+        <VariableRendering/>
+    </Rendering>
+</Chart>
